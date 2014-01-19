@@ -17,6 +17,15 @@
 #include "xml.h"
 #include "cd.h"
 #include "dvd.h"
+
+#pragma comment(lib,"comctl32.lib")
+#pragma comment(lib,"wsock32.lib")
+#pragma comment(lib,"version.lib")
+#pragma comment(lib,"winmm.lib")
+#pragma comment(lib,"quartz.lib")
+#pragma comment(lib,"dxguid.lib")
+#pragma comment(lib,"strmiids.lib")
+
 //------------------------------------------------------------------
 
 COLORREF colors[]={0x000000, 0xeaf7fb, 0xffffff, 0xff0000, 0x000000, 0x00ff00,
