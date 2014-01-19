@@ -1,0 +1,403 @@
+*************
+ Tiny Player
+*************
+Pøehrávaè video souborù, audio souborù, DVD, audio CD. Kodeky pro jednotlivé typy souborù nejsou souèástí programu, a proto si je musíte dodateènì stáhnout a nainstalovat. Zkuste se podívat na http://www.free-codecs.com
+
+Upozornìní: Pokud máte DirectX verze menší než 9, pak nebudete moct používat nìkteré funkce pøehrávaèe. 
+
+Instalace
+---------
+ZIP archiv rozbalte do libovolné složky na disku. Po spuštìní programu v Možnostech zvolte pøípony souborù, ke kterým se má program asociovat.
+
+Odinstalace
+-----------
+V menu Soubor zvolte Odstranit konfiguraci. Tím se odstraní položky z registru. Pak mùžete program smazat z disku.
+
+Pøehrávání
+----------
+Otevøít soubor lze nìkolika zpùsoby:
+(1) V menu Soubor zvolte "Otevøít soubory" nebo stisknìte tlaèítko na panelu nástrojù. Lze vybrat více souborù, pokud jsou ve stejné složce.
+(2) V menu Soubor zvolte "Otevøít složku" nebo stisknìte tlaèítko na panelu nástrojù. Prohledávají se rekurzivnì také všechny podadresáøe, lze tedy vybrat i celý disk.
+(3) Dvojklikem otevøete jeden soubor v Prùzkumníkovi (pokud je pøípona asociována).
+(4) Pøetáhnìte soubory nebo složky z Prùzkumníka do okna pøehrávaèe
+(5) V prùzkumníku stisknìte Ctrl+C a v pøehrávaèi Ctrl+V
+(6) Otevøte m3u playlist
+
+Pokud je bìhem otevírání souborù stisknuto Ctrl nebo 'q', pak jsou soubory jen pøidány na konec playlistu a nezaènou se okamžitì pøehrávat.
+
+DVD
+---
+Abyste mohli pøehrávat DVD, musíte nejdøíve nainstalovat MPEG-2 dekodér a také AC3 filtr. Bohužel ne každý MPEG-2 dekodér funguje s programem Tiny Player. Napøíklad Ligos a MainConcept nefungují. DScaler funguje, ale ne když je obraz nastaven na 256 barev. GPL a Gabest fungují, ale v možnostech na kartì Obraz musíte zakázat Overlay Mixer.
+DVD pøehrajete pøíkazem Soubor\"Pøehrát DVD". Jestliže máte obsah DVD zkopírován na hard disku, pak jej mùžete otevøít pøíkazem Soubor\"Otevøít soubory...", kde musíte vybrat soubor VIDEO_TS.IFO. Do playlistu se pøidá položka "DVD menu", která má stejný význam jako pøíkaz DVD\Nabídka, a pak následují Title01, Title02, atd.     
+
+
+Filtry
+------
+V menu Filtry se bìhem pøehrávání objeví názvy používaných DirectShow filtrù. Pokud jsou za názvem filtru tøi teèky, pak lze zobrazit informace a nebo mìnit nìkteré dùležité vlastnosti. Nìkteré filtry neumìjí mìnit vlastnosti bìhem pøehrávání, a v takovém pøípadì musíte místo tlaèítkem Play spustit pøehrávání tlaèítkem Pause, pak zmìnit vlastnosti filtru a teprve potom stisknout Play.
+
+Winamp pluginy
+--------------
+Jestliže nìjaký soubor nelze pøehrát pomocí DirectShow filtrù, pak se TinyPlayer pokusí použít Winamp plugin (www.winamp.com). Bohužel to funguje jen se staršími verzemi Winampu, nejvýše do verze 5.111. Pokud nemáte Winamp nainstalován, pak si vytvoøte složku C:\Program Files\Winamp\Plugins, a do ní si z Internetu stáhnìte jen ty pluginy, které potøebujete. Musejí mít pøíponu dll a první tøi znaky názvu pluginu musejí být in_.
+Pozor: Nìkteré nastavení pluginu jsou ignorovány: title formatting, VBR display, fast layer 3 equalizer.
+Poznámka: Winamp plugin se nepoužije, pokud máte zároveò nainstalován také DirectShow filtr. Napøíklad DirectShow MP3 Decoder lze ve Windows XP odinstalovat pøíkazem regsvr32 /u l3codecx.ax
+
+freedb
+------
+V menu Soubor je položka "Informace o CD", která zobrazí okno s údaji o tom CD, které se právì nachází v CD mechanice. Údaje mùžete stáhnout z internetové databáze nebo je vyplnit ruènì. Nejdøíve si na disku musíte vytvoøit složku (napø. C:\cddb), do které se budou informace ukládat. Název této složky zadejte v Možnostech na kartì LokálníCDDB. Používáte-li ExactAudioCopy, CDex nebo podobnou aplikaci na kopírování CD, pak už pravdìpodobnì na disku CDDB databázi máte. V tomto pøípadì jen zjistìte, v jaké je složce a jaký má formát a kódování. Formát Unix se pozná podle osmiznakových názvù souborù, formát Windows používá šestiznakové názvy obsahující písmena to. Kódování obvykle bývá CP1250. Pokud vytváøíte úplnì novou databázi, pak zvolte kódování UTF-8, protože to podporuje všechny jazyky. 
+Jméno interpreta musí být ve tvaru køestní jméno, mezera, pøíjmení (pokud se nejedná o hudební skupinu). Anglické názvy hudebních skupin nesmìjí zaèínat èlenem The. Jestliže CD obsahuje skladby od rùzných autorù, pak jako interpreta musíte zadat Various a názvy jednotlivých písnièek zadat ve tvaru Autor / Název, kde na obou stranách lomítka je jedna mezera.
+Položka freedb urèuje adresáø, do kterého se záznam uloží. 
+Pokud údaje stažené z internetu patøí k úplnì jinému CD, pak kliknìte na tlaèítko Vymazat, potom ruènì vyplòte údaje o svém CD, zmìòte položku freedb a nakonec odešlete. Nesmíte zapomenout freedb kategorii zmìnit, jinak se odesláním smažou údaje o CD, které bylo døíve uloženo v databázi.
+Pokud údaje stažené z internetu jsou chybné, ale odpovídají vašemu CD, pak je opravte a odešlete. V tom pøípadì naopak nesmíte zmìnit položku freedb, jinak budou údaje v databázi dvakrát v rùzných adresáøích. 
+Nikdy neodesílejte informace o vypalovaném CD, protože mùže mít jiné rozmístìní stop než originální CD (napøíklad když CD bylo vypáleno metodou TAO, která mezi stopy pøidává dvousekundové mezery, nebo když pùvodní CD bylo chránìno proti kopírování).
+Pokud chcete, aby se písnièky pøehrávaly v jiném poøadí, než v jakém jsou na CD, pak do položky "Poøadí stop" napište èísla skladeb oddìlená èárkami. Tato èísla jsou o jedna menší než jak jsou zobrazena v seznamu. Za touto položkou je tlaèítko, které do pole "Poøadí stop" vepíše èísla podle aktuálního playlistu.
+
+Možnosti - Spouštìní
+--------------------
+Povolit více instancí:  Bude možné mít najednou otevøeno více oken programu (bude spuštìno více procesù).
+
+Registrovat pøípony pøi spuštìní pøehrávaèe:  Jinak se pøípony souborù pøiøadí k tomuto pøehrávaèi jen když v možnostech kliknete na tlaèítko OK. 
+
+Pøípony multimediálních souborù:  Takové soubory se zobrazují v oknì "Otevøít soubor" a také se vyberou pøi "Otevøít složku". Jednotlivé pøípony jsou od sebe oddìlené støedníky. 
+
+Asociované pøípony:  Pokud v Prùzkumníku (nebo nìjakém jiném správci souborù) otevøete soubor s touto pøíponou, pak se spustí Tiny Player. Soubory s jinou pøíponou se otevøou v jiném programu (napø. ve Windows Media Playeru).
+
+Priorita procesu:  Doporuèuje se normální nebo nadprùmìrná. Pøi vysoké se zadrhávají ostatní aplikace. Pøi nízké dochází k výpadkùm zvuku. Ve Windows 95/98/ME nefunguje nadprùmìrná a podprùmìrná priorita.
+
+Možnosti - Obecné
+-----------------
+Pøi otevøení více souborù je setøídit podle cesty a jména:  Pøi otevøení složky nebo nìkolika souborù se pøidané soubory setøídí. Neplatí pro CD a pøi otevøení M3U nebo ASX playlistu.
+
+Povolit spoøiè obrazovky, pokud se nepøehrává video:  Pokud používáte vizualizaci na celé obrazovce, pak je výhodné tuto možnost nechat vypnutou. Pøi pøehrávání videa je spoøiè obrazovky vždy zakázán.
+
+Skok vpøed/zpìt:  Pøíkazy "Skok vpøed" a "Skok zpìt" najdete v menu Pøehrávání. Také si pro nì mùžete dát tlaèítka na panel nástrojù.
+
+Interval pøekreslování pozice a titulkù:  Malá hodnota zvyšuje zátìž procesoru. Pøi velké hodnotì se titulky zobrazují pozdì.
+
+Možnosti - Playlist
+-------------------
+Automaticky naèítat délky a datový tok všech souborù v playlistu:  Pokud tuto možnost nezaškrtnete, pak se obsah sloupcù "Bitrate" a "Délka" zobrazí až poté, co v menu Playlist dáte pøíkaz "Naèíst délky". 
+
+ID3 a APEv1 tagy zobrazovat v kódování ISO-8859-1:  Podle standardu mohou tagy obsahovat jen text v západoevropském kódování. Pøesto ale vìtšina programù umožòuje do tagu zapsat také èeské znaky v kódování Win-1250. V takovém pøípadì tuto možnost nezaškrtávejte.
+
+Sloupce:  Maximální poèet sloupcù je 16. Každý øádek editaèního pole odpovídá jednomu sloupci. Cokoli uvnitø hranatých závorek se zobrazí jen tehdy, pokud se alespoò jedno pole podaøilo nahradit. 
+Pøíklad: [%ar - ][%tr. ]%ti[ \[%ye\]]
+Zpìtné lomítko znamená, že se má následující znak (%, [ , ], \ ) normálnì zobrazit.
+
+Titulek okna: Text, který je vidìt v záhlaví okna. Mùže obsahovat informace o právì pøehrávaném souboru (podobnì jako sloupce v playlistu).
+
+Možnosti - Zvuk1
+----------------
+Pøi potížích na pomalejších poèítaèích zkuste nìkteré hodnoty zvìtšit. 
+
+Délka bufferu:  Velikost pamìti, kam se zapisují výstupní zvuková data a odkud si je ète zvuková karta. 
+
+Spustit po zaplnìní:  Ovlivòuje jak brzy po otevøení souboru se spustí zvuk. Na pomalejších poèítaèích je vhodné zadat vìtší hodnotu, aby nedocházelo hned na zaèátku k podteèení bufferu. Pokud ale pøehráváte WMV nebo ASF videa, nedávejte hodnotu vìtší než 500. 
+
+Zmìna stopy:  Jak dlouho trvá pøechod z aktuálnì hrající stopy na jinou položku v seznamu. Tato hodnota se nepoužívá pro video soubory.
+
+Kontrolovat podteèení:  Když máte pomalý procesor nebo máte spuštìno najednou více aplikací, mùže docházet k podteèení zvukového bufferu. Pokud je tato možnost zaškrtnuta, dojde k zastavení pøehrávání do té doby, dokud se buffer znovu nenaplní dostateèným množstvím zvukových dat. Pokud ale tuto možnost vypnete, bude se pøehrávat buffer neustále dokola. Tento pøepínaè platí jen pro zvukové soubory. Bìhem pøehrávání videa se podteèení vždy kontroluje.
+
+Zapisovat data do bufferu každých 100 ms:  Tato volba je vhodná pro rovnomìrnìjší rozložení zátìže procesoru. 
+
+Vytvoøit oznamovací pozice:  Napøíklad pøi 3 oznamovacích pozicích a délce bufferu 2500 ms se budou data do bufferu zapisovat každých 833 ms. Na nìkterých zvukových kartách to nemusí fungovat.
+
+Pokud zaškrtnete "Zvukové zaøízení", pak si mùžete vybrat mezi DirectSound a WaveOut a zvolit zvukovou kartu (pokud jich máte více). Nebude ale fungovat ekvalizér a rychlost pøehrávání u nìkterých typù souborù. Také jednotivé soubory nebudou na sebe plynule navazovat a bude mezi nimi mezera (zhruba desetina sekundy). Zvukové zaøízení se nepoužívá pøi pøehrávání CD ani pøi použití Winamp pluginù.
+
+Další soubor v seznamu otevírat s pøedstihem 8 sekund:  Vhodné pro pomalejší poèítaèe.
+
+
+Možnosti - Zvuk2
+----------------
+Interval pøekreslování vizualizace:  Plynulost vizualizace. Tato hodnota by mìla být násobkem 10 ms nebo 20 ms (v závislosti na verzi Windows).
+
+Priorita vizualizace:  Doporuèuje se podprùmìrná priorita. Pøi nejnižší se vizualizace zadrhává.
+
+Povolit ekvalizér:  Pokud ekvalizér nepoužíváte, pak je lepší ho nechat vypnutý, protože u nìkterých zvukových karet mùže zpùsobovat problémy. Èísla udávají frekvence, které jsou vidìt v oknì ekvalizéru. Maximální poèet frekvencí je 20.
+
+Možnosti - Obraz
+----------------
+Zachovat pomìr stran pøi zmìnì velikosti videa:  Pøi zmìnì velikosti okna pomocí myši se nemìní pomìr mezi výškou a šíøkou okna.
+
+Zachovat pomìr stran na celé obrazovce:  Pokud tuto možnost vypnete, pak se pomìr stran upraví na 4:3 (to neplatí pro širokoúhlé filmy). Jinak se pomìr nezmìní a podél okrajù obrazovky budou èerné pruhy.
+
+Skrýt ukazatel myši: Kurzor myši nebude vidìt uvnitø okna s videem. Na celé obrazovce se tento pøepínaè ignoruje.
+
+Overlay Mixer:  Jestliže máte problémy s videem (napøíklad špatné barvy), pak zkuste tuto možnost zmìnit. 
+
+Možnosti - Titulky
+------------------
+Automaticky otevírat titulky:  Pøi otevøení video souboru se zároveò otevøe soubor s titulky. Zaèátek názvu souboru s titulky musí být shodný s názvem video souboru (Napøíklad xyz.avi mùže mít titulky v souboru xyzCZ.sub).
+
+Maximální doba zobrazení titulku:  Nìkteré soubory obsahují jen èasy, kdy se mají titulky objevit a ne kdy mají zmizet. 
+
+Adresáø s titulky:  Nejdøíve se titulky hledají ve složce, ve které je AVI soubor, a teprve potom v této složce.
+
+Možnosti - CD mechanika
+-----------------------
+Digitální pøehrávání:  Pokud tuto možnost vypnete, pak se použije systémové MCI rozhraní, které obvykle pøehrává CD analogovì pøes kabel propojující CD mechaniku se zvukovou kartou. Pak nebude fungovat vizualizace, ekvalizér a zmìna rychlosti.
+
+Pøíkaz pro ètení:  Závisí na výrobci a typu mechaniky.
+
+Big endian:  Pokud je slyšet hlasitý šum, pak toto zkuste pøepnout.
+
+Rychlost:  Doporuèuje se 4x. Nemusí to fungovat na všech CD mechanikách. Hodnota "max" znamená, že pøehrávaè vùbec nebude rychlost mìnit.
+
+Obnovovat rychlost pravidelnì každých:  Zaškrtnìte tuto možnost, pokud mechanika èasto bezdùvodnì zvyšuje svoji rychlost.
+
+Poèet sektorù, které se ètou najednou:  Vìtší hodnota zmenšuje zátìž procesoru.
+
+Povolit CD-TEXT:  Pokud máte starší mechaniku, která neumí CD-TEXT, pak ho vypnìte. CD-TEXT se používá hlavnì na vypálených CD. Na legálnì koupených CD obvykle není. 
+
+Možnosti - freedb
+-----------------
+Pøipojit se k freedb automaticky pøi pøehrávání CD:  Vhodné pro trvalé internetové pøipojení. Pokud jste pøipojeni pøes telefon (dial-up), pak tuto možnost vypnìte a používejte tlaèítko v oknì Soubor / Informace o CD.
+
+Server:  Název serveru nemusíte zadávat ruènì. Kliknìte na tlaèítko "Seznam všech serverù", potom na tlaèítko Aktualizovat a vyberte server, který je pokud možno nejblíže.
+
+Použít proxy:  Název proxy serveru zjistìte z nastavení Internet Exploreru. Proxy se používá v lokálních sítích ve firmách a úøadech. Domácí uživatelé obvykle nic vyplòovat nemusejí.
+
+Váš E-mail:  Pro odesílání informací do internetové databáze je potøeba znát vaši e-mailovou adresu. Na ni vám pøijde odpovìï, pokud se z nìjakého dùvodu nepodaøí pøidat záznam do databáze.
+
+Tipy a triky
+------------
+* Pøi zobrazení na celé obrazovce lze hlavní okno zobrazit pohybem myši. Skrýt ho lze kliknutí pravým tlaèítkem na video.
+* Pøi zobrazení na celé obrazovce kliknutí levým tlaèítkem provede PAUSE.
+* Dvojklik na video pøepne na celou obrazovku.
+* Playlist lze setøídit podle jakéhokoli sloupce. Tøídìní podle prvního sloupce znamená setøídìní podle cesty a názvu souboru.
+* Snadno lze mìnit poøadí položek v playlistu pomocí myši. Lze pøesouvat naráz i více oznaèených souborù.
+* Pokud je tlaèítko PLAY stisknuto bìhem pøehrávání, zaène se pøehrávat znovu od zaèátku. Dvojklik na aktuální položku v playlistu udìlá to samé, ale zároveò jsou restartovány všechny kodeky.
+* Kliknutí na èas pøepne mezi zpùsobem zobrazení èasu od zaèátku / do konce.
+* Nìkteré vlastnosti souboru lze zjistit jen bìhem pøehrávání.
+* Kliknutí pravým tlaèítkem na vizualizaci pøepne na další plugin.
+* Dvojklik levým tlaèítkem na vizualizaci zobrazí konfiguraèní okno.
+* Zvuk z libovolného souboru lze uložit do WAV souboru (menu Pøehrávání\Zvuk). Pøi zapnuté vizualizaci je zvuk také slyšet, pøi vypnuté vizualizaci se jen uloží do souboru. Lze takto zkonvertovat i celý playlist. Pokud pùvodní soubor je na CD-ROM, pak se WAV zapíše do složky, kde je nainstalován TinyPlayer.
+* Z webové stránky autora si mùžete stáhnout program HotkeyP, který umožòuje ovládat pøehrávaè klávesovými zkratkami i v pøípadì, kdy je okno pøehrávaèe na pozadí nebo minimalizované.
+
+Známé chyby a problémy
+----------------------
+* Nìkterá MPEG-2 videa se zasekávají. Pokud s tím máte velké problémy, pak v možnostech na kartì Zvuk1 zaškrtnìte "Zvukové zaøízení".
+* Pouze z AVI, MPEG, OGM souborù lze zjistit poèet snímkù za sekundu. U ostatních video formátù je pøi zobrazování titulkù nutné ruènì zadat èasovou korekci.
+* Ukládání snímkù do BMP není moc pøesné. Obvykle se uloží nìjaký pozdìjší nebo døívìjší. U nìkterých typù souborù (napø. QuickTime) ukládání snímkù vùbec nefunguje.
+* Nìkteré typy souborù (napø. MIDI) neumožòují vizualizaci, ekvalizér a zmìnu rychlosti.
+* Na konci playlistu tìsnì pøed koncem pøehrávání program zhruba sekundu nereaguje.
+
+
+Co je nového
+------------
+2.8.4 (20.12.2012)
+opravené chyby:
+ukládání m3u souboru nefungovalo v Èínì
+
+2.8.3 (19.8.2011)
+ruský a nìmecký pøeklad
+
+opravené chyby:
+panel nástrojù nešel upravovat ve Windows Vista/7
+video na celé obrazovce mìlo pravý a dolní okraj
+možnost Plynule zeslabit zastavení
+Winamp pluginy se naèítají pouze tehdy, když verze Winampu je 5.1 nebo starší
+
+2.8.2 (25.2.2011)
+francouzský pøeklad
+
+2.8.1 (13.8.2008)
+opravené chyby:
+pøi zapnutém Overlay Mixeru šlo pøehrát video jen na prvním monitoru
+nìkteré video soubory se spouštìly dlouho
+
+2.8 (28.4.2008)
+pøehrávat video na celé obrazovce lze i na druhém monitoru
+
+opravené chyby:
+èas se špatnì pøekreslil pøi pøechodu z -10:00 na -9:59
+zvuk se ztlumil pøi waveOut zaøízení
+
+2.7 (19.8.2007)
+lze pøehrávat 24-bitový a 32-bitový zvuk (WAVE_FORMAT_EXTENSIBLE, WAVE_FORMAT_IEEE_FLOAT)
+lze mìnit jas, kontrast, sytost, odstín, gamma
+když je ve složce jen jedno video a jedny titulky, otevøou se titulky automaticky 
+double-click v oknì videa pøepne na celou obrazovku
+možnost kontrolovat podteèení zvukového bufferu
+možnost zakázat equalizer
+možnost nastavovat rychlost CD pravidelnì každých 400 sektorù 
+
+opravené chyby:
+nešlo pøehrát DVD, která mìla menu bez zvuku
+pøi vìtší rychlosti se pøehrávání zadrhávalo
+rychlost CD byla o trochu menší než kolik bylo nastaveno v možnostech
+ID3v2 tagy u nìkterých souborù zpùsobily chybu
+velikost 100% nefungovala na celé obrazovce
+pøi otvírání neexistujícího souboru na cizím poèítaèi se místo hlášky "Nenalezen soubor" zobrazilo "Nelze pøehrát"
+
+2.6 (11.3.2007)
+možnost neschovávat ukazatel myši v oknì videa
+
+opravené chyby:
+minimalizované okno nemìnilo svùj název pøi pøechodu na další skladbu
+
+2.5.3 (20.10.2006)
+opravené chyby:
+ze ASX playlistu se špatnì naèítaly nìkteré znaky
+nezobrazovaly se titulky, které nemìly urèen koncový èas
+program se spustil vícekrát, jestliže se naráz otevíralo více souborù
+
+2.5.2 (6.10.2006)
+opravené chyby:
+pøípony souborù se nìkdy nepodaøilo asociovat
+program se pøipojoval k freedb, když jste se pokusili pøehrát CD a CD mechanika byla prázdná
+mpeg2 video mìlo špatné rozmìry
+
+2.5 (29.6.2006)
+pøehrávání DVD
+naèítání délek všech souborù v playlistu se provádí v samostatném threadu
+lepší reakce na podteèení zvukového bufferu (pøi pøehrávání videa na pomalých poèítaèích)
+
+opravené chyby:
+v playlistu nemohly být soubory se stejným názvem, i když byly z rùzných složek
+pøi zmìnì pomìru stran videa bìhem pøehrávání se nezmìnily rozmìry okna
+pøi zmìnì rozlišení monitoru bìhem pøehrávání se na chvíli zaèal pøehrávat soubor od zaèátku    
+
+2.4.1 (25.1.2006)
+u ID3v1 tagù se odstraní koncové mezery
+
+opravené chyby:
+zvukový buffer se neuvolnil pøi zmìnì stereo/mono nebo 8/16 bit
+titulky se mazaly klíèovou barvou místo èernou
+
+2.4 (1.1.2006)
+Winamp input pluginy
+možnost zmìnit titulek okna
+
+opravené chyby:
+MP3 s variabilním datovým tokem (VBR) mìly chybnou délku
+nešlo otevøít soubor, v jehož názvu jsou Unicode znaky
+nefungovala asociace nových pøípon
+Overlay Mixer na konci souboru zpùsobil chybu
+
+2.3.5 (4.12.2005)
+opraveno: informace o CD se nìkdy uložily do nesprávného souboru
+
+2.3.2 (3.10.2005)
+opraveno: u nìkterých video souborù byl zvuk o pùl sekundy døíve než obraz
+
+2.3 (19.9.2005)
+možnost urèit soubor, kam se ukládá aktuální playlist po skonèení programu
+oblast kolem videa na celé obrazovce zmìnìna z tmavì šedé na èernou
+Velikost / Pomìr obrazovky (užiteèné pro monitory, které mají nestandardní rozmìry)
+
+2.2 (8.8.2005)
+digitální pøehrávání CD - funguje vizualizace, ekvalizér, zmìna rychlosti
+Playlist / Ukázat právì hrající
+Pøehrávání / Zastavovat
+možnost zadat výchozí složku pro pøíkaz "Otevøít složku..."
+ID3 a APEv1 tagy lze zobrazit v kódování Win-1250 nebo ISO-8859-1
+sloupce se dají upravit, kromì názvu souboru a délky mohou obsahovat také tagy
+
+2.1 (28.7.2005)
+vlastní zpùsob zvukového výstupu, lze nastavit délku vyrovnávací pamìti
+ekvalizér
+lze zmìnit prioritu vizualizace
+možnost plynule zeslabit zvuk pøi zastavení, pauze, skoku
+
+opravené chyby:
+chyba pøi spouštìní programu, když parametrem byl soubor
+výška videa na celé obrazovce byla o 1 bod menší
+byly problémy s pøíliš dlouhými názvy stop na CD nebo v Ogg/APE/WMA tagu
+
+2.0 (6.6.2005)
+informace o CD, CD-TEXT, internetová databáze freedb
+WMA/WMV tagy
+z OGM souborù lze zjistit poèet snímkù za sekundu
+
+1.12 (23.5.2005)
+ve vlastnostech právì pøehrávaného souboru jsou ID3,APE,Ogg tagy
+Pøehrávání\Zvuk\Uložit WAV
+plynulé pause,stop,seek
+
+1.11 (22.4.2005)
+ASX,WPL playlisty
+
+1.10 (16.4.2005)
+Pøehrávání\Zvuk\Stereo,Mono,Levý,Pravý,Ztlumit
+Soubor\Odstranit soubor
+
+1.9 (1.3.2005)
+opravena chyba pøi pøehrávání MIDI
+zrychlena vizualizace Spektrální analýza
+
+1.8 (5.12.2004)
+pøehrávání hudebních CD
+
+1.7 (28.11.2004)
+možnost povolení spoøièe obrazovky pro audio soubory
+tlaèítka play,stop,další,pøedchozí na nìkterých klávesnicích
+povolení nebo zakázání Overlay Mixeru
+
+1.6 (11.10.2004)
+vizualizace: spektrální analýza
+
+1.5 (27.9.2004)
+konfigurovatelné klávesové zkratky
+ovládání hlasitosti
+zmìna velikosti videa koleèkem myši
+zachování pomìru stran videa na celé obrazovce
+neprùhledné titulky
+Playlist -> Nechat jen vybrané
+možnost spuštìní více instancí programu
+zvolení pøípon souborù s titulky
+registrace pøípon pøi každém spuštìní
+pøi stisku Ctrl se soubory jen pøidají do playlistu
+do vlastností právì pøehrávaného souboru pøidán Autor a Název
+zobrazení délek u všech souborù hned po jejich pøidání do playlistu
+vizualizace na celé obrazovce
+
+1.4 (23.8.2004)
+titulky
+vizualizace
+zakázán úsporný režim monitoru bìhem pøehrávání videa
+lze zobrazit najednou vlastnosti více filtrù
+vlastnosti souboru (velikost videa, poèet snímkù za sekundu)
+pøepínání mezi více zvukovými stopami (ve vícejazyèných filmech)
+plynulejší pøechod mezi dvìma zvukovými soubory
+
+1.3 (19.7.2004)
+lze si pøizpùsobit panel nástrojù
+ukládání snímkù do BMP souborù
+pøíkaz na naètení délek všech souborù v playlistu
+%20 se zobrazuje jako mezera
+pøichytávání okna k okrajùm obrazovky
+myší lze mìnit poøadí položek v playlistu
+lze mìnit velikost videa na celé obrazovce (klávesy +,-)
+program si pamatuje velikost okna s videem
+drag&drop a copy&paste souborù a adresáøù z Prùzkumníka
+lze zmìnit barvy
+skok na zadaný èas
+opakovat vše nebo skladbu
+lze zvolit zvukové zaøízení
+aktuální playlist se ukládá pøi ukonèení
+v playlistu nemùže být jeden soubor vícekrát
+
+1.2 (23.6.2004)
+možnost zachovat pomìr stran pøi zmìnì velikosti videa
+pøi otevøení více souborù nezaènou hrát všechny najednou
+
+1.1 (22.6.2004)
+priorita procesu
+setøídìní pøi pøidání více souborù
+skok vpøed/zpìt
+èas zbývající do konce skladby
+písmo
+m3u playlist
+asociace souborù
+
+0.1 (17.6.2004)
+lze zmìnit rychlost pøehrávání
+menu Filtry
+
+
+Licence
+-------
+Program je zdarma a vztahuje se na nìj licence "GNU General Public License". Pokud ji neznáte, pak se podívejte na  http://opensource.org/licenses  nebo mi napište a já vám ji pošlu.
+
+************************************************
+http://petr.lastovicka.sweb.cz

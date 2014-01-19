@@ -1,0 +1,390 @@
+*************
+ Tiny Player
+*************
+Audio, video and CD player. It needs DirectX 9. Older version of DirectX may work, but some functions will not be available. Codecs are not part of the program, so you have to download them separately. Some codecs can be found on http://www.free-codecs.com
+
+Installation
+------------
+Extract ZIP archive to any folder. Run the EXE file. In the Options dialog, select file extensions which will be associated to this player.
+
+Uninstallation
+--------------
+Choose "Delete settings" from the File menu. It will remove settings from the Windows registry. Then you can delete program files from your disk.
+
+
+Play files
+----------
+Files can be opened by:
+(1) "Open files" (Ctrl+O). More files can by opened if they are in the same folder.
+(2) "Open folder" (Ctrl+D). All subdirectories are searched recursively. You can select the entire drive.
+(3) Double-click a file in the Explorer (if the extension is associated).
+(4) Drag files or folders from the Explorer and drop them to the player window.
+(5) Use Ctrl+C in the Explorer and then Ctrl+V in the player.
+(6) "Open playlist" (Ctrl+P)
+
+Press Ctrl or 'q' key if you only want to add files to the playlist, but not play them immediately.
+
+DVD
+---
+Before you can play a DVD, you have to install some MPEG-2 decoder and AC3 filter. WARNING: Some MPEG-2 decoders don't work (e.g. Ligos and MainConcept). DScaler works, but not in the 256 color video mode. Both GPL and Gabest decoders work, but only if the Overlay Mixer is disabled (in the Tiny Player options on the Video tab). 
+Use the menu command File\"Play DVD" to open a DVD. If you have copied files from DVD to the hard disk, you can open them by File\"Open files..." where you must select the file VIDEO_TS.IFO. The playlist item "DVD menu" has the same meaning as the command DVD\"Root menu". If your DVD has more than one title, you can double-click playlist items Title01, Title02 etc.      
+
+Filters
+-------
+Names of used DirectShow filters are shown in the menu Filters. Some of them support property pages and have some advanced settings. It is sometimes necessary to use the button Pause to start playing, then change properties of the filter and then press the button Play.
+
+Winamp plugins
+--------------
+If a file cannot be opened by DirectShow, then the player attempts to use Winamp plugins (www.winamp.com). Unfortunately it works only with Winamp 5.111 or older. Disadvantage is that a file is opened more slowly. If you have not Winamp installed, you can create folder "C:\Program Files\Winamp\Plugins" and put there only those plugins which you need. Plugin's file name must have dll extension and in_ prefix. 
+Warning: Some plugin settings are ignored: title formatting, VBR display, fast layer 3 equalizer.
+Note: Winamp plugin is not used unless you uninstall DirectShow filter. For example, DirectShow MP3 Decoder can be uninstalled in Windows XP by command regsvr32 /u l3codecx.ax.
+
+freedb
+------
+Command "CD information" (in the File menu) opens dialog window to edit infomation about CD which is currently inserted in the drive. You can download entries from the internet freedb database or you can edit them manually. At first you have to create a folder (for example C:\cddb) in which the entries will be stored. Then write name of this folder into Options / LocalCDDB box. If you use ExactAudioCopy, CDex or other ripper, you probably already have some database. In that case, don't create a new folder, but find out where is your existing database and which format and encoding does it use. Unix format uses 8-characters file names. Windows format has 6-characters file names where the middle characters are "to". Many applications support only ISO-8859-1 or CP1252 encoding. However, it is recommended to select UTF-8 encoding for a new database, because it can handle all languages.
+Never write info completely in capitals or completely lower case, if there is no special reason for that. For bands that have a leading "the", simply leave out the "the" (e.g. use "Rolling Stones" instead of "The Rolling Stones"). Names of people should be written "first name last name" - NOT "last name, first name". When the CD is a compilation, you should include the artist in the track name, using the syntax "artist / track-title" and set the CD-artist to "Various".
+The combo box freedb is used to select a directory where the file will be saved. 
+If you get info about a quite different CD, you can fill in info about your CD, change freedb category and then submit. It is important to choose another category from the freedb combo box, otherwise previous CD info will be overwritten.
+If you get wrong info about your CD (e.g. spelling mistakes, unknown year or genre), then you should correct it and resubmit. The freedb category MUST NOT be changed, otherwise there will be two entries in the database that belong to the same CD.
+Your E-mail address is required for submit (not for query). You will receive an email only if submit fails.
+Never submit information about burned CD, because it may have different track offsets than original CD (especially when you used TAO method to burn the CD or when you added two second gaps between tracks).
+Playback order field can contain a comma-separated list of track numbers. They are indexed from zero. The button after this edit box fills in the current playlist order.
+
+
+Options - Start
+---------------
+Allow multiple instances:  Allow more than one player window.
+
+Register extensions at player start-up:  Associate file types to this player every time the program starts. Otherwise they are associated only at the moment when you press the OK button in the options dialog box.
+
+Media files extensions:  These semicolon-separated file types are shown in "Open file" window. These types are also chosen by command "Open folder". 
+
+Associated extensions:  If you double-click a file of this extension in the Explorer (or your favourite file manager), then the Tiny Player plays the file. Files which have different extension are opened by the Windows Media Player or other installed player.
+
+Process priority:  "Normal" or "Above normal" priority is recommended. "Above normal" and "Below normal" does not work on Windows 95/98/ME.
+
+Options - General
+-----------------
+When loading multiple files, sort them by path and name:  Files are sorted if they were opened by "Open files" or "Open folder". It doesn't apply to "Play audio CD" and "Playlist/Open". 
+
+Enable screensaver when no video is playing:  It is useful if you don't use visualization. Screensaver is always disabled during video playback.
+
+Jump forward/backward:  Commands "Jump forward" and "Jump backward" are in the "Control" menu. You can also add buttons on a toolbar.
+
+Interval of redrawing position and subtitles:  Recommended values are between 100 and 980. Smaller values increase processor usage. 
+
+Options - Playlist
+-------------------
+Automatically display length and bitrate of all files in the playlist:  If this option is disabled, then columns "Length" and "Bitrate" are empty until you use menu command "Read lengths".
+
+ISO-8859-1 encoding for ID3 and APEv1 tags:  Show file properties in Western European encoding. 
+
+Columns:  Each line in the options edit box represents one column in the playlist. Maximal number of columns is 16. Text in brackets is displayed only if at least one field referenced inside the bracktes has been found. 
+Example: [%ar - ][%tr. ]%ti[ \[%ye\]]
+Backslash means that a character after the backslash is normally displayed and not interpreted as a command ( % , [ , ], \ ). 
+
+Window title: The text which is visible in the window title bar. Information about the current playlist item can be displayed by % fields.
+
+Options - Audio1
+----------------
+Try to increase some values if you have problems (especially on slow computers). 
+Buffer length:  Size of the memory where output samples are written and from where the audio card reads them. 
+Prebuffer:  How soon after opening a file you hear the sound. This value cannot be greater than buffer length.
+Track change:  How long does it take when you start playing another item in the playlist. Video files ignore this value.
+
+Check buffer underrun:  If you have slow processor, buffer underruns can occur. If this option is checked, playback will stop until there are enough samples in the buffer. If this option is NOT checked, then the buffer will be played continuously and old samples will be repeated. 
+
+Write audio samples to the buffer every 100 ms:  It is useful if you want more smooth and invariable processor usage.
+
+Create notification positions:  Default option, but it is not supported by all sound cards.
+
+If you check "Audio device:" then you can choose DirectSound/WaveOut and select a sound card (if you have more than one). But the equalizer will be disabled, you will not be able to change speed of some files, there will be gaps between tracks in a playlist. The audio device is not used to play CD and for Winamp plugins.
+
+Load next track in advance:  Next file in the playlist will be opened before previous file ends. It is needed only on slow computers.
+
+
+Options - Audio2
+----------------
+Interval of redrawing visualization:  This value should be a multiple of 10 ms or 20 ms (it depends on Windows version).
+
+Visualization priority:  Recommended priority is "below normal". 
+
+Enable equalizer:  Check this option only if you really use the equalizer. Some cheap sound cards don't work well with equalizer. The numbers are frequencies that can be adjusted by the equalizer. Maximal number of frequencies is 20.
+
+Options - Video
+---------------
+Keep aspect ratio when resizing video:  Ratio between window width and height does not change when you resize the video window by a mouse.
+
+Keep aspect ratio in full screen:  If you don't check this option, video ratio in fullscreen will be adjusted to 4:3. Otherwise you will see black bars at the screen top/bottom or left/right sides. This option does not apply to 16:9 movies.
+
+Hide mouse cursor: The mouse arrow will not be visible inside the video window. This option is ignored in fullscreen mode.
+
+Overlay Mixer:  Try to switch this if you have problems with colors or acceleration.
+
+Options - Subtitles
+-------------------
+Automatically open subtitles:  If a video file is opened, its subtitles file is opened too. Prefix of subtitles file name has to be equal to a video file name. (For example xyz.avi file can have subtitles xyzENG.sub).
+
+Maximum subtitle display time:  Some subtitles files contain only start times, but not end times. 
+
+Subtitles folder:  The player looks for subtitles in the same folder where is an AVI file and then in this subtitles folder. 
+
+Options - CD drive
+------------------
+Digital audio extraction:  If you disable this option, system MCI interface will be used. It usually plays CD through analog cable which connects a CD drive and a sound card. Visualization, equalizer and speed change will be disabled.
+
+Read command:  It depends on your drive type and manufacturer.
+
+Big endian:  Don't check this unless you hear loud noise instead of music.
+
+Speed:  Recommended speed is 4x. Some drives ignore this value. "Max" means that the player will not change the speed.
+
+Set speed &periodically every:  Check this option if your drive erratically increases speed.
+
+Number of sectors to get each read:  You can increase this in order to decrease processor usage.
+
+Enable CD-TEXT:  Some older drives does not support CD-TEXT and can make errors when the player tries to get it. CD-TEXT is usually on burned CD. Original bought CD usually does not have it. 
+
+
+Tips & tricks
+-------------
+* Move mouse in fullscreen to show the main window. Right-click on the video to bring it to foreground.
+* Click left mouse button in fullscreen to pause the video.
+* Double-click on the video window switches to fullscreen.
+* Click on the column headers to sort the playlist. Click on the first column header to sort by file path and file name.
+* Use mouse to change order of items in the playlist. You can select and drag more than one item.
+* If the play button is pressed during playback, a file is restarted from the beginning. If you double-click on the current item in the playlist, the file is stopped and then restarted.
+* Click on the time to switch mode between elapsed/remaining time.
+* File properties (author, title, video size, frame rate) can be discovered only during playback.
+* Right-click on the visualization switches to the next plugin.
+* Double-click on the visualization shows a configuration window.
+* Audio from any media file can be extracted to a WAV file (menu Control\Sound). The sound is muted and the conversion is faster if the Visualization is off. Turn the Visualization on if you also want to listen to the saved music. If the original file is on a CD-ROM then the WAV is written to the TinyPlayer's installation folder.
+* You can download program HotkeyP (from the author's web page) which can be used to define keyboard shortcuts to control player even if the window is hidden or minimized.
+
+Known bugs and problems
+-----------------------
+* MPEG-2 video often freeze. If you have this problem, you can disable the built-in audio renderer and select audio device in the options.
+* Video frame rate is detected only for AVI, MPEG or OGM movies. Other video types have unknown frame rate => time correction is needed for subtitles.
+* Capture frames to BMP is not accurate. Usually some later or previous frame is saved. QuickTime videos don't support frames capturing.
+* MIDI files don't support visualization, equalizer and cannot change speed.
+* The player does not respond to user input at the end of playlist (approximately 1 second before stop).
+
+
+What's new
+----------
+2.8.4 (20 December 2012)
+fixed bugs:
+saving m3u playlist did not work in China
+
+2.8.3 (19 August 2011)
+Russian and German translations
+
+fixed bugs:
+toolbar could not be customized on Windows Vista/7
+fullscreen video had right and bottom border
+option Audio / Fade out / stop
+Winamp plugins are used only if Winamp version is 5.1 or older
+
+2.8.2 (25 February 2011)
+French translation
+
+2.8.1 (13 August 2008)
+fixed bugs:
+video was visible only on the primary monitor if Overlay Mixer was enabled
+some video files have been opening slowly
+
+2.8 (28 April 2008)
+fullscreen video can be displayed on a secondary monitor
+
+fixed bugs:
+time was displayed badly when changed from -10:00 to -9:59
+sound was muted when waveOut device was selected
+
+2.7 (19 August 2007)
+can play 24-bit and 32-bit audio (WAVE_FORMAT_EXTENSIBLE, WAVE_FORMAT_IEEE_FLOAT)
+color controls (brightness, contrast, saturation, hue, gamma)
+subtitles are opened automatically if there is only one video file and one subtitle file in a folder
+double-click on the video window will switch to fullscreen
+option to check audio buffer underflow
+option to disable equalizer
+option to set CD speed periodically every 400 sectors
+
+fixed bugs:
+could not play DVD which had a menu without sound
+playback at higher speed was not fluent and often freezed
+CD speed was lesser than a value which was set in the options
+some ID3v2 tags caused fatal errors
+video size 100% could not be set in fullscreen
+if some file on network computer did not exist, message "Cannot play" was displayed instead of message "File not found"
+
+2.6 (11 March 2007)
+option not to hide the mouse cursor on the video window
+
+fixed bug:
+minimized window did not update its title when a track changed
+
+2.5.3 (20 October 2006)
+fixed bugs:
+some characters could not be read from the ASX playlist
+subtitles which did not have end time were not displayed at all
+multiple instances of the program were started if multiple files were opened
+
+2.5.2 (6 October 2006)
+fixed bugs:
+file extensions sometimes could not be associated
+program connected to freedb when you tried to play a CD and the CD drive was empty
+mpeg2 videos have wrong size
+
+2.5 (29 June 2006)
+DVD playback
+lengths of all files in the playlist are read in a separate thread
+better response to the audio buffer underflow (when a video is played on a slow computer)
+
+fixed bugs:
+files with the same name, but from different folders, could not be in the playlist
+the window size was not changed when an original video aspect ratio was changed during playback
+file started from beginning for a while when the monitor resolution was changed during playback
+
+2.4.1 (30 January 2006)
+trailing spaces are removed from ID3v1 tags
+
+fixed bugs:
+audio buffer was not released when changing stereo/mono or 8/16bit
+
+2.4 (1 January 2006)
+Winamp input plugins
+option to set window title
+
+fixed bugs: 
+variable bitrate (VBR) MP3 files had incorrect length
+Unicode file names could not be opened from a command line
+new file extensions could not be associated
+Overlay Mixer would crash at end of file
+
+2.3.5 (4 December 2005)
+fixed: CD info was sometimes saved to a wrong file
+
+2.3.2 (3 October 2005)
+fixed: some video files have audio a half second earlier before video
+
+2.3 (19 September 2005)
+option: file name of the current playlist that is saved at exit
+area above and below 16:9 fullscreen video changed from dark gray to black
+Zoom / Screen ratio (useful for monitors that have not standard size)
+
+2.2 (8 August 2005)
+digital CD playback - you can use visualization, equalizer, change speed
+Playlist / Show current
+Control / Manual advance
+option: initial folder for a command "Open folder..."
+ID3 and APEv1 tags can be displayed in ISO-8859-1 or system encoding
+customizable columns, there can be ID3 tags in columns
+
+2.1 (28 July 2005)
+built-in audio renderer, the audio buffer size can be set 
+equalizer
+visualization priority
+option to fade out at stop, pause, seek
+
+fixed bugs:
+the program crashed at startup if command line parameter was a file name
+fullscreen video height was one pixel less than screen height
+problems with too long CD track titles or Ogg/APE/WMA tags 
+
+2.0 (6 June 2005)
+CD info, CD-TEXT, freedb
+WMA/WMV tags
+FPS of OGM videos
+
+1.12 (23 May 2005)
+there are ID3,APE,Ogg tags in a file info
+Control\Sound\Save WAV
+smooth pause, stop and seek
+
+1.11 (22 April 2005)
+ASX,WPL playlists
+
+1.10 (16 April 2005)
+Control\Sound\Stereo,Mono,Left,Right,Mute
+File\Delete file
+
+1.9 (1 March 2005)
+optimized vizualization Spectrum analyzer
+fixed bug when opening MIDI files
+
+1.8 (5 December 2004)
+plays audio CD 
+
+1.7 (28 November 2004)
+option to enable screen saver for audio files
+multimedia keys play,stop,prev,next on some keyboards
+option to enable or disable Overlay Mixer
+
+1.6 (11 October 2004)
+vizualization: spectrum analyzer
+
+1.5 (27 September 2004)
+keyboard accelerators customization
+volume control
+mouse wheel changes video size
+keep aspect ratio in fullscreen
+opaque subtitles
+Playlist -> Crop selected
+allow multiple instances
+subtitle files extensions
+registration of extensions at startup
+press Ctrl to queue files, but not play them immediately
+file properties: Author and Title
+automatically read info of all files when they are opened
+full screen visualization
+
+1.4 (23 August 2004)
+subtitles
+visualization
+monitor power saving is disabled during video playback
+all filter property pages can be displayed simultaneously
+file properties (video size, frame rate)
+selection of audio streams in a multi-language movies
+gapless audio playback
+
+1.3 (19 July 2004)
+toolbar customization
+capture video frame to BMP file
+command to read lengts of all files in the playlist
+%20 is converted to space
+order of items in a playlist can be changed by dragging
+video can be resized in fullscreen (keys +,-)
+video window size is remembered
+drag&drop and copy&paste files or directories from the Explorer
+colors
+selection of audio device
+repeat track/all
+jump to time
+the current playlist is saved at exit
+duplicates are removed from playlists
+window is snapped to screen edges
+
+1.2 (23 June 2004)
+option to keep aspect ratio when resizing video
+only one file starts to play when multiple files are opened
+
+1.1 (22 June 2004)
+process priority
+sort when multiple files are opened
+jump forward/backward
+remaining time 
+font
+m3u playlist
+association of file extensions 
+
+0.1 (17 June 2004)
+menu Filters
+menu Rate
+
+
+License
+-------
+This program is free and distributed under the terms of "GNU General Public License". Please visit http://opensource.org/licenses  or send email to the author if you don't know what it means.
+
+************************************************
+http://petr.lastovicka.sweb.cz

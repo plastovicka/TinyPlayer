@@ -1,0 +1,478 @@
+#CP1254
+
+;;;;;;;;
+; Menu ;
+;;;;;;;;
+
+401=&Dosya
+201=Dosya &Aç...
+244=K&lasör Aç...
+287=&Url Aç...
+299=D&VD Çal
+295=Ses &CD'si Çal...
+293=CD &Bilgisi...
+240=&Herzaman Üstte
+270=Ka&tmaný Yakala
+296=D&osyayý Sil
+278=File &properties...
+235=Ayarlarý &Sil
+406=&Dil
+286=&Klavye...
+269=Araç Çubu&ðu...
+256=&Font...
+263=&Renkler...
+245=A&yarlar...
+202=&Çýkýþ
+
+408=&Liste
+257=&Aç...
+258=&Kaydet...
+248=&Listeyi Sil
+266=Ö&ncekini Sil
+229=&Seçileni Sil
+288=S&eçileni Kýrp
+247=&Tümünü Seç
+251=Seçi&mi Ýptal Et
+250=Ters&ine Çevir
+205=&Geçerli Olaný Göster
+268=Sü&re
+242=&Deðiþtir
+249=Ters Çe&vir
+243=Kar&ýþýk
+
+402=&Kontrol
+227=&Önceki
+213=Ç&al
+203=&Duraklat
+204=D&urdur
+255=Dur sonra &geçerli
+228=Ýl&eri
+253=Ýleri A&l
+254=Ge&ri Al
+261=&Zaman Atla...
+225=Single &frame step
+
+411=&Ses
+297=&Ekolayzýr
+285=Switch &audio stream
+215=S&tereo
+216=&Mono
+217=S&ol
+218=&Sað
+219=Sessi&z
+214=&Kaydet &WAV
+
+410=&Canlandýrma
+271=&Açýk/Kapalý
+294=Ý&leri Eklenti
+267=&Geçen Zaman/Kalan Zaman
+206=&Elle Ýlerle
+231=&Hepsini Tekrarla
+262=&Parçayý Tekrarla
+
+403=&Yakýnlaþtýr
+209=&50%
+212=&75%
+208=&100%
+234=15&0%
+210=&200%
+232=&Ýçe Yakýnlaþtýr
+233=&Dýþa Yakýnlaþtýr
+207=&Tam Ekran
+239=&Orjinal Oran
+298=&Ekran Oraný
+238=1&6 : 9
+237=&4 : 3
+
+404=&Oran
+224=0,5
+289=0,75
+222=&1
+290=1,25
+223=&2
+260=Öz&el...
+221=A&zalt 5%
+220=A&rttýr 5%
+
+409=&Altyazý
+279=&Aç...
+283=&Gizle
+284=&Zaman Ayarla...
+274=Ö&nce
+275=&Sonra
+272=&Font...
+281=&Boyutu Azalt
+280=B&oyutu Arttýr
+276=Yü&kselt
+277=&Düþür
+
+407=Sü&zgeç
+
+412=&DVD
+413=Ba&þlýk
+414=Bölü&m
+303=&Sonraki Bölüm
+304=Ö&nceki Bölüm
+305=&Bölümümü  Tekrar Et
+308=&Ana Menü
+302=Sü&rdür
+420=D&iðer Menüler
+312=Menü &Bölümü
+309=Ý&kinci Menü
+310=&Ses Menüsü
+311=&Köþe Menüsü
+313=B&aþlýk Menüsü
+415=&Köþe
+416=S&es
+417=&Dil Menüsü
+419=A&ltresim
+307=Al&tresmi Göster
+306=Ka&panan Baþlýklarý Göster
+
+405=Ya&rdým
+252=&Beni Oku
+230=&Hakkýnda
+
+
+;;;;;;;;;;;
+; Ayarlar ;
+;;;;;;;;;;;
+
+20=Ayarlar
+
+24=Baþla
+517=&Dosya explorerdan açýldýðýnda pencereyi aktif et
+575=Ç&oklu örneklere izin ver
+576=Ç&almaya baþladýðýnda kaydet ve arttýr	
+512=Do&syalarý arttýr
+513=Ý&liþkili arttýr
+519=&Yöntem önceliði
+591=Çala&n liste dosyalarý
+
+25=Genel
+520=Ç&eþitli dosyalar yüklendiðinde, yoluna ve ismine göre sýrala
+579=&Video yokken ekraný aktif et
+522=Ý&leri geri atla:
+523=Saniye
+515=&Baþlýk ve pozisyonlarra göre boþluk:
+554=&Dosyayý ileri yükle:  8 saniye
+562="&Klasör aç..." dialog kutusunu klasörde baþlat:
+
+35=Þarký listesi
+578=&Otomatik uzunluðu göster ve bütün dosyalarý listele
+577=Üs&tünde göster ve %20 boþluk
+564=&ISO-8859-1 þifrele  ID3 ve APEv1 etiketler
+563=&Sütunlar:
+565=%nu - Listedeki sayý\n%fi -  dosya ismi\n%pa - dosya yolu\n%ex - dosya süresi\n%si - dosya boyutu (bytes)\n%bi - Hýzý (kb/s)\n%le - Uzunluk(min:sec)\n%ti - baþlýk,    %tr - parça\n%ar - artist,  %al - album\n%ye - year,  %ge - tür\n%co - açýklama,  %ta - etiket
+592=&Pencere baþlýðý:
+
+26=Ses1
+526=1)  Ses &oluþtur
+525=2)  Ses &aygýtý:
+559=&Tampon uzunluk:
+514=&parça deðiþtir:
+521=Ta&mpon:
+532=&Her tampona örnek ses yaz
+533=&Durum bildirisi oluþtur
+535=Durum
+555=Parça d&eðiþtir:
+
+32=Ses2
+531=&Görsel aralýk:
+518=Görse&l öncelik:
+569=Ses:
+570=&Pasif
+571=&Birincil olmayan
+572=&wave ya da  CD
+538=&Ekolayzýr:
+568=&Dýþa sol /Ýçe sol
+528=D&uraklat
+529=Du&r
+530=&Ara
+
+27=Video
+516=&Tam Ekran video aç
+524=&Videodan görüntü al
+558=Tam &ekran görüntü al
+546=Karýþtýrarak kullan 
+595=&Sadece alt baþlýklar için
+596=&Herzaman
+597=&Asla
+
+28=Altyazý
+547=&Alt yazýyý otomatik aç
+536=A&ltyazý fontu için þekil aç
+557=&Saydam yazý
+534=&Maksimum altyazý zamaný:
+553=Altyazý Dosyasý :
+574=&Dosya uzatma:
+550=&Renk
+551=&Font
+
+34=CD Sürücü
+541=&Dijital ses çýkar
+548=&Komut oku:
+549=&Sað/ sol kanal deðiþtir
+552=&Büyük (deðiþtir yüksek / düþük bytes)
+556=&Hýz:
+560=&Okunan her bir sektör sayýsý:
+561=&Aktif CD-TEXT  (artist, album, parça baþlýklarý)
+
+14=YerelCDDB
+600=&Klasör:
+633=Forma&t
+601=Windows
+602=Unix
+632=&Encoding
+604=UTF-8
+639=&Aktif özel pleybek düzeni
+
+29=freedb
+634=&CD çaldýðýnda otomatik baðlan
+606=Server
+635=Yol
+607=Port
+636=&Bütün server listesini göster...
+642=Zaman:
+643=Seç
+609=K&ullanýlan vekil
+640=&Kullanýcý
+641=Þ&ifre
+608=&E-mail Adresi
+
+
+;;;;;;;;;;;;;;;;
+;Dialog Kutusu ;
+;;;;;;;;;;;;;;;;
+
+11=Hakkýnda
+301=Versiyon
+
+21=Oran
+590=Hýz (floating-point decimal):
+
+22=Zaman atla
+
+18=Adres Aç
+
+23=Renkler
+586=Alt Baþlýk:
+580=Liste:
+581=Seçili:
+582=Çalan:
+585=Zaman:
+583=Ýlrleme:
+584=Araç Çubuðu:
+
+17=Altyazý zamaný düzelt
+537=&Deðiþtir:
+539=Ö&lçü:
+511=FPS
+542=Altyazý fazla görünüyorsa
+543=erken\ngeç\nhýzlý\nyavaþ
+544=kullan
+545=negatif deðiþtir\npozitif deðiþtir\nküçük ölçü\nbüyük ölçü
+
+19=Klavye kýsayollarý
+566=Konut:
+567=Anahtar:
+
+16=CD Bilgisi
+611=&Artist
+610=Al&bum baþlýðý
+613=&Yýl
+614=&Genre
+615=&freedb
+638=&Düzenli çal
+612=Açý&lama
+646=Düzeltilmiþ:
+648=R&ead CD-TEXT
+617=&Read from local CDDB
+630=Yerel  &CDDB sil
+616=Yerel CDDB &kaydet
+618=&Query freedb
+619=&Submit to freedb
+644=Hepsini Temizle
+647=Toplam Uzunluk:
+620=#
+621=Baþlýk
+622=Ofset
+623=Len.
+624=Açýklama
+
+15=Çok sonuç
+631= Daha CD nin ID bulunamýyor. onlar için bir tane seç.
+
+12=Freedb servers
+637=&Güncelle
+
+;Ekolayzýr
+540=Sýfýrla
+
+
+33=Ses Özellikleri
+915=Format:
+903=Örnek Uzunluk:
+916=Underruns:
+917=Tampon kilit yap:
+904=Bilgi tamponu:
+
+30=Osilaskop
+901=Göreli Konum
+902=Ölçekle
+905=Sol
+906=Sað
+907=Çizgi
+
+31=Spektrum Çözümleyici
+900=Kar
+912=Bandlar
+909=parmaklýklar
+910=En baþarýlý zaman
+911=Ayýrýcý
+908=Zemin rengi
+913=Uç hýzý düþür
+914=Parça hýzý düþür
+
+
+;;;;;;;;;;;;;
+;Araç Çubuðu;
+;;;;;;;;;;;;;
+
+1227=Önceki
+1213=Oynat
+1203=Duraklar
+1204=Durdur
+1228=Ýlri
+1201=Dosya Aç
+1244=Klasör Aç
+1248=Tümünü Sil
+1245=Ayarlar
+1207=Tam Ekran
+1225=Bir Ýlerle
+1253=Ýleri Sar
+1254=Geri Sar
+1258=Listeyi Kaydet
+1256=Font
+1232=Ýçe Yakýnlaþtýr
+1233=Dýþa Yakýnlaþtýr
+1271=Canlandýrma
+1278=Dosya Bilgisi
+1287=Adres Aç
+1295=CD Oynat
+1297=Ekolayzýr
+1299=DVD Oynat
+
+
+;;;;;;;;;;;;;;;;;;
+; Hata Mesajlarý ;
+;;;;;;;;;;;;;;;;;;
+
+739=Dosya Bulunamýyor
+730=Dosya Açýlamýyor
+733=Cannot create file %s
+754=Dosya Okuma Hatasý
+734=Yazma Baþarýsýz: %s
+753=Dosya %s çok büyük
+735=windows algýlamadý
+862=CD den dosya seç (menu dosya / ayarlar / YerelCDDB)
+790=Sürücüde CD yok
+865=CD de ses dosyasý yok
+867=CD sürücüsüne eriþilemiyor (error %d)
+798=CD bilgisi cdplayer.ini bulundu
+796=CD veri tabaný bulamýyor
+797=CD dizini bulamýyor "%s"
+793=CD nin üzerinde yazý yok
+783=fonksiyon kullanýlamýyor.\nDirectX 9 u Tekrar kur .
+784=görüntü yakalama baþarýsýz
+786=baþlýk yüklenemiyor !\ndosya: %s
+782=video çalamýyor
+863=server bulunamýyor yada internete baðlanmýyor
+864=server a baðlanmýyor.\ntekrar dene yada program ayarlarýndan baþka bir server seç.
+859=server cevap vermiyor ya da hatalý format sonucu
+860=server isteðine yanýt vermedi
+794=E-mail adresini belirt. (menu dosya / ayarlar)
+795=parça baþlýklarý, artist, album ve katagorileri doldur
+799=baþka cd katagorisi %s hangisi id=%s !
+792=Bu CD henüz internette deðil
+785=göderilen fonksiyon isteði baþarýsýz
+866=%c: CD sürücü harfi deðil
+789=Ses aygýtý bulunamýyor (Baþka baþvuru kullan ?)
+868=Sürücüde DVD yok
+780=Çalamýyor %s
+788=bu dosya sadece ses  
+781=ekolayzýr istiyorsan ses sistemi kur
+755=hata  %s\nçizgi %d
+756=hata  %s\nmesaj numarasý %d çok büyük
+757=hata  %s\nnumarayý çoðalt %d
+791=Dosyayý silmek ister misin %s ?
+861=CD bilgilerini kaydetmek ister misin ?
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;Dosya bilgileri
+670=dosya: %s\nboyut: %I64d bytes\n
+681=toplam uzunluk: %d:%02d\n\n
+673=uzunluk: %.3f seconds\n
+671=\norjinal video boyutu: %d x %d\nvideo gösteri boyutu: %d x %d\n
+672=çerçeve hýzý: %.3f\n
+677=%d Hz, %d bit, %s\n
+
+;Çalma listesi sütunlar
+651=dosya Ýsmi
+652=Tip
+653=Bit hýzý
+654=Uzunluk
+655=Yol
+656=Boyut
+
+;Öncelik Sýrasý
+660=boþ
+661=normal
+662=büyük
+663=gerçek zaman
+664=düþey
+665=yukarý
+
+;Öncelikli iþ
+690=sonuçsuz
+691=Alt
+692=düþey
+693=normal
+694=yukarý
+
+;Dosya uzantýlarýný süz
+501=Bütün Dosyalar
+500=Media Dosyalarý
+502=Liste
+503=Altbaþlýk
+
+;Klavye Ni
+667=Ctrl+
+668=Shift+
+669=Alt+
+
+;Diyalog Butonlarý
+1=Tamam
+2=Vazgeç
+8=Kapat
+10=Seç
+
+;Yardým Dosyasý
+13=tinyplay_EN.txt
+
+;Etiketler
+1000=Baþlýk
+1001=Artist
+1002=Album
+1003=Eser
+1004=yýl
+1005=Açýklama
+1006=Tür
+1007=Telifhakký
+1008=Þifrele
+1009=Adres
+1010=Açýklama
+1011=Besteci
+1012=Orig. Artist
+1013=Etiket
