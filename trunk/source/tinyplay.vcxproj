@@ -171,7 +171,7 @@
     </ResourceCompile>
     <PreLinkEvent />
     <Link>
-      <AdditionalDependencies>quartz.lib;wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ProgramDatabaseFile>.\Release_Unicode/tinyplay.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -214,7 +214,7 @@
     </ResourceCompile>
     <PreLinkEvent />
     <Link>
-      <AdditionalDependencies>quartz.lib;wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug_Unicode/tinyplayDBGW.pdb</ProgramDatabaseFile>
@@ -266,7 +266,7 @@
     </ResourceCompile>
     <PreLinkEvent />
     <Link>
-      <AdditionalDependencies>quartz.lib;wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ProgramDatabaseFile>.\Release/tinyplay98.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -315,7 +315,7 @@
       </Command>
     </PreLinkEvent>
     <Link>
-      <AdditionalDependencies>quartz.lib;wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/tinyplayDBG.pdb</ProgramDatabaseFile>
@@ -362,7 +362,7 @@
     </ResourceCompile>
     <PreLinkEvent />
     <Link>
-      <AdditionalDependencies>wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;quartz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug_Optimize/tinyplayDBGW.pdb</ProgramDatabaseFile>
