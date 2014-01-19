@@ -1,0 +1,477 @@
+#CP1252
+;;;;;;;;
+; Menu ;
+;;;;;;;;
+
+401=&Arkiv
+201=Öppna &filer ...
+244=Öppna &mapp ...
+287=Öppna &URL...
+299=Spela upp &DVD
+295=Spela upp &ljud-cd
+293=&Cd-information...
+240=Alltid &överst
+270=S&kärmdump
+296=Ta &bort fil
+278=F&ilegenskaper ...
+235=&Radera inställningarna i Registret
+406=&Språk (Language)
+286=K&ortkommandon ...
+269=&Verktygsfält ...
+256=T&ecken ...
+263=F&ärger ...
+245=Alter&nativ ...
+202=&Avsluta
+
+408=&Spellista
+257=&Öppna ...
+258=&Spara ...
+248=&Ta bort allt
+266=Ta bort &föregående
+229=Ta bort &markerade poster
+288=Spara &endast markerade
+247=Markera &allt
+251=A&vmarkera allt
+250=&Invertera markering
+205=Visa a&ktuell
+268=Ange &längd
+242=Bla&nda om
+249=&Omvänt
+243=&Blanda
+
+402=&Kontroller
+227=&Föregående
+213=Spela &upp
+203=&Paus
+204=&Stopp
+255=Stoppa efter &aktuell
+228=&Nästa
+253=&Gå framåt
+254=Gå &bakåt
+261=Gå &till tidpunkt ...
+225=Stega &enstaka bildruta
+
+411=&Ljud
+297=&Equalizer
+285=Skifta &kanaler
+215=&Stereo
+216=&Mono
+217=&Vänster
+218=&Höger
+219=&Tyst
+214=Spara &WAV
+
+410=&Visuella effekter
+271=&På/Av
+294=&Nästa plugin
+267=Spelad/&Kvarvarande tid
+206=&Byt spår manuellt
+231=Upp&repa allt
+262=Upprepa sp&år
+
+403=&Zooma
+209=&50 %
+212=&75 %
+208=&100 %
+234=15&0 %
+210=&200 %
+232=Zooma &in
+233=Zooma &ut
+207=&Helskärm
+239=O&riginal ratio
+298=&Screen ratio
+238=1&6:9
+237=&4:3
+
+404=Has&tighet
+224=0,5
+289=0,75
+222=&1
+290=1,25
+223=&2
+260=&Anpassa ...
+221=&Minska med 5 %
+220=&Öka med 5 %
+
+409=&Undertexter
+279=&Öppna ...
+283=&Dölj
+284=&Korrigera tid ...
+274=&Tidigare
+275=&Senare
+272=T&eckensnitt...
+281=&Minska storlek
+280=Ök&a storlek
+276=Flytta &upp
+277=Flytta &ner
+
+407=&Filter
+
+412=&DVD
+413=&Titel
+414=&Kapitel
+303=&Nästa kapitel
+304=&Föregående kapitel
+305=&Spela om kapitel
+308=&Rootmenyn
+302=Resu&me
+420=&Andra menyer
+312=&Kapitelmeny
+309=&Undertextmeny
+310=&Ljudmeny
+311=&Vinkelmeny
+313=&Titelmeny
+415=V&inkel
+416=&Ljud
+417=&Menyspråk
+419=&Subpicture
+307=Show s&ubpicture
+306=Sho&w closed captioning
+
+405=&Hjälp
+252=&Läsmig
+230=&Om ...
+
+
+;;;;;;;;;;;
+; Options ;
+;;;;;;;;;;;
+
+20=Alternativ
+
+24=Starta
+517=&Aktivera fönster när en fil öppnas från Utforskaren
+575=&Tillåt flera instanser av Tiny Player
+576=&Registrera filtyper när spelaren startar
+512=&Mediafilstyper:
+513=Associerade &filtyper:
+519=&Processprioritering:
+591=&Spellista:
+
+25=Allmänt
+520=När många filer öppnas, &sortera dem efter sökväg och namn
+579=&Aktivera skärmsläckare när ingen video spelas
+522=&Gå framåt/bakåt:
+523=sekunder
+515=&Interval of redrawing position and subtitles:
+554=&Öppna nästa spår i förväg:  8 sekunder
+562=&Startmapp för dialogrutan "Öppna mapp ...":
+
+35=Spellista
+578=Visa längd och &bithastighet automatiskt för alla filer i spellistan
+577=Visa &understreck och %20 som mellanslag
+564=&ISO-8859-1 kodning för ID3- och APEv1-taggar
+563=&Kolumner:
+565=%nu - nummer i spellistan\n%fi -  filnamn\n%pa - sökväg\n%ex - filtyp\n%si - filstorlek (bytes)\n%bi - bitrate (kB/s)\n%le - längd (min:sek)\n%ti - titel,    %tr - spår\n%ar - artist,  %al - album\n%ye - år,  %ge - genre\n%co - kommentar,  %ta - tagg
+592=&Namnlist:
+
+26=Audio1
+526=&1)  Inbyggd ljudrenderare
+525=&2)  Ljudenhet:
+559=&Buffertlängd:
+514=&Spårbyte:
+521=&Förbuffring:
+532=&Write audio samples to the buffer every
+533=Create &notification positions
+535=positioner
+555=Spåröverlappning:
+
+32=Audio2
+531=&Interval of redrawing visualization:
+518=&Visualiseringsprioritet:
+569=Volym:
+570=&inaktiverad
+571=&master out
+572=&wave eller cd
+538=&Equalizer:
+568=&Tona ut/Tona in
+528=&paus
+529=&stopp
+530=sö&k
+
+27=Video
+516=Öppna video i &helskärm
+524=&Bibehåll bildproportioner vid storleksändring
+558=B&ibehåll bildproportioner i helskärm
+593=&Dölj muspekaren
+546=Overlay mixer 
+595=Endast för &undertexter
+596=&Alltid
+597=A&ldrig
+
+28=Undertexter
+547=&Öppna undertexter automatiskt
+536=Outline &pen for subtitle font
+557=&Remsa bakom texten
+534=&Maximal visningstid för undertext:
+553=Undertextmapp:
+574=F&iltyper:
+550=&Färg
+551=&Text
+
+34=Cd-enhet
+541=&Digital ljudextrahering
+548=&Läskommando:
+549=&Skifta vänster/höger kanal
+552=&Big endian (skifta höga/låga byte)
+556=&Hastighet:
+560=&Antal sektioner per avläsning:
+561=A&ktivera cd-text (artist, album, spårtitlar)
+
+14=Lokal CDDB
+600=&Mapp:
+633=&Format
+601=Windows
+602=Unix
+632=&Kodning
+604=UTF-8
+639=&Aktivera egen uppspelningsordning
+
+29=freedb
+634=&Anslut automatiskt till freedb när en cd spelas
+606=Server:
+635=Sökväg:
+607=Port:
+636=&Visa lista med alla servrar ...
+642=Timeout:
+643=sek
+609=Använd pro&xy
+640=A&nvändare:
+641=&Lösenord:
+608=&E-postadress:
+
+
+;;;;;;;;;;;;;;;;
+; Dialog boxes ;
+;;;;;;;;;;;;;;;;
+
+11=Om
+301=Version
+
+21=Hastighet
+590=Hastighet (floating-point decimal):
+
+22=Gå till tid
+
+18=Öppna URL
+
+23=Färger
+586=Undertexter:
+580=Spellista:
+581=Markering:
+582=Aktuellt spår:
+585=Tid:
+583=Förloppsindikator:
+584=Verktygsfält:
+
+17=Ändring av undertexttid
+537=&Skift:
+539=S&kala:
+511=FPS
+542=Om undertexterna visas för
+543=tidigt\nsent\nsnabbt\nsakta
+544=använd
+545=negativ skift\npositiv skift\nlägre skala\nhögre skala
+
+19=Kortkommandon
+566=Kommando:
+567=Tangent:
+
+16=Cd-information
+611=&Artist
+610=Al&bumtitel
+613=&År
+614=&Genre
+615=&freedb
+638=&Spelordning
+612=&Kommentar
+646=Revision:
+648=L&äs cd-text
+617=&Läst från lokal CDDB
+630=&Ta bort från lokal CDDB
+616=&Spara till lokal CDDB
+618=&Fråga freedb
+619=Skicka till freedb
+644=Ta bort alla
+647=Total längd:
+620=#
+621=Titel
+622=Offset
+623=Län.
+624=Kommentar
+
+15=Flera träffar
+631=Flera cd-skivor med samma ID hittades. Du måst välja en av dem.
+
+12=Freedb-servrar
+637=&Uppdatera
+
+;Equalizer
+540=Återställ
+
+33=Egenskaper för ljudrenderare
+915=Format:
+903=Sample-längd:
+916=Underruns:
+917=Buffer locks done:
+904=Data buffered:
+
+30=Oscilloskop
+901=Offset
+902=Skala
+905=Vänster
+906=Höger
+907=Rad
+
+31=Spektrumanalys
+900=Gain
+912=Band
+909=Staplar
+910=Toppar
+911=Avskiljare
+908=Bakgrund
+913=Sjunkhastighet topp
+914=Sjunkhast. för staplar
+
+
+;;;;;;;;;;;
+; Toolbar ;
+;;;;;;;;;;;
+
+1227=Föregående
+1213=Spela upp
+1203=Paus
+1204=Stopp
+1228=Nästa
+1201=Öppna filer
+1244=Öppna mapp
+1248=Ta bort alla
+1245=Alternativ
+1207=Helskärm
+1225=Stega
+1253=Gå framåt
+1254=Gå tillbaka
+1258=Spara spellista
+1256=Teckensnitt
+1232=Zooma in
+1233=Zooma ut
+1271=Visualiseringar
+1278=Filinfo
+1287=Öppna URL
+1295=Spela cd-skiva
+1297=Equalizer
+1299=Spela upp DVD
+
+
+;;;;;;;;;;;;;;;;;;
+; Error messages ;
+;;;;;;;;;;;;;;;;;;
+
+739=Hittade inte filen %s
+730=Kan inte öppna filen %s
+733=Kan inte skapa filen %s
+754=Fel vid läsning av filen %s
+734=Fel vid skrivning: %s
+753=Filen %s är för lång
+735=Ingen åtkomst till Windows-registret
+862=Du måste välja den mapp där din lokala cd-databas finns (menyn Arkiv|Alternativ|LocalCDDB)
+790=Det finns ingen cd-skiva i enheten.
+865=Det finns inget ljudspår på denna cd
+867=Ingen åtkomst till cd-enheten (fel %d)
+798=Cd-info hittades i cdplayer.ini
+796=Cd-skivan hittades inte i den lokala databasen
+797=Cd-skivan hittades inte i mappen "%s"
+793=Det finns ingen cd-text på denna cd-skiva
+783=Denna funktion är inte tillgänglig.\nInstallera DirectX 9.
+784=Kunde inte fånga en bildruta
+786=Kan inte öppna undertexter!\nFilen: %s
+782=Ingen video spelas för tillfället.
+863=Servern freedb hittades inte. Är du ansluten till Internet?
+864=Kan inte ansluta till servern freedb.\nFörsök igen senare eller välj en annan server.
+859=freedb-servern returnerade ett fel eller felaktigt formaterat resultat
+860=Fick inget svar från servern freedb
+794=Du måste ange din e-postadress (menyn Arkiv|Alternativ)
+795=Du måste fylla i spårtitlar, artist, album och freedb-kategori
+799=Det finns en annan cd i kategorin %s som har id=%s!
+792=Denna cd finns inte i databasen på Internet
+785=Visualization DLL does not export required functions
+866=%c: är inte någon cd-enhet
+789=Ljudenheten misslyckades (används den av något annat program?)
+868=Det finns ingen DVD-skiva i enheten.
+780=Kan inte spela upp %s
+788=Denna fil har bara en enda ljudström
+781=Du måste välja den inbyggda ljudrenderaren om du vill ha en equalizer
+755=Fel i %s\nRad %d
+756=Fel i %s\nMeddelandenummer %d är för stort
+757=Fel i %s\nDuplicerat nummer %d
+791=Vill du ta bort filen %s?
+861=Vill du spara cd-infon i den lokala databasen?
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;Media file info
+670=Fil: %s\nStorlek: %I64d byte\n
+681=Totallängd: %d:%02d\n\n
+673=Längd: %.3f sekunder\n
+671=\nOriginalstorlek: %d x %d\nVisad videostorlek: %d x %d\n
+672=Frame rate: %.3f\n
+677=%d Hz, %d bit, %s\n
+
+;Playlist columns
+651=Filnamn
+652=Typ
+653=Bitrate
+654=Längd
+655=Storlek
+656=Storlek
+
+;Process priority
+660=inaktiv
+661=normal
+662=hög
+663=realtid
+664=under normal
+665=över normal
+
+;Thread priority
+690=inaktiv
+691=lägsta
+692=under normal
+693=normal
+694=över normal
+
+;File extensions filters
+501=Alla filer
+500=Mediafiler
+502=Spellistor
+503=Undertexter
+
+;Keyboard modifiers
+667=Ctrl+
+668=Skift+
+669=Alt+
+
+;Dialog buttons
+1=OK
+2=Avbryt
+8=Stäng
+10=Välj
+
+;Help file
+13=tinyplay_EN.txt
+
+;Tags
+1000=Titel
+1001=Artist
+1002=Album
+1003=Spår
+1004=År
+1005=Kommentar
+1006=Genre
+1007=Copyright
+1008=Kodad av
+1009=URL
+1010=Beskrivning
+1011=Kompositör
+1012=Ursprungsartist
+1013=Tagg

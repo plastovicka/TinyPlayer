@@ -1,0 +1,433 @@
+#CP1250
+300=(C) 2004-2012 Petr Laštovièka
+301=Verze
+13=tinyplay_CZ.txt
+
+1=OK
+2=Storno
+8=Zavøít
+10=Vybrat
+
+;názvy oken
+11=O programu
+12=Seznam freedb serverù
+15=Více nalezených záznamù
+16=Informace o CD
+17=Èasová korekce titulkù
+18=Otevøít URL
+19=Klávesové zkratky
+20=Možnosti
+21=Rychlost
+22=Skok na èas
+23=Barvy
+36=Nastavení videa
+
+24=Spouštìní
+25=Obecné
+35=Playlist
+26=Zvuk1
+32=Zvuk2
+27=Obraz
+28=Titulky
+34=CD mechanika
+14=LokálníCDDB
+29=freedb
+
+30=Osciloskop
+31=Spektrální analýza
+33=Zvuk - vlastnosti
+
+;hlavní menu
+401=&Soubor
+402=&Pøehrávání
+403=&Velikost
+404=&Rychlost
+405=&Nápovìda
+406=&Jazyk
+407=&Filtry
+408=Play&list
+409=&Titulky
+410=Vizualiza&ce
+411=Zv&uk
+412=&DVD
+413=T&itul
+414=&Kapitola
+415=Ú&hel pohledu
+416=&Zvuk
+417=&Jazyk v menu
+419=&Titulky
+420=&Ostatní nabídky
+
+201=&Otevøít soubory...
+202=&Konec
+203=Poza&stavit
+204=Zastav&it
+205=U&kázat právì hrající
+206=&Zastavovat
+207=&Celá obrazovka
+213=Pø&ehrát
+214=&Uložit WAV
+215=&Stereo
+216=&Mono
+217=&Levý
+218=&Pravý
+219=&Ztlumit
+220=Z&vìtšit o 5%
+221=Z&menšit o 5%
+225=&Krokovat
+227=&Pøedchozí
+228=&Další
+229=Odstranit vyb&rané
+230=&O programu...
+231=&Opakovat vše
+232=Z&vìtšit
+233=Z&menšit
+235=Odstranit konfiguraci
+239=&Pùvodní pomìr stran
+240=&Vždy navrchu
+242=Za&míchat
+243=Ná&hodnì
+244=Otevøít &složku...
+245=&Možnosti...
+247=&Vybrat vše
+248=O&dstranit vše
+249=O&brátit
+250=&Invertovat výbìr
+251=&Zrušit výbìr
+252=&Nápovìda
+253=Skok &vpøed
+254=Skok zpì&t
+255=N&a konci zastavit
+256=&Písmo...
+257=&Otevøít...
+258=&Uložit...
+260=V&lastní...
+261=Skok &na èas...
+262=Opakovat sklad&bu
+263=&Barvy...
+266=Odstranit &pøedchozí
+267=Èas upl&ynulý/zbývaj.
+268=&Naèíst délky
+269=Panel &nástrojù...
+270=&Uložit snímek
+271=&Zapnout/Vypnout
+272=&Písmo...
+274=&Døíve
+275=Po&zdìji
+276=Posunout &nahoru
+277=Posunout do&lù
+278=V&lastnosti souboru...
+279=&Otevøít...
+280=Z&vìtšit
+281=Z&menšit
+282=Nastavení v&idea
+283=&Skrýt
+284=Èasová &korekce...
+285=Zmìnit z&vukovou stopu
+286=Kláv&esové zkratky...
+287=Otevøít U&RL...
+288=N&echat jen vybrané
+293=&Informace o CD...
+294=&Další plugin
+295=Pøehrát &CD
+296=Odstranit soubor
+297=&Ekvalizér
+298=Pomìr &obrazovky
+299=Pøehrát &DVD
+302=Pok&raèovat
+303=&Další kapitola
+304=&Pøedchozí kapitola
+305=Na z&aèátek kapitoly
+306=&Skryté titulky
+307=Zo&brazit titulky
+308=&Nabídka
+309=Nabídka &titulkù
+310=Nabídka &zvuku 
+311=Nabídka ú&hlu pohledu 
+312=Nabídka &kapitol 
+313=Nabídka &celého disku
+
+
+;typy souborù
+500=Mediální soubory
+501=Všechny soubory
+502=Playlist
+503=Titulky
+
+;Možnosti
+511=snímkù/sekundu
+512=Pøípony &multimediálních souborù
+513=&Asociované pøípony
+514=&Zmìna stopy:
+515=&Interval pøekreslování pozice a titulkù:
+516=Otevírat video na &celé obrazovce
+517=A&ktivovat okno pøi otevøení souboru z Prùzkumníka
+518=Priorita vi&zualizace:
+519=&Priorita procesu:
+520=Pøi otevøení &více souborù je setøídit podle cesty a názvu
+521=Spustit po zaplnìní:
+522=&Skok vpøed/zpìt:
+523=sekund
+524=Zachovat &pomìr stran pøi zmìnì velikosti videa
+525=&Zvukové zaøízení:
+526=&Vlastní zpùsob zvukového výstupu
+528=pauza
+529=zastavení
+530=skoky
+531=&Interval pøekreslování vizualizace:
+532=&Zapisovat data do bufferu každých
+533=Vytvoøit &oznamovací pozice
+534=&Maximální doba zobrazení titulku:
+535=pozice
+536=Obry&sové písmo
+537=&Posunutí:
+538=Povolit &ekvalizér
+539=&Rychlost:
+540=Vynulovat
+541=&Digitální pøehrávání
+542=Jsou-li titulky zobrazovány
+543=brzy\npozdì\nrychle\npomalu
+544=použijte
+545=záporný posun\nkladný posun\nmenší rychlost\nvìtší rychlost
+546=Overlay Mixer používat
+547=Automaticky otevírat &titulky
+548=&Pøíkaz pro ètení:
+549=Pro&hodit levý/pravý kanál
+550=&Barva
+551=&Písmo
+552=&Big endian (prohodit vyšší/nižší byte)
+553=A&dresáø s titulky:
+554=&Další soubor v seznamu otevírat s pøedstihem 8 sekund
+555=Pøek&rývání stop:
+556=&Rychlost:
+557=&Neprùhledný text
+558=Zachovat pomìr stran na celé o&brazovce
+559=Délka &bufferu:
+560=Poèet &sektorù, které se ètou najednou:
+561=Povolit &CD-TEXT  (autor, album, názvy stop)
+562=Dialogové okno "&Otevøít složku..." zaèíná ve složce:
+563=&Sloupce:
+564=&ID3 a APEv1 tagy zobrazovat v kódování ISO-8859-1
+565=%nu - èíslo v seznamu\n%fi - název souboru\n%pa - cesta souboru\n%ex - pøípona souboru\n%bi - datový tok (kb/s)\n%le - délka (min:sek)\n%si - velikost v bytech\n%ti - název,  %tr - stopa\n%ar - autor,  %al - album\n%ye - rok,  %ge - žánr\n%co - komentáø,  %ta - tag
+566=Pøíkaz:
+567=Klávesa:
+568=Plynule &zeslabit:
+569=&Hlasitost:
+570=žádná
+571=celkový výstup
+572=wave nebo CD
+574=Pøípon&y:
+575=Povolit &více instancí
+576=&Registrovat pøípony pøi spuštìní pøehrávaèe
+577=Podtržítka a %20 zobrazovat jako &mezery
+578=Automaticky &naèítat délky a datový tok všech souborù v playlistu
+579=Povolit spoøiè o&brazovky, pokud se nepøehrává video
+595=jen pro &titulky
+596=&vždy
+597=&nikdy
+600=&Složka:
+601=Windows
+602=Unix
+606=&Server
+607=Port
+608=Váš &E-mail
+609=Použít &proxy
+632=&Kódování
+633=&Formát
+634=Pøipojit se k freedb &automaticky pøi pøehrávání CD
+635=Cesta
+636=Seznam &všech serverù...
+637=&Aktualizovat
+639=&Povolit vlastní poøadí pøehrávání
+640=&Uživatel
+641=&Heslo
+642=Èasový limit
+643=sekund
+591=Naèíst p&laylist z:
+592=&Titulek okna:
+593=&Skrýt ukazatel myši
+594=&Obnovovat rychlost pravidelnì každých
+625=sektorù
+626=&Kontrolovat podteèení
+
+
+;Barvy
+580=Playlist:
+581=Vybrané:
+582=Právì hrající:
+583=Pozice:
+584=Panel nástrojù:
+585=Èas:
+586=Titulky:
+
+590=Rychlost (desetinné èíslo):
+
+;Informace o CD
+610=Titul
+611=Interpret
+612=Komentáø
+613=Rok
+614=Žánr
+615=freedb
+616=Uložit do lokální db
+617=Naèíst z lokální db
+618=Stáhnout z freedb
+619=Odeslat do freedb
+620=
+621=Název
+622=Start
+623=Délka
+624=Komentáø
+630=Odstranit z lokální db
+638=Poøadí stop
+644=Vymazat
+
+646=Revize:
+647=Celková délka:
+648=Pøeèíst CD-TEXT
+
+631=Bylo nalezeno nìkolik rùzných CD záznamù.\nVyberte si jeden z nich.
+
+;nastavení videa
+685=Jas:
+686=Kontrast:
+687=Sytost:
+688=Odstín:
+689=Gamma:
+684=Výchozí
+
+;názvy sloupcù
+651=Název souboru
+652=Typ
+654=Délka
+655=Cesta
+656=Velikost
+
+;priorita procesu
+660=nízká
+661=normální
+662=vysoká
+663=v reálném èase
+664=podprùmìrná
+665=nadprùmìrná
+
+667=Ctrl+
+668=Shift+
+669=Alt+
+
+;informace o souboru
+670=Soubor: %s\nVelikost: %I64d bytù\n
+671=\nPùvodní velikost videa: %d x %d\nVelikost okna s videem: %d x %d\n
+672=Rychlost zobrazování snímkù: %.3f\n
+673=Délka:  %.3f sekund\n
+677=%d Hz, %d bitù, %s\n
+681=Celková délka: %d:%02d\n\n
+
+;priorita threadu
+690=nejnižší
+691=nízká
+692=podprùmìrná
+693=normální
+694=nadprùmìrná
+
+;vizualizace
+900=Zesílení
+901=Rozdíl
+902=Mìøítko
+903=Délka paketù:
+904=Naplnìní:
+905=Levý
+906=Pravý
+907=Linka
+908=Pozadí
+909=Sloupce
+910=Vrcholky
+911=Oddìlovaè
+912=Zjemnìní
+913=Padání vrcholkù
+914=Padání sloupcù
+915=Formát:
+916=Podteèení:
+917=Poèítadlo zápisù:
+
+;tagy
+1000=Název
+1001=Interpret
+1002=Album
+1003=Stopa
+1004=Rok
+1005=Komentáø
+1006=Žánr
+1007=Autorská práva
+1008=Enkodér
+1009=URL
+1010=Popis
+1011=Skladatel
+1012=Pùvodní autor
+
+;panel nástrojù
+1227=Pøedchozí
+1213=Pøehrát
+1203=Pozastavit
+1204=Zastavit
+1228=Další
+1201=Otevøít soubory
+1244=Otevøít složku
+1248=Odstranit vše
+1245=Možnosti
+1207=Celá obrazovka
+1225=Krok
+1253=Skok vpøed
+1254=Skok zpìt
+1258=Uložit playlist
+1256=Písmo
+1232=Zvìtšit
+1233=Zmenšit
+1271=Vizualizace
+1278=Vlastnosti souboru
+1287=Otevøít URL
+1295=Pøehrát CD
+1297=Ekvalizér
+1299=Pøehrát DVD
+
+;chybová hlášení
+730=Nelze otevøít soubor %s
+733=Nelze vytvoøit soubor %s
+734=Chyba pøi zápisu do %s
+735=Nelze uložit nastavení do registru
+739=Nenalezen soubor %s
+753=Soubor %s je moc dlouhý
+754=Chyba pøi ètení souboru %s
+755=Chyba v %s\nØádek %d nezaèíná èíslem
+756=Chyba v %s\nÈíslo %d je moc velké
+757=Chyba v %s\nVícenásobný výskyt %d
+780=Nelze pøehrát %s
+781=Pokud chcete používat ekvalizér, nesmí být v možnostech zaškrtnuto "Zvukové zaøízení".
+782=Ukládat snímky lze jen pøi pøehrávání videa
+783=Tato funkce bohužel není k dispozici.\nZkuste nainstalovat DirectX 9
+784=Bohužel se nepodaøilo získat snímek
+785=DLL neobsahuje funkce potøebné k vizualizaci
+786=Nelze naèíst titulky !\nSoubor: %s
+788=Tento soubor obsahuje jen jednu zvukovou stopu
+789=Zvukové zaøízení selhalo\n(asi je používáno jinou aplikací)
+790=V mechanice není žádné CD
+791=Chcete smazat soubor %s ?
+792=CD není v internetové databázi
+793=Na tomto CD není zapsán CD-TEXT
+794=Musíte zadat svoji emailovou adresu (v menu Soubor / Možnosti)
+795=Musíte zadat názvy písnièek, album, interpreta a freedb kategorii
+796=CD nebylo nalezeno v lokální databázi
+797=CD nebylo nalezeno v adresáøi "%s"
+798=CD bylo nalezeno v cdplayer.ini
+799=V kategorii %s už existuje CD, které má id=%s !
+859=freedb server vrátil chybu
+860=freedb server neodpovìdìl na dotaz
+861=Chcete informace o CD uložit do lokální databáze ?
+862=Musíte urèit složku, kde se nachází lokální databáze (v menu Soubor / Možnosti).
+863=freedb server nebyl nalezen, nebo nejste pøipojeni k internetu
+864=Ke freedb serveru se nelze pøipojit.\nZkuste to pozdìji nebo v možnostech zvolte jiný server.
+865=CD neobsahuje žádnou zvukovou stopu
+866=%c: není písmeno CD mechaniky
+867=Nelze pøistupovat k CD mechanice (chyba %d)
+868=V mechanice není žádné DVD
+869=V možnostech musíte zaškrtnout "Povolit ekvalizér"

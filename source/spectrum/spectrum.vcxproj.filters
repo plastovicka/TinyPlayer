@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1731a028-d765-4840-beac-bd787c3cfbcb}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7e317b64-b9ce-4ac3-9af8-5280df2cd523}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{25339009-2e6d-442c-b7c2-b0ae1f97ee74}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fft.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spectrum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="spectrum.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spectrum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

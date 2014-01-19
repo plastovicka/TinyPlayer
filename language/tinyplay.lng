@@ -1,0 +1,489 @@
+;;;;;;;;
+; Menu ;
+;;;;;;;;
+
+401=&File
+201=&Open files...
+244=Open fol&der...
+287=Open U&RL...
+299=Play D&VD
+295=Pla&y audio CD
+293=CD &information...
+240=&Always on top
+270=Capt&ure frame
+296=Delete file
+278=File &properties...
+235=Delete settings
+406=&Language
+286=&Keyboard...
+269=Tool&bar...
+256=&Font...
+263=&Colors...
+245=Op&tions...
+202=E&xit
+
+408=&Playlist
+257=&Open...
+258=&Save...
+248=R&emove all
+266=Remove &previous
+229=Re&move selected
+288=&Crop selected
+247=Select &all
+251=&Unselect all
+250=&Invert selection
+205=S&how current
+268=Read &lengths
+242=Reshu&ffle
+249=&Reverse
+243=Ran&dom
+
+402=&Control
+227=&Previous
+213=P&lay
+203=P&ause
+204=&Stop
+255=Stop after &current
+228=&Next
+253=Jump &forward
+254=Jump &backward
+261=&Jump to time...
+225=Single f&rame step
+
+411=S&ound
+297=&Equalizer
+285=Switch &audio stream
+215=&Stereo
+216=&Mono
+217=&Left
+218=&Right
+219=M&ute
+214=Save &WAV
+
+410=&Visualization
+271=&On/Off
+294=&Next plugin
+282=V&ideo colors
+267=Elapsed/Remainin&g
+206=&Manual advance
+231=Repea&t all
+262=Repeat trac&k
+
+403=&Zoom
+209=&50%
+212=&75%
+208=&100%
+234=15&0%
+210=&200%
+232=Zoom &in
+233=Zoom &out
+207=&Full screen
+239=O&riginal ratio
+298=&Screen ratio
+238=1&6 : 9
+237=&4 : 3
+
+404=&Rate
+224=0,5
+289=0,75
+222=&1
+290=1,25
+223=&2
+260=&Custom...
+221=&Decrease by 5%
+220=&Increase  by 5%
+
+409=&Subtitles
+279=&Open...
+283=&Hide
+284=&Time correction...
+274=&Earlier
+275=&Later
+272=&Font...
+281=Decrease &size
+280=&Increase size
+276=Move &up
+277=Move &down
+
+407=F&ilters
+
+412=&DVD
+413=&Title
+414=C&hapter
+303=&Next chapter
+304=Pr&evious chapter
+305=Repla&y chapter
+308=&Root menu
+302=Resu&me
+420=&Other menus
+312=&Chapter menu
+309=&Subtitle menu
+310=A&udio menu
+311=A&ngle menu
+313=T&itle menu
+415=An&gle
+416=&Audio
+417=Menu &language
+419=&Subpicture
+307=Show s&ubpicture
+306=Sho&w closed captioning
+
+405=&Help
+252=&Readme
+230=&About...
+
+
+;;;;;;;;;;;
+; Options ;
+;;;;;;;;;;;
+
+20=Options
+
+24=Start
+517=Activate window when a &file is opened from Explorer
+575=Allow multiple &instances
+576=&Register extensions at player start-up
+512=&Media files extensions
+513=Associated &extensions
+519=&Process priority:
+591=Play&list file:
+
+25=General
+520=When loading multiple files, &sort them by path and name
+579=&Enable screensaver when no video is playing
+522=&Jump forward/backward:
+523=seconds
+515=&Interval of redrawing position and subtitles:
+554=Load ne&xt track in advance:  8 seconds
+562="&Open folder..." dialog box starts in folder:
+
+35=Playlist
+578=Automatically display length and bitrate of &all files in the playlist
+577=Show &underscores and %20 as spaces
+564=&ISO-8859-1 encoding for ID3 and APEv1 tags
+563=&Columns:
+565=%nu - number in playlist\n%fi -  file name\n%pa - file path\n%ex - file extension\n%si - file size (bytes)\n%bi - bitrate (kb/s)\n%le - length (min:sec)\n%ti - title,    %tr - track\n%ar - artist,  %al - album\n%ye - year,  %ge - genre\n%co - comment,  %ta - tag
+592=&Window title:
+
+26=Audio1
+526=1)  Built-in audio &renderer
+525=2)  Audio &device:
+559=&Buffer length:
+514=&Track change:
+521=Pr&ebuffer:
+626=Check buffer &underrun
+532=&Write audio samples to the buffer every
+533=Create &notification positions
+535=positions
+555=Tracks over&lap:
+
+32=Audio2
+531=&Interval of redrawing visualization:
+518=&Visualization priority:
+569=Volume:
+570=&disabled
+571=&master out
+572=&wave or CD
+538=&Enable equalizer
+568=&Fade out / Fade in
+528=&pause
+529=&stop
+530=see&k
+
+27=Video
+516=Open video in &full screen
+524=Keep aspect &ratio when resizing video
+558=Keep aspect ratio in f&ull screen
+593=&Hide mouse cursor
+546=Overlay Mixer use 
+595=only for &subtitles
+596=&always
+597=&never
+
+28=Subtitles
+547=Automatically open &subtitles
+536=Outline &pen for subtitle font
+557=Opaque te&xt
+534=&Maximum subtitle display time:
+553=Subtitles folder:
+574=File &extensions:
+550=&Color
+551=&Font
+
+34=CD drive
+541=&Digital audio extraction
+548=&Read command:
+549=S&wap left/right channels
+552=&Big endian (swap high / low bytes)
+556=&Speed:
+594=Set speed &periodically every
+625=sector
+560=&Number of sectors to get each read:
+561=&Enable CD-TEXT  (artist, album, track titles)
+
+14=LocalCDDB
+600=Fol&der:
+633=Forma&t
+601=Windows
+602=Unix
+632=&Encoding
+604=UTF-8
+639=Enable custom playback &order
+
+29=freedb
+634=&Automatically connect to freedb when playing CD
+606=Server
+635=Path
+607=Port
+636=&Show all servers list...
+642=Timeout:
+643=sec
+609=Use pro&xy
+640=&User
+641=&Password
+608=Your &E-mail
+
+
+;;;;;;;;;;;;;;;;
+; Dialog boxes ;
+;;;;;;;;;;;;;;;;
+
+11=About
+301=Version
+
+21=Rate
+590=Speed (floating-point decimal):
+
+22=Jump to time
+
+18=Open URL
+
+23=Colors
+586=Subtitles:
+580=Playlist:
+581=Selected:
+582=Playing:
+585=Time:
+583=Progress:
+584=Toolbar:
+
+17=Subtitles time correction
+537=S&hift:
+539=S&cale:
+511=FPS
+542=If subtitles are displayed too
+543=early\nlate\nfast\nslow
+544=use
+545=negative shift\npositive shift\nlower scale\nhigher scale
+
+19=Keyboard shortcuts
+566=Command:
+567=Key:
+
+16=CD information
+611=&Artist
+610=Al&bum title
+613=&Year
+614=&Genre
+615=&freedb
+638=&Play order
+612=&Comment
+646=Revision:
+648=R&ead CD-TEXT
+617=&Read from local CDDB
+630=&Delete from local CDDB
+616=&Save to local CDDB
+618=&Query freedb
+619=Submit to freedb
+644=Clear all
+647=Total length:
+620=#
+621=Title
+622=Offset
+623=Len.
+624=Comment
+
+15=Multiple result
+631=More CDs with the same ID were found. You have to choose one of them.
+
+12=Freedb servers
+637=&Update
+
+;Equalizer
+540=Reset
+
+36=Color controls
+685=Brightness:
+686=Contrast:
+687=Saturation:
+688=Hue:
+689=Gamma:
+684=Default
+
+33=Audio renderer properties
+915=Format:
+903=Sample length:
+916=Underruns:
+917=Buffer locks done:
+904=Data buffered:
+
+30=Oscilloscope
+901=Offset
+902=Scale
+905=Left
+906=Right
+907=Line
+
+31=Spectrum analyzer
+900=Gain
+912=Bands
+909=Bars
+910=Peaks
+911=Separator
+908=Background
+913=Peak falloff speed
+914=Bar falloff speed
+
+
+;;;;;;;;;;;
+; Toolbar ;
+;;;;;;;;;;;
+
+1227=Previous
+1213=Play
+1203=Pause
+1204=Stop
+1228=Next
+1201=Open files
+1244=Open folder
+1248=Remove all
+1245=Options
+1207=Full screen
+1225=Step
+1253=Jump forward
+1254=Jump backward
+1258=Save playlist
+1256=Font
+1232=Zoom in
+1233=Zoom out
+1271=Visualization
+1278=File info
+1287=Open URL
+1295=Play CD
+1297=Equalizer
+1299=Play DVD
+
+
+;;;;;;;;;;;;;;;;;;
+; Error messages ;
+;;;;;;;;;;;;;;;;;;
+
+739=File %s not found
+730=Cannot open file %s
+733=Cannot create file %s
+754=Error reading file %s
+734=Write failed: %s
+753=File %s is too long
+735=Cannot write to Windows registry
+862=You have to select a folder in which is your local CD database (menu File / Options / LocalCDDB)
+790=There is no CD in the drive
+865=There is no audio track on the CD
+867=Cannot access CD drive (error %d)
+798=CD info has been found in cdplayer.ini
+796=CD was not found in the local database
+797=CD not found in directory "%s"
+793=There is no CD-TEXT on this CD
+783=This function is not available.\nTry to install DirectX 9.
+784=Failed to capture a frame
+786=Can't load subtitles !\nFile: %s
+782=No video is playing
+863=freedb server not found or you are not connected to the internet
+864=Cannot connect to freedb server.\nTry it later or choose another server in program options.
+859=freedb server returned error or incorrectly formatted result
+860=freedb server did not respond to your request
+794=You have to specify your email address (menu File / Options)
+795=You have to fill in track titles, artist, album and freedb category
+799=There is another CD in category %s which has id=%s !
+792=This CD is not yet in the internet database
+785=Visualization DLL does not export required functions
+866=%c: is not a CD drive letter
+789=Audio device failed (is it used by another application ?)
+868=There is no DVD in the drive
+780=Cannot play %s
+788=This file has only one audio stream
+781=You have to choose built-in audio renderer if you want equalizer
+755=Error in %s\nLine %d
+756=Error in %s\nMessage number %d is too big
+757=Error in %s\nDuplicated number %d
+791=Do you want to delete file %s ?
+861=Do you want to save CD info to the local database ?
+869=You have to check "Enable equalizer" in the options
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;Media file info
+670=File: %s\nSize: %I64d bytes\n
+681=Total length: %d:%02d\n\n
+673=Length: %.3f seconds\n
+671=\nOriginal video size: %d x %d\nDisplayed video size: %d x %d\n
+672=Frame rate: %.3f\n
+677=%d Hz, %d bit, %s\n
+
+;Playlist columns
+651=File name
+652=Type
+653=Bitrate
+654=Length
+655=Path
+656=Size
+
+;Process priority
+660=idle
+661=normal
+662=high
+663=realtime
+664=below normal
+665=above normal
+
+;Thread priority
+690=idle
+691=lowest
+692=below normal
+693=normal
+694=above normal
+
+;File extensions filters
+501=All files
+500=Media files
+502=Playlist
+503=Subtitles
+
+;Keyboard modifiers
+667=Ctrl+
+668=Shift+
+669=Alt+
+
+;Dialog buttons
+1=OK
+2=Cancel
+8=Close
+10=Select
+
+;Help file
+13=tinyplay_EN.txt
+
+;Tags
+1000=Title
+1001=Artist
+1002=Album
+1003=Track
+1004=Year
+1005=Comment
+1006=Genre
+1007=Copyright
+1008=Encoded by
+1009=URL
+1010=Description
+1011=Composer
+1012=Orig. Artist
+1013=Tag

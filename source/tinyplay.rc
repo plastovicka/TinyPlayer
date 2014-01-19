@@ -1,0 +1,1058 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "winresrc.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Czech resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open files...",              ID_FILE_OPENCLIP
+        MENUITEM "Open fol&der...",             ID_OPENDIR
+        MENUITEM "Open U&RL...",                ID_OPENURL
+        MENUITEM "Play D&VD",                   ID_DVD_FILE_OPENDVD
+        MENUITEM "Pla&y audio CD",              ID_PLAYAUDIOCD
+        MENUITEM "CD &information...",          ID_CDINFO
+        MENUITEM SEPARATOR
+        MENUITEM "&Always on top",              ID_ONTOP
+        MENUITEM "Capt&ure frame",              ID_GRAB
+        MENUITEM "Delete file",                 ID_DELETE_FILE
+        MENUITEM "File &properties...",         ID_FILEINFO
+        MENUITEM SEPARATOR
+        MENUITEM "Delete settings",             ID_DELETEINI
+        POPUP "&Language"
+        BEGIN
+            MENUITEM ".",                           29999
+        END
+        MENUITEM "&Keyboard...",                ID_KEYS
+        MENUITEM "Tool&bar...",                 ID_TOOLBAR
+        MENUITEM "&Font...",                    ID_FILE_FONT
+        MENUITEM "&Colors...",                  ID_COLORS
+        MENUITEM "Op&tions...",                 ID_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Playlist"
+    BEGIN
+        MENUITEM "&Open...",                    ID_PLAYLIST_OPEN
+        MENUITEM "&Save...",                    ID_PLAYLIST_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "R&emove all",                 ID_PLAYLIST_REMOVEALL
+        MENUITEM "Remove &previous",            ID_PLAYLIST_REMOVEPREVIOUS
+        MENUITEM "Re&move selected",            ID_PLAYLIST_REMOVE
+        MENUITEM "&Crop selected",              ID_PLAYLIST_CROP
+        MENUITEM SEPARATOR
+        MENUITEM "Select &all",                 ID_PLAYLIST_SELECTALL
+        MENUITEM "&Unselect all",               ID_UNSELECTALL
+        MENUITEM "&Invert selection",           ID_PLAYLIST_INVERTSELECTION
+        MENUITEM "S&how current",               ID_SHOW_CURRENT
+        MENUITEM SEPARATOR
+        MENUITEM "Read &lengths",               ID_ALLINFO
+        MENUITEM "Reshu&ffle",                  ID_SHUFFLE
+        MENUITEM "&Reverse",                    ID_PLAYLIST_REVERSE
+        MENUITEM SEPARATOR
+        MENUITEM "Ran&dom",                     ID_RANDOM
+    END
+    POPUP "&Control"
+    BEGIN
+        MENUITEM "&Previous",                   ID_FILE_PREVIOUS
+        MENUITEM "P&lay",                       ID_FILE_PLAY
+        MENUITEM "P&ause",                      ID_FILE_PAUSE
+        MENUITEM "&Stop",                       ID_FILE_STOP
+        MENUITEM "Stop after &current",         ID_CONTROL_STOPAFTERCURRENT
+        MENUITEM "&Next",                       ID_FILE_NEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Jump &forward",               ID_CONTROL_JUMPFORWARD
+        MENUITEM "Jump &backward",              ID_CONTROL_JUMPBACKWARD
+        MENUITEM "&Jump to time...",            ID_JUMPTOTIME
+        MENUITEM "Single f&rame step",          ID_SINGLE_STEP
+        MENUITEM SEPARATOR
+        POPUP "S&ound"
+        BEGIN
+            MENUITEM "&Equalizer",                  ID_EQUALIZER
+            MENUITEM "Switch &audio stream",        ID_AUDIOSTREAM
+            MENUITEM SEPARATOR
+            MENUITEM "&Stereo",                     ID_SOUND_STEREO
+            MENUITEM "&Mono",                       ID_SOUND_MONO
+            MENUITEM "&Left",                       ID_SOUND_LEFT
+            MENUITEM "&Right",                      ID_SOUND_RIGHT
+            MENUITEM "M&ute",                       ID_SOUND_MUTE
+            MENUITEM "Save &WAV",                   ID_SOUND_WAV
+        END
+        POPUP "&Visualization"
+        BEGIN
+            MENUITEM "&On/Off",                     ID_VISUAL
+            MENUITEM "&Next plugin",                ID_NEXTVISUAL
+            MENUITEM SEPARATOR
+            MENUITEM ".",                           39999
+        END
+        MENUITEM "V&ideo colors",               ID_DDCOLOR
+        MENUITEM "Elapsed/Remainin&g",          ID_TIMEREMAIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Manual advance",             ID_REPEAT_STOP
+        MENUITEM "Repea&t all",                 ID_REPEAT
+        MENUITEM "Repeat trac&k",               ID_REPEAT1
+    END
+    POPUP "&Zoom"
+    BEGIN
+        MENUITEM "&50%",                        ID_FILE_SIZE_HALF
+        MENUITEM "&75%",                        ID_FILE_SIZE_THREEQUARTER
+        MENUITEM "&100%",                       ID_FILE_SIZE_NORMAL, CHECKED
+        MENUITEM "15&0%",                       ID_FILE_SIZE_150
+        MENUITEM "&200%",                       ID_FILE_SIZE_DOUBLE
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom &in",                    ID_ZOOMIN
+        MENUITEM "Zoom &out",                   ID_ZOOMOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Full screen",                ID_FILE_FULLSCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "O&riginal ratio",             ID_RATIO_ORIG
+        MENUITEM "&Screen ratio",               ID_RATIO_SCREEN
+        MENUITEM "1&6 : 9",                     ID_RATIO169
+        MENUITEM "&4 : 3",                      ID_RATIO34
+    END
+    POPUP "&Rate"
+    BEGIN
+        MENUITEM "0,5",                         ID_RATE_HALF
+        MENUITEM "0,75",                        ID_RATE_75
+        MENUITEM "&1",                          ID_RATE_NORMAL
+        MENUITEM "1,25",                        ID_RATE_125
+        MENUITEM "&2",                          ID_RATE_DOUBLE
+        MENUITEM "&Custom...",                  ID_RATE_CUSTOM
+        MENUITEM SEPARATOR
+        MENUITEM "&Decrease by 5%",             ID_RATE_DECREASE
+        MENUITEM "&Increase  by 5%",            ID_RATE_INCREASE
+    END
+    POPUP "&Subtitles"
+    BEGIN
+        MENUITEM "&Open...",                    ID_SUBTITLES_LOAD
+        MENUITEM "&Hide",                       ID_SUBTITLES_OFF
+        MENUITEM SEPARATOR
+        MENUITEM "&Time correction...",         ID_SUBTITLES_TIMECORRECTION
+        MENUITEM "&Earlier",                    ID_SUBTITLES_EARLIER
+        MENUITEM "&Later",                      ID_SUBTITLES_LATER
+        MENUITEM SEPARATOR
+        MENUITEM "&Font...",                    ID_SUBTITLES_FONT
+        MENUITEM "Decrease &size",              ID_SUBTITLES_SMALLER
+        MENUITEM "&Increase size",              ID_SUBTITLES_LARGER
+        MENUITEM SEPARATOR
+        MENUITEM "Move &up",                    ID_SUBTITLES_MOVEUP
+        MENUITEM "Move &down",                  ID_SUBTITLES_MOVEDOWN
+        MENUITEM SEPARATOR
+        MENUITEM ".",                           ID_SUBTITLES
+    END
+    POPUP "F&ilters"
+    BEGIN
+        MENUITEM ".",                           ID_FILTERS
+    END
+    POPUP "&DVD"
+    BEGIN
+        POPUP "&Title"
+        BEGIN
+            MENUITEM ".",                           0
+        END
+        POPUP "C&hapter"
+        BEGIN
+            MENUITEM ".",                           0
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Next chapter",               ID_DVD_NEXTCHAPTER
+        MENUITEM "Pr&evious chapter",           ID_DVD_PREVIOUSCHAPTER
+        MENUITEM "Repla&y chapter",             ID_DVD_REPLAYCHAPTER
+        MENUITEM SEPARATOR
+        MENUITEM "&Root menu",                  ID_DVD_MENU_ROOT
+        MENUITEM "Resu&me",                     ID_DVD_MENU_RESUME
+        POPUP "&Other menus"
+        BEGIN
+            MENUITEM "&Chapter menu",               ID_DVD_MENU_CHAPTER
+            MENUITEM "&Subtitle menu",              ID_DVD_MENU_SUBPICTURE
+            MENUITEM "A&udio menu",                 ID_DVD_MENU_AUDIO
+            MENUITEM "A&ngle menu",                 ID_DVD_MENU_ANGLE
+            MENUITEM "T&itle menu",                 ID_DVD_MENU_TITLE
+        END
+        MENUITEM SEPARATOR
+        POPUP "An&gle"
+        BEGIN
+            MENUITEM ".",                           0
+        END
+        POPUP "&Audio"
+        BEGIN
+            MENUITEM ".",                           0
+        END
+        POPUP "Menu &language"
+        BEGIN
+            MENUITEM ".",                           0
+        END
+        POPUP "&Subpicture"
+        BEGIN
+            MENUITEM ".",                           0
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Show s&ubpicture",            ID_DVD_SHOWSUBPICTURE
+        MENUITEM "Sho&w closed captioning",     ID_DVD_SHOWCC
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Readme",                     ID_HELP_README
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PLAYWND             ICON    DISCARDABLE     "tinyplay.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  52, 18, 113, 104
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 11, "MS Sans Serif"
+BEGIN
+    CTEXT           "(C) 2004-2011  Petr Lastovicka",300,4,50,104,10
+    CTEXT           "Version",301,36,24,28,9
+    CTEXT           "Tiny Player",IDC_STATIC,36,6,40,9
+    ICON            IDI_PLAYWND,IDC_STATIC,12,18,20,20,SS_CENTERIMAGE
+    PUSHBUTTON      "OK",IDOK,40,84,32,14
+    ICON            IDI_PLAYWND,IDC_STATIC,81,18,20,20,SS_CENTERIMAGE
+    PUSHBUTTON      "http://petr.lastovicka.sweb.cz",123,5,64,104,13
+    LTEXT           "",101,65,24,12,8
+END
+
+IDD_RATE DIALOG DISCARDABLE  0, 0, 195, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rate"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Speed (floating-point decimal):",IDC_SRATE,7,9,126,8
+    EDITTEXT        IDC_RATE,140,7,41,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,30,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,114,34,50,14
+END
+
+IDD_JUMP DIALOG DISCARDABLE  0, 0, 104, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Jump to time"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_JUMP,22,6,32,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "min:sec",IDC_STATIC,69,10,25,8
+    DEFPUSHBUTTON   "OK",IDOK,7,34,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,56,34,40,14
+END
+
+IDD_COLORS DIALOG DISCARDABLE  0, 0, 149, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Colors"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Subtitles:",IDC_COLOR_SUBT,7,10,68,8
+    CONTROL         "",110,"Button",BS_OWNERDRAW | WS_TABSTOP,80,7,15,15
+    CONTROL         "",111,"Button",BS_OWNERDRAW | WS_TABSTOP,104,7,15,15
+    CONTROL         "",112,"Button",BS_OWNERDRAW | WS_TABSTOP,127,7,15,15
+    LTEXT           "Playlist:",IDC_COLOR_PLAYLIST,7,29,68,8
+    CONTROL         "",101,"Button",BS_OWNERDRAW | WS_TABSTOP,80,26,15,15
+    CONTROL         "",100,"Button",BS_OWNERDRAW | WS_TABSTOP,104,26,15,15
+    LTEXT           "Selected:",IDC_COLOR_SELECTED,7,49,68,8
+    CONTROL         "",103,"Button",BS_OWNERDRAW | WS_TABSTOP,80,47,15,15
+    CONTROL         "",102,"Button",BS_OWNERDRAW | WS_TABSTOP,104,47,15,15
+    LTEXT           "Playing:",IDC_COLOR_PLAYING,7,69,68,8
+    CONTROL         "",105,"Button",BS_OWNERDRAW | WS_TABSTOP,80,66,15,15
+    CONTROL         "",104,"Button",BS_OWNERDRAW | WS_TABSTOP,104,66,15,15
+    LTEXT           "Time:",IDC_COLOR_TIME,7,89,68,8
+    CONTROL         "",109,"Button",BS_OWNERDRAW | WS_TABSTOP,80,87,15,15
+    CONTROL         "",108,"Button",BS_OWNERDRAW | WS_TABSTOP,104,87,15,15
+    LTEXT           "Progress:",IDC_COLOR_PROGRESS,7,112,68,8
+    CONTROL         "",106,"Button",BS_OWNERDRAW | WS_TABSTOP,80,109,15,15
+    LTEXT           "Toolbar:",IDC_COLOR_TOOLBAR,7,132,68,8
+    CONTROL         "",107,"Button",BS_OWNERDRAW | WS_TABSTOP,80,130,15,15
+    DEFPUSHBUTTON   "OK",IDOK,14,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,77,157,50,14
+END
+
+OPTIONS_GENERAL DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "When loading multiple files, &sort them by path and name",
+                    IDC_SORTONLOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    10,256,10
+    CONTROL         "&Enable screensaver when no video is playing",
+                    IDC_SCREENSAVER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    25,256,10
+    LTEXT           "&Jump forward/backward:",IDC_SJUMP,7,63,151,8
+    EDITTEXT        IDC_JUMPSEC,163,61,35,14,ES_AUTOHSCROLL
+    LTEXT           "seconds",IDC_SSECOND,204,63,65,8
+    LTEXT           "&Interval of redrawing position and subtitles:",
+                    IDC_STIMEUPDATE,7,98,151,8
+    EDITTEXT        IDC_TICK,163,96,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,202,99,55,8
+    LTEXT           """&Open folder..."" dialog box starts in folder:",
+                    IDC_SOPENDIR_FOLDER,7,132,260,8
+    EDITTEXT        IDC_OPENDIR_FOLDER,7,144,228,14,ES_AUTOHSCROLL
+    PUSHBUTTON      ". . .",IDC_BROWSE,241,144,17,14
+END
+
+OPTIONS_AUDIO1 DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "1)  Built-in audio &renderer",IDC_USEDS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,9,7,254,10
+    CONTROL         "2)  Audio &device:",IDC_USEDEVICE,"Button",
+                    BS_AUTORADIOBUTTON,7,122,75,8
+    COMBOBOX        IDC_AUDIO_OUT,86,120,177,85,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    RTEXT           "&Buffer length:",IDC_SDSBUFLEN,8,29,67,8
+    EDITTEXT        IDC_DSBUFLEN,80,26,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,114,29,13,8
+    RTEXT           "&Track change:",IDC_SDSTRACK_PREBUF,129,29,58,8
+    EDITTEXT        IDC_DSTRACK_PREBUF,192,26,28,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,225,29,27,8
+    RTEXT           "Pr&ebuffer:",IDC_SDSPREBUF,7,50,68,8
+    EDITTEXT        IDC_DSPREBUF,80,48,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,113,50,17,8
+    CONTROL         "Check buffer &underrun",IDC_DSCHECK_UNDERRUN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,51,130,10
+    CONTROL         "&Write audio samples to the buffer every",IDC_DSNOTIF0,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,19,76,153,10
+    CONTROL         "Create &notification positions",IDC_DSNOTIF1,"Button",
+                    BS_AUTORADIOBUTTON,19,93,153,10
+    EDITTEXT        IDC_DSSLEEP,177,74,24,14,ES_NUMBER | WS_GROUP
+    LTEXT           "ms",IDC_STATIC,209,77,58,8
+    EDITTEXT        IDC_DSNOTIF_POS,177,91,24,14,ES_NUMBER | WS_GROUP
+    LTEXT           "positions",IDC_SDSNOTIF_POS,207,94,60,8
+    GROUPBOX        "",IDC_STATIC,0,109,263,5
+    CONTROL         "Load ne&xt track in advance:  8 seconds",IDC_GAPLESS,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,23,139,
+                    244,10
+    RTEXT           "Tracks over&lap:",IDC_SOVERLAP,7,156,85,10
+    EDITTEXT        IDC_OVERLAP,99,154,28,14,ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,133,157,63,8
+END
+
+IDD_SUBTTIME DIALOG DISCARDABLE  0, 0, 279, 117
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Subtitles time correction"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "S&hift:",IDC_SSUBTSHIFT,7,9,61,8
+    EDITTEXT        IDC_SUBTSHIFT,75,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "seconds",IDC_SSECOND,122,10,94,8
+    LTEXT           "S&cale:",IDC_SSUBTSCALE,7,33,60,8
+    EDITTEXT        IDC_SUBTSCALE,75,32,40,14,ES_AUTOHSCROLL
+    LTEXT           "FPS",IDC_SFPS,122,34,94,8
+    DEFPUSHBUTTON   "OK",IDOK,44,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,134,95,50,14
+    LTEXT           "If subtitles are displayed too",IDC_SSUBTHELP1,3,55,94,
+                    34,SS_CENTERIMAGE
+    CTEXT           "use",IDC_SSUBTHELP3,141,55,37,34,SS_CENTERIMAGE
+    LTEXT           "negative shift\npositive shift\nlower scale\nhigher scale",
+                    IDC_SSUBTHELP4,183,55,96,34
+    LTEXT           "early\nlate\nfast\nslow",IDC_SSUBTHELP2,101,55,36,34
+END
+
+OPTIONS_SUBTITLES DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Automatically open &subtitles",IDC_SUBTAUTOLOAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,10,256,10
+    CONTROL         "Outline &pen for subtitle font",IDC_SUBTOUTLINE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,25,256,10
+    CONTROL         "Opaque te&xt",IDC_SUBTOPAQUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,40,256,10
+    LTEXT           "&Maximum subtitle display time:",IDC_SSUBTDELAY,8,61,
+                    141,8
+    EDITTEXT        IDC_SUBTDELAY,153,59,35,14,ES_AUTOHSCROLL
+    LTEXT           "sec",IDC_SSECOND,195,61,67,8
+    LTEXT           "Subtitles folder:",IDC_SSUBTDIR,7,82,256,8
+    EDITTEXT        IDC_SUBTDIR,7,95,217,14,ES_AUTOHSCROLL
+    PUSHBUTTON      ". . .",IDC_BROWSE,234,95,17,14
+    LTEXT           "File &extensions:",IDC_SSUBTEXT,7,118,256,8
+    EDITTEXT        IDC_SUBTEXT,7,131,256,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Color",IDC_SUBTCOLOR,33,155,58,14
+    PUSHBUTTON      "&Font",IDC_SUBTFONT,123,155,58,14
+END
+
+IDD_KEYS DIALOG DISCARDABLE  0, 0, 234, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Keyboard shortcuts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Command:",IDC_SCMD,7,9,51,8
+    EDITTEXT        IDC_KEYCMD,61,7,144,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      ". . .",IDC_MENUDROP,208,7,19,14
+    LTEXT           "Key:",IDC_SKEY,7,33,51,8
+    EDITTEXT        IDC_KEY,61,30,144,14,ES_AUTOHSCROLL
+END
+
+IDD_URL DIALOG DISCARDABLE  0, 0, 213, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open URL"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_URL,7,7,199,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,41,29,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,122,29,50,14
+END
+
+OPTIONS_VIDEO DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Open video in &full screen",IDC_FULLSCREEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,9,253,10
+    CONTROL         "Keep aspect &ratio when resizing video",IDC_KEEP_RATIO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,28,253,10
+    CONTROL         "Keep aspect ratio in f&ull screen",IDC_FULLSCREENRATIO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,47,253,10
+    CONTROL         "&Hide mouse cursor",IDC_HIDE_MOUSE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,66,253,10
+    GROUPBOX        "Overlay Mixer use ",546,7,89,186,65
+    CONTROL         "only for &subtitles",IDC_USEOVERLAY0,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,105,164,10
+    CONTROL         "&always",IDC_USEOVERLAY1,"Button",BS_AUTORADIOBUTTON,15,
+                    121,163,10
+    CONTROL         "&never",IDC_USEOVERLAY2,"Button",BS_AUTORADIOBUTTON,15,
+                    137,161,10
+END
+
+OPTIONS_START DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Activate window when a &file is opened from Explorer",
+                    IDC_STARTFOREGROUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,10,256,10
+    CONTROL         "Allow multiple &instances",IDC_MULTINST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,25,256,10
+    CONTROL         "&Register extensions at player start-up",IDC_REGEXT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,40,256,10
+    LTEXT           "&Media files extensions",IDC_SEXT,7,60,256,8
+    EDITTEXT        IDC_EXTENSIONS,7,72,256,14,ES_AUTOHSCROLL
+    LTEXT           "Associated &extensions",IDC_SASSOC,7,95,256,8
+    EDITTEXT        IDC_ASSOCIATED,7,106,256,14,ES_AUTOHSCROLL
+    CTEXT           "&Process priority:",IDC_PRIORITY,4,135,79,8
+    COMBOBOX        IDC_PRIORITYCOMBO,89,133,78,87,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CTEXT           "Play&list file:",IDC_SSAVEDLIST,2,157,72,8
+    EDITTEXT        IDC_SAVEDLIST,78,154,185,14,ES_AUTOHSCROLL
+END
+
+IDD_CD DIALOG DISCARDABLE  0, 0, 415, 269
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CD information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Artist",IDC_SARTIST,7,9,49,8
+    EDITTEXT        IDC_CDARTIST,62,7,188,14,ES_AUTOHSCROLL
+    LTEXT           "Al&bum title",IDC_SALBUM,7,27,49,8
+    EDITTEXT        IDC_CDALBUM,62,25,188,14,ES_AUTOHSCROLL
+    LTEXT           "&Year",IDC_SYEAR,279,9,38,8
+    EDITTEXT        IDC_CDYEAR,323,7,40,14,ES_NUMBER
+    LTEXT           "&Genre",IDC_SGENRE,279,27,38,8
+    COMBOBOX        IDC_CDGENRE,323,25,71,154,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&freedb",IDC_SFREEDB,279,45,38,8
+    COMBOBOX        IDC_CDCATEGORY,323,43,71,123,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Play order",IDC_SPLAYORDER,7,46,49,8
+    EDITTEXT        IDC_CDORDER,62,43,160,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "<",IDC_DEFAULT_ORDER,232,43,18,14
+    LTEXT           "&Comment",IDC_SCOMMENT,7,64,49,8
+    EDITTEXT        IDC_CDEXTD,62,62,263,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_CDLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_OWNERDATA | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,84,401,128
+    RTEXT           "freedb ID:",IDC_STATIC,0,218,39,8
+    LTEXT           "",IDC_DISCID,43,218,42,8
+    RTEXT           "MCI ID:",IDC_STATIC,0,233,36,8
+    LTEXT           "",IDC_MEDIAID,42,233,43,8
+    RTEXT           "Revision:",IDC_SREVISION,331,66,43,8
+    LTEXT           "",IDC_REVISION,381,66,25,8
+    PUSHBUTTON      "R&ead CD-TEXT",IDC_CDTEXT,100,235,102,14
+    PUSHBUTTON      "&Read from local CDDB",IDC_CDREADLOCAL,100,217,102,14,
+                    BS_CENTER
+    PUSHBUTTON      "&Delete from local CDDB",IDC_CDDELLOCAL,204,217,102,14,
+                    BS_CENTER
+    PUSHBUTTON      "&Save to local CDDB",IDC_CDSAVELOCAL,308,217,102,14,
+                    BS_CENTER
+    PUSHBUTTON      "&Query freedb",IDC_QUERY_FREEDB,204,235,102,14
+    PUSHBUTTON      "Submit to freedb",IDC_SUBMIT,308,235,102,14
+    PUSHBUTTON      "Clear all",IDC_CDDELETE,100,252,102,14
+    PUSHBUTTON      "Close",IDCLOSE,308,252,102,14
+    RTEXT           "Total length:",IDC_STOTAL,0,248,54,8
+    LTEXT           "",IDC_TOTAL,59,248,25,8
+END
+
+OPTIONS_CDDB DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Automatically connect to freedb when playing CD",
+                    IDC_AUTO_CONNECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    7,256,10
+    GROUPBOX        "",IDC_STATIC,3,17,260,62
+    LTEXT           "Server",IDC_SSERVER,9,26,119,8
+    EDITTEXT        IDC_FREEDB_SERVER,8,40,125,14,ES_AUTOHSCROLL
+    LTEXT           "Path",IDC_SPATH,139,25,70,8
+    EDITTEXT        IDC_FREEDB_PATH,138,40,73,14,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_SPORT,227,26,30,8
+    EDITTEXT        IDC_FREEDB_PORT,226,40,26,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "&Show all servers list...",IDC_SHOWSITELIST,9,59,106,14
+    RTEXT           "Timeout:",IDC_STIMEOUT,121,63,72,8
+    EDITTEXT        IDC_FREEDB_TIMEOUT,199,60,22,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "sec",IDC_SSEC,225,63,30,8
+    GROUPBOX        "",IDC_STATIC,3,82,260,56
+    CONTROL         "Use pro&xy",IDC_USEPROXY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,95,76,10
+    EDITTEXT        IDC_PROXY,92,95,120,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROXYPORT,224,95,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "&User",IDC_SUSER,9,120,41,8
+    EDITTEXT        IDC_PROXY_USER,57,117,76,14,ES_AUTOHSCROLL
+    RTEXT           "&Password",IDC_SPASSWD,139,120,49,8
+    EDITTEXT        IDC_PROXY_PASS,194,116,60,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CTEXT           "Your &E-mail",IDC_SEMAIL,5,153,66,8
+    EDITTEXT        IDC_EMAIL,76,150,187,14,ES_AUTOHSCROLL
+END
+
+IDD_MULTCD DIALOG DISCARDABLE  0, 0, 281, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Multiple result"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,162,104,50,14
+    LISTBOX         IDC_MULTRESULT,7,34,267,60,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "More CDs with the same ID were found. You have to choose one of them.",
+                    IDC_SFREEDB_COLLISION,7,7,267,18
+END
+
+OPTIONS_LOCALCDDB DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Fol&der:",IDC_SFOLDER,4,20,36,8,NOT WS_GROUP
+    EDITTEXT        IDC_CDDBFOLDER,45,18,186,14,ES_AUTOHSCROLL
+    PUSHBUTTON      ". . .",IDC_BROWSE,239,18,17,14
+    CONTROL         "Windows",IDC_CDDBWIN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,27,57,95,10
+    CONTROL         "Unix",IDC_CDDBUNIX,"Button",BS_AUTORADIOBUTTON,27,72,95,
+                    10
+    CONTROL         "",IDC_CDDBACP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,27,114,96,10
+    CONTROL         "UTF-8",IDC_CDDBUTF8,"Button",BS_AUTORADIOBUTTON,27,129,
+                    96,10
+    GROUPBOX        "Forma&t",IDC_SFORMAT,20,45,111,44,WS_GROUP
+    GROUPBOX        "&Encoding",IDC_SENCODING,20,101,111,44,WS_GROUP
+    CONTROL         "Enable custom playback &order",IDC_CDUSEORDER,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,15,157,248,10
+END
+
+IDD_SITES DIALOG DISCARDABLE  0, 0, 346, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Freedb servers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SITELIST,7,7,332,108,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Select",IDSELECT,20,146,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,146,50,14
+    PUSHBUTTON      "&Update",IDC_SITES,236,146,71,14
+END
+
+OPTIONS_AUDIO2 DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Interval of redrawing visualization:",IDC_SVISTIMER,11,
+                    9,140,8
+    EDITTEXT        IDC_VISTIMER,157,6,28,14,ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,191,9,72,8
+    LTEXT           "&Visualization priority:",IDC_SVISPRIORITY,11,28,96,8
+    COMBOBOX        IDC_VISUALPRIORITYCOMBO,114,26,71,87,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    GROUPBOX        "Volume:",IDC_SVOLUME,14,47,131,56,WS_GROUP
+    CONTROL         "&disabled",IDC_VOLUME0,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFT | WS_GROUP | WS_TABSTOP,23,60,114,10
+    CONTROL         "&master out",IDC_VOLUME1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFT,23,74,114,10
+    CONTROL         "&wave or CD",IDC_VOLUME2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFT,23,88,114,10
+    CONTROL         "&Enable equalizer",IDC_ENABLE_EQ,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | WS_GROUP | WS_TABSTOP,7,115,
+                    85,10
+    EDITTEXT        IDC_EQ_FREQ,98,113,165,14,ES_AUTOHSCROLL
+    GROUPBOX        "&Fade out / Fade in",IDC_SFADE,7,138,256,30
+    CONTROL         "&pause",IDC_FADEOUT_PAUSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,19,152,68,10
+    CONTROL         "&stop",IDC_FADEOUT_STOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,94,152,69,10
+    CONTROL         "see&k",IDC_FADEOUT_SEEK,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,170,152,85,10
+END
+
+IDD_AUDIO_FILTER DIALOG DISCARDABLE  0, 0, 196, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Audio renderer properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Sample length:",IDC_DS_SSAMPLE_SIZE,7,26,93,8
+    LTEXT           "Format:",IDC_DS_SFORMAT,7,7,69,8
+    LTEXT           "Underruns:",IDC_DS_SUNDERRUN,7,45,96,8
+    LTEXT           "Buffer locks done:",IDC_DS_SLOCKS,7,64,96,8
+    LTEXT           "Data buffered:",IDC_DS_SBUFFERED,7,83,96,8
+    CTEXT           "",IDC_DS_FORMAT,82,7,104,8
+    RTEXT           "",IDC_DS_SAMPLE_SIZE,109,26,58,8
+    RTEXT           "",IDC_DS_UNDERRUN,109,45,58,8
+    RTEXT           "",IDC_DS_LOCKS,109,64,58,8
+    RTEXT           "",IDC_DS_BUFFERED,109,83,58,8
+    LTEXT           "ms",IDC_STATIC,172,83,17,8
+    LTEXT           "B",IDC_STATIC,174,26,8,8
+END
+
+OPTIONS_CD DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Digital audio extraction",IDC_CDDA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,7,247,10
+    COMBOBOX        IDC_CDMETHOD,141,27,67,141,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Read command:",IDC_SCDMETHOD,26,29,109,8
+    CONTROL         "S&wap left/right channels",IDC_CDSWAPLR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,49,237,10
+    CONTROL         "&Big endian (swap high / low bytes)",IDC_CDBIGENDIAN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,62,237,10
+    LTEXT           "&Speed:",IDC_SCDSPEED,26,84,67,8
+    COMBOBOX        IDC_CDSPEED,102,83,48,125,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Set speed &periodically every",IDC_SETCDSPEED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,104,152,10
+    EDITTEXT        IDC_CDSPEED_INTERVAL,182,102,29,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "sector",IDC_SSECTOR,215,105,52,8
+    LTEXT           "&Number of sectors to get each read:",IDC_SCDSECTORS,26,
+                    126,152,8
+    EDITTEXT        IDC_CDSECTORS,182,123,29,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,0,140,263,5
+    CONTROL         "&Enable CD-TEXT  (artist, album, track titles)",
+                    IDC_CDTEXT_ON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,
+                    154,246,10
+END
+
+OPTIONS_PLAYLIST DIALOG DISCARDABLE  0, 0, 270, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Automatically display length and bitrate of &all files in the playlist",
+                    IDC_AUTOINFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,10,
+                    256,10
+    CONTROL         "Show &underscores and %20 as spaces",IDC_UNDERSCORES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,23,256,10
+    CONTROL         "&ISO-8859-1 encoding for ID3 and APEv1 tags",
+                    IDC_ISO88591,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,36,
+                    256,10
+    LTEXT           "&Columns:",IDC_SCOLUMNS,7,50,100,8
+    EDITTEXT        IDC_COLUMNS,7,62,98,83,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "%nu - number in playlist\n%fi -  file name\n%pa - file path\n%ex - file extension\n%si - file size (bytes)\n%bi - bitrate (kb/s)\n%le - length (min:sec)\n%ti - title,    %tr - track\n%ar - artist,  %al - album\n%ye - year,  %ge - genre\n%co - comment,  %ta - tag",
+                    IDC_SCOLUMNS_HELP,113,55,156,96
+    CTEXT           "&Window title:",IDS_TITLE,0,157,69,8
+    EDITTEXT        IDC_TITLE,74,155,175,14,ES_AUTOHSCROLL
+END
+
+IDD_DDCOLOR DIALOGEX 0, 0, 176, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Color controls"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Brightness:",IDC_SBRIGHTNESS,7,10,60,8
+    CONTROL         "Slider1",IDC_BRIGHTNESS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,69,7,100,15
+    LTEXT           "Contrast:",IDC_SCONTRAST,7,27,60,8
+    CONTROL         "Slider1",IDC_CONTRAST,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,69,24,100,15
+    LTEXT           "Saturation:",IDC_SSATURATION,7,44,60,8
+    CONTROL         "Slider1",IDC_SATURATION,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,69,41,100,15
+    LTEXT           "Hue:",IDC_SHUE,7,61,60,8
+    CONTROL         "Slider1",IDC_HUE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,69,58,100,15
+    LTEXT           "Gamma:",IDC_SGAMMA,7,78,60,8
+    CONTROL         "Slider1",IDC_GAMMA,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,69,75,100,15
+    PUSHBUTTON      "Default",IDC_DDCOLOR_RESET,112,99,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,8,4,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Petr Laštovièka\0"
+            VALUE "FileDescription", "Tiny Player\0"
+            VALUE "FileVersion", "2, 8, 4, 0\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "(c) 2004-2012 Petr Lastovicka\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "tinyplay.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""winresrc.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "+",            ID_ZOOMIN,              ASCII,  NOINVERT
+    "-",            ID_ZOOMOUT,             ASCII,  NOINVERT
+    "1",            ID_RATIO_ORIG,          VIRTKEY, SHIFT, NOINVERT
+    188,            ID_CONTROL_JUMPBACKWARD, VIRTKEY, NOINVERT
+    190,            ID_CONTROL_JUMPFORWARD, VIRTKEY, NOINVERT
+    "2",            ID_RATIO_SCREEN,        VIRTKEY, SHIFT, NOINVERT
+    "A",            ID_ONTOP,               VIRTKEY, NOINVERT
+    "A",            ID_PLAYLIST_SELECTALL,  VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_UNSELECTALL,         VIRTKEY, ALT, NOINVERT
+    "B",            ID_FILE_NEXT,           VIRTKEY, NOINVERT
+    "C",            ID_FILE_PAUSE,          VIRTKEY, NOINVERT
+    "D",            ID_FILE_SIZE_DOUBLE,    VIRTKEY, NOINVERT
+    "D",            ID_OPENDIR,             VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EQUALIZER,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_FILE_FULLSCREEN,     VIRTKEY, NOINVERT
+    "G",            ID_GRAB,                VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_FILE_SIZE_HALF,      VIRTKEY, NOINVERT
+    "J",            ID_JUMPTOTIME,          VIRTKEY, NOINVERT
+    "L",            ID_SUBTITLES_LOAD,      VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_SIZE_NORMAL,    VIRTKEY, NOINVERT
+    "O",            ID_FILE_OPENCLIP,       VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_OPTIONS,             VIRTKEY, ALT, NOINVERT
+    "P",            ID_PLAYLIST_OPEN,       VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_SHUFFLE,             VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SUBTITLES_OFF,       VIRTKEY, NOINVERT
+    "S",            ID_PLAYLIST_SAVE,       VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_VISUAL,              VIRTKEY, NOINVERT
+    "V",            ID_FILE_STOP,           VIRTKEY, NOINVERT
+    "V",            ID_PASTE,               VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_CONTROL_STOPAFTERCURRENT, VIRTKEY, SHIFT, NOINVERT
+    VK_ADD,         ID_SUBTITLES_LARGER,    VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_PLAYLIST_REMOVE,     VIRTKEY, NOINVERT
+    VK_DELETE,      ID_PLAYLIST_REMOVEALL,  VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_SUBTITLES_MOVEDOWN,  VIRTKEY, ALT, NOINVERT
+    VK_F5,          ID_RATE_DECREASE,       VIRTKEY, NOINVERT
+    VK_F6,          ID_RATE_INCREASE,       VIRTKEY, NOINVERT
+    VK_F7,          ID_RATE_NORMAL,         VIRTKEY, NOINVERT
+    VK_HOME,        ID_PLAYLIST_REMOVEPREVIOUS, VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        ID_SUBTITLES_EARLIER,   VIRTKEY, ALT, NOINVERT
+    VK_RIGHT,       ID_SUBTITLES_LATER,     VIRTKEY, ALT, NOINVERT
+    VK_SPACE,       ID_SINGLE_STEP,         VIRTKEY, NOINVERT
+    VK_SUBTRACT,    ID_SUBTITLES_SMALLER,   VIRTKEY, ALT, NOINVERT
+    VK_UP,          ID_SUBTITLES_MOVEUP,    VIRTKEY, ALT, NOINVERT
+    "X",            ID_FILE_PLAY,           VIRTKEY, NOINVERT
+    "Z",            ID_FILE_PREVIOUS,       VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PLAYBTN             BITMAP  MOVEABLE PURE   "Playbtn.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_RATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_JUMP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 97
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    OPTIONS_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    OPTIONS_AUDIO1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_SUBTTIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    OPTIONS_SUBTITLES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_KEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_URL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    OPTIONS_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    OPTIONS_START, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_CD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    OPTIONS_CDDB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_MULTCD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    OPTIONS_LOCALCDDB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_SITES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    OPTIONS_AUDIO2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_AUDIO_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    OPTIONS_CD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    OPTIONS_PLAYLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DDCOLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Czech resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

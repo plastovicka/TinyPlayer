@@ -1,0 +1,53 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "oscilosc"=.\source\oscilosc\oscilosc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "spectrum"=.\source\spectrum\spectrum.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "tinyplay"=.\source\tinyplay.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

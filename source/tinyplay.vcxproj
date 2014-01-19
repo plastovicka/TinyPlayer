@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Optimize Unicode|Win32">
+      <Configuration>Debug Optimize Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Unicode|Win32">
+      <Configuration>Debug Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Unicode|Win32">
+      <Configuration>Release Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9BA58974-79B6-4652-A7A3-0A5D6863858C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">.\Release_Unicode\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">.\Debug_Unicode\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">..\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">.\Debug_Optimize\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Lib;$(LibraryPath)</LibraryPath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">$(ProjectName)DBGW</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)DBG</TargetName>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">
+    <TargetName>$(ProjectName)DBGO</TargetName>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)2013</TargetName>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">
+    <TargetName>$(ProjectName)2013W</TargetName>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft Visual Studio\DXSDK\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release_Unicode/tinyplay.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/O1 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>NDEBUG;UNICODE;_WINDOWS;_MBCS;WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>hdr.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release_Unicode/tinyplay.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release_Unicode/</AssemblerListingLocation>
+      <ObjectFileName>.\Release_Unicode/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_Unicode/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent />
+    <Link>
+      <AdditionalDependencies>quartz.lib;wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release_Unicode/tinyplay.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>131072</StackCommitSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug_Unicode/tinyplay.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;_WINDOWS;WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>hdr.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug_Unicode/tinyplay.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug_Unicode/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug_Unicode/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug_Unicode/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent />
+    <Link>
+      <AdditionalDependencies>quartz.lib;wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug_Unicode/tinyplayDBGW.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>131072</StackCommitSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>C:\_Petr\CW\tinyplay\source\winamp.manifest</AdditionalManifestFiles>
+    </Manifest>
+    <PreLinkEvent>
+      <Command>c:\_petr\cw\hotkeyp\hotkeyp.exe -close window PlasPlayer</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/tinyplay.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>hdr.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/tinyplay.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent />
+    <Link>
+      <AdditionalDependencies>quartz.lib;wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/tinyplay98.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>131072</StackCommitSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/tinyplay.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;_WINDOWS;WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>hdr.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/tinyplay.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>quartz.lib;wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/tinyplayDBG.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>2097152</StackCommitSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug_Optimize/tinyplay.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>NDEBUG;UNICODE;_WINDOWS;_MBCS;WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>hdr.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug_Optimize/tinyplay.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug_Optimize/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug_Optimize/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug_Optimize/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent />
+    <Link>
+      <AdditionalDependencies>wsock32.lib;version.lib;comctl32.lib;winmm.lib;dxguid.lib;strmiids.lib;quartz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug_Optimize/tinyplayDBGW.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>131072</StackCommitSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aspi.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="assocext.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="cd.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="dvd.cpp" />
+    <ClCompile Include="dvdoptions.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="filter.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="freedb.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="lang.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="playctrl.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="playlist.cpp" />
+    <ClCompile Include="sound.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="tag.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="tinyplay.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="vsfilter.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="winamp.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="xml.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinSpace</Optimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tinyplay.rc">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Optimize Unicode|Win32'">NDEBUG;WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug Unicode|Win32'">NDEBUG;WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release Unicode|Win32'">NDEBUG;WIN32</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aspi.h" />
+    <ClInclude Include="assocext.h" />
+    <ClInclude Include="cd.h" />
+    <ClInclude Include="darray.h" />
+    <ClInclude Include="draw.h" />
+    <ClInclude Include="dvd.h" />
+    <ClInclude Include="filter.h" />
+    <ClInclude Include="hdr.h" />
+    <ClInclude Include="lang.h" />
+    <ClInclude Include="sound.h" />
+    <ClInclude Include="tinyplay.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="winamp.h" />
+    <ClInclude Include="xml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Playbtn.bmp" />
+    <None Include="tinyplay.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
