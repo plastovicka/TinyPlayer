@@ -1,0 +1,490 @@
+#CP1252
+;;;;;;;;
+; Menu ;
+;;;;;;;;
+
+401=&fitxer
+201=&Obrir fitxers...
+244=Obrir carpe&ta...
+287=Obrir U&RL...
+299=Executar D&VD
+295=E&xecutar audio CD
+293=CD &information...
+240=&Sempre en primer pla
+270=Capt&urar fotograma
+296=Esborrar fitxer
+278=fitxer &propietats...
+235=Esborrar configuracio
+406=&Llenguatge
+286=&Teclat...
+269=&Barra d'eines...
+256=&Font...
+263=&Colors...
+245=O&pcions...
+202=So&rtir
+
+408=&Llista de reproduccio
+257=&Obrir...
+258=&Guardar...
+248=&Esborrar tot
+266=Esborrar &Anterior
+229=Esborrar els se&leccionats
+288=&Retallar els seleccionats
+247=Seleccionar &tot
+251=&Deseleccionar tot
+250=&Invertir Seleccionarion
+205=&Mostrar actual
+268=Llegir &longituds
+242=Tornar a barrejar
+249=&Tornar enrera
+243=A&leatori
+
+402=&Control
+227=&Anterior
+213=E&xecutar
+203=P&ausa
+204=&Stop
+255=Parar despres de l'&actual
+228=&Proper
+253=Saltar &endavant
+254=Saltar &enrera
+261=&Saltar al minut...
+225=Saltar un foto&grama
+
+411=S&o
+297=&Equalitzador
+285=Commutar l'stream d'&audio
+215=&Stereo
+216=&Mono
+217=&esquerra
+218=&dreta
+219=M&utejar
+214=Guardar &WAV
+
+410=&Visualitzacio
+271=&Engegar/Apagar
+294=&Proper plugin
+282=Colors de V&ideo
+267=Transcorregut/Re&stant
+206=Avançament &manual
+231=Repe&tir tot
+262=Repetir pi&sta
+
+403=&Zoom
+209=&50%
+212=&75%
+208=&100%
+234=15&0%
+210=&200%
+232=Zoom &in
+233=Zoom &out
+207=&Pantalla completa
+239=Aspecte o&riginal 
+298=Aspecte de la pant&alla
+238=1&6 : 9
+237=&4 : 3
+
+404=&Velocitat
+224=0,5
+289=0,75
+222=&1
+290=1,25
+223=&2
+260=&Personlitzada...
+221=&Disminuir un 5%
+220=&Incrementar un 5%
+
+409=&Subtitols
+279=&Obrir...
+283=&Amagar
+284=&correcio del temps...
+274=&Mes aviat
+275=&Mes tard
+272=&Font...
+281=Disminuir &tamany
+280=&Incrementar tamany
+276=Moure &amunt
+277=Moure &avall
+
+407=F&iltres
+
+412=&DVD
+413=&Titol
+414=Ca&pitol
+303=&Proper capitol
+304=capitol &anterior
+305=Repla&y capitol
+308=&menu arrel
+302=Con&tinuar
+420=&Altres menus
+312=menu del &capitol
+309=menu del &subtitol 
+310=menu de l'A&udio 
+311=menu de l'A&ngle 
+313=menu del T&itol 
+415=An&gle
+416=&Audio
+417=Menu &Llenguatge
+419=&Subpicture
+307=Mostrar s&ubpicture
+306=Mostrar captures tancades
+
+405=&Ajuda
+252=&Llegir-me
+230=&Sobre...
+
+
+;;;;;;;;;;;
+; Opcions ;
+;;;;;;;;;;;
+
+20=Opcions
+
+24=Començar
+517=Activar finestra quan un fit&xer es obert des de l'Explorer
+575=Permetre &instancies multiples
+576=&Registrar extensions a l'iniciar el reproductor
+512=&extensions dels fitxers multimedia  
+513=ex&tensions associades
+519=Prioritat dels &processos:
+591=fitxer de Reproduir&list :
+
+25=General
+520=Al carregar multiples fitxers, &ordenar-los per ruta i nom
+579=&Activar salvapantalles quan no s'executi cap video
+522=&Saltar endavant/enrera:
+523=segons
+515=&Interval de redibuix de posicio i subtitols:
+554=Carregar la propera pista per endavant:  8 segons
+562="&Obrir carpeta..." caixa de dialeg Començar a carpeta:
+
+35=Llista de reproduccio
+578=Automaticament mostrar longitut i bitrate de &tots els fitxers de la llista de reproduccio
+577=Mostrar &guions i %20 com a espais
+564=Codificacacio &ISO-8859-1 pels tags ID3 i APEv1
+563=&Columnes:
+565=%nu - numero a Llista de reproduccio\n%fi -  fitxer nom\n%pa - fitxer ruta\n%ex - fitxer extensio\n%si - fitxer tamany (bytes)\n%bi - bitrate (kb/s)\n%le - longitud (min:sec)\n%ti - titol,    %tr - track\n%ar - Artistaa,  %al - album\n%ye - any,  %ge - genere\n%co - comentari,  %ta - tag
+592=&Finestra titol:
+
+26=Audio1
+526=1) Renderitzador d'audio inco&rporat
+525=2) Dispositiu d'Au&dio:
+559=Longitud del &buffer:
+514=&Canvi de pista:
+521=Pr&ebuffer:
+626=Check buffer &underrun
+532=&Escriure mostres d'audio al buffer cada
+533=Crear &notificacio de posicions
+535=posicions
+555=Superposicio de p&istes:
+
+32=Audio2
+531=&Interval de refresc de la visualitzacio:
+518=Prioritat de &Visualitzacio:
+569=Volum:
+570=&desactivat
+571=&master out
+572=&wave or CD
+538=&habilitat equalitzador
+568=&Fade out / Fade in
+528=&pausa
+529=&stop
+530=cer&car
+
+27=Video
+516=Obrir video a pantalla completa
+524=Mantenir la proporcio al redimensionar el video
+558=Mantenir la proporcio a pantalla completa
+593=&Amagar el cursor del ratolí
+546=Sobreposar l'us del mesclador 
+595=nomes per &subtitols
+596=&Sempre
+597=&mai
+
+28=Subtitols
+547=Obrir automaticament &subtitols
+536=requadrar &llapis per a la font de subtitol
+557=te&xt opac
+534=Temps &Maxim que es mostra el subtitol:
+553=carpeta de subtitols :
+574=&extensions de fitxer:
+550=&Color
+551=&Font
+
+34=Unitat CD
+541=Extraccio &digital d'audio
+548=&Llegir comandament:
+549=Intercan&viar els canals esquerra/dreta
+552=&Big endian (intercanviar alt / baix bytes)
+556=&Velocitat:
+594=Establir velocitat &periodicament cada
+625=sector
+560=&Numero de sectors per a cada lectura:
+561=&Habilitar CD-TEXT  (Artistaa, album, pista titols)
+
+14=LocalCDDB
+600=Car&peta:
+633=Forma&tejar
+601=Finestres
+602=Unix
+632=&Codificar
+604=UTF-8
+639=Habilitar &ordre de reproduccio personalitzada 
+
+29=freedb
+634=&Automaticament connectarar a freedb al reproduir un CD
+606=Servidor
+635=Ruta
+607=Port
+636=&Mostrar tota la llista de servidors
+642=Timeout:
+643=sec
+609=Usar pro&xy
+640=&Usuari
+641=&Password
+608=El teu &E-mail
+
+
+;;;;;;;;;;;;;;;;;;;;
+; Caixes de dialeg ;
+;;;;;;;;;;;;;;;;;;;;
+
+11=Sobre
+301=Versio
+
+21=Rate
+590=Velocitat (decimal de coma flotant):
+
+22=Saltar a un temps
+
+18=Obrir URL
+
+23=Colors
+586=Subtitols:
+580=Llista de reproduccio:
+581=els seleccionats:
+582=Reproduint:
+585=Temps:
+583=Progres:
+584=Barra d'eines:
+
+17=Subtitols correcio de temps
+537=Can&viar:
+539=E&cala:
+511=FPS
+542=Si els subtitols es mostres tambe
+543=aviat\ntard\nrapid\nslent
+544=usar
+545=negatiu shift\npositiu shift\nel mes baix escala\nla mes alta escala
+
+19=Dreceres de Teclat
+566=comandament:
+567=Tecla:
+
+16=Informacio del CD
+611=&Artista
+610=titol de l'Al&bum 
+613=&any
+614=&Genere
+615=&freedb
+638=&Ordre de reproduccio
+612=&Comentari
+646=Revisio:
+648=Lle&gir CD-TEXT
+617=&Llegir desde CDDB local 
+630=&Esborrar desde CDDB local 
+616=&Guardar a CDDB local 
+618=&Preguntar a freedb
+619=Enviar a freedb
+644=Esborrar tot
+647=Longitud total:
+620=#
+621=titol
+622=Offset
+623=Len.
+624=Comentari
+
+15=Resultat multiple
+631=S'han trobat mes CDs ambel mateix ID. N'has de triar un d'aquests.
+
+12=Servidors Freedb
+637=&Actualitzar
+
+;Equalitzador
+540=Reset
+
+36=controls de color
+685=Brillo:
+686=Contrast:
+687=Saturacio:
+688=To:
+689=Gamma:
+684=Default
+
+33=propietats de la renderitzacio d'Audio
+915=Formatejar:
+903=Longitud de la mostra:
+916=Underruns (insuficiència de dades):
+917=Bloquejos de buffer fets:
+904=Dades buffered:
+
+30=Oscil.loscopi
+901=Offset
+902=Escala
+905=esquerra
+906=dreta
+907=Linia
+
+31=Analitzador d'espectre
+900=Gain (guany)
+912=Bandes
+909=Barres
+910=Pics
+911=Separador
+908=Fons
+913=Velocitat de la caiguda de pic
+914=Velocitat de la caiguda de la barra
+
+
+;;;;;;;;;;;;;;;;;
+; Barra d'eines ;
+;;;;;;;;;;;;;;;;;
+
+1227=Anterior
+1213=Reproduir
+1203=Pausa
+1204=Stop
+1228=Proper
+1201=Obrir fitxers
+1244=Obrir carpeta
+1248=Esborrar tot
+1245=Opcions
+1207=Pantalla completa
+1225=Pas
+1253=Saltar endavant
+1254=Saltar enrera
+1258=Guardar Llista de reproduccio
+1256=Font
+1232=Zoom in
+1233=Zoom out
+1271=Visualitzacio
+1278=Informacio del fitxer
+1287=Obrir URL
+1295=Reproduir CD
+1297=Equalitzador
+1299=Reproduir DVD
+
+
+;;;;;;;;;;;;;;;;;;;;
+; Missatge d'error ;
+;;;;;;;;;;;;;;;;;;;;
+
+739=fitxer %s no trobat
+730=No es pot Obrir fitxer %s
+733=No es pot crear fitxer %s
+754=Error Llegint fitxer %s
+734=l'Escriptura ha fallat: %s
+753=fitxer %s es massa llarg
+735=No es pot escriure al registre de Windows
+862=Has de Seleccionar a carpeta que contingui la base de dades del teu CD (menu fitxer / Opcions / LocalCDDB)
+790=No hi ha cap CD a la unitat
+865=No hi ha cap pista d'audio al CD
+867=No es pot accedir a la unitat de CD (error %d)
+798=La informacio del CD s'ha trobat a cdReproduirer.ini
+796=El CD no s'ha trobat a la base de dades local
+797=El CD no s'ha trobat al directori "%s"
+793=No hi ha cap CD-TEXT en aquest CD
+783=Aquesta funcio no esta disponible.\nprova d'instalar DirectX 9.
+784=ha fallat al capturar el fotograma
+786=No es poden carregar els subtitols !\nfitxer: %s
+782=No s'esta reproduint cap video
+863=El servidor freedb no es trobar o no esta connectarat a internet
+864=No es pot connectar al servidor freedb.\nProva mes tard o tria un altre servidor a les opcions.
+859=El servidor freedb ha retornat un error o resultat amb format incorrecte
+860=El servidor freedb no respon a la teva peticio
+794=Has d'especificar el teu email (menu fitxer / Opcions)
+795=Has d'omplir pista de titols, Artista, album i categoria freedb
+799=Hi ha un altre CD a la categoria %s que te una id=%s !
+792=Aquest CD encara no esta la base de dades d'internet
+785=La visualitzacio de DLL no exporta les funcions requerides
+866=%c: no es una lletra valida de unitat CD
+789=El dispositiu d'audio ha fallat (l'esta fent servir una altra aplicacio ?)
+868=No hi ha cap DVD a la unitat
+780=No es pot reproduir %s
+788=Aquest fitxer nomes te un stream d'audio
+781=Has d'escollir el renderitzador d'audio incorporat si vols equalitzador
+755=Error a la %s\nLinia %d
+756=Error al %s\nMissatge numero %d es massa gran
+757=Error de %s\nnumero duplicat %d
+791=Vols Esborrar el fitxer %s ?
+861=Vols Guardar la informacio del CD a la base de dades local ?
+869=Has de escollir "Habilitar equalitzador" a les Opcions
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;Informacio del fitxer multimedia
+670=fitxer: %s\ntamany: %I64d bytes\n
+681=Longitud Total: %d:%02d\n\n
+673=Longitud: %.3f segons\n
+671=\ntamany del video original: %d x %d\ntamany del video mostrat: %d x %d\n
+672=Frame rate (velocitat dels fotogrames): %.3f\n
+677=%d Hz, %d bit, %s\n
+
+;Llista de reproduccio Columnes
+651=nom del fitxer
+652=Tipus
+653=Bitrate
+654=Longitud
+655=Ruta
+656=tamany
+
+;prioritat del proces
+660=baixa
+661=normal
+662=alta
+663=temps real
+664=per sota del normal
+665=per sobre del normal
+
+;Thprioritat de lectura
+690=baixa
+691=la mes baixa
+692=per sota del  normal
+693=normal
+694=per sobre del normal
+
+;filtres d'extensions de fitxer
+501=tots els fitxers
+500=fitxers multimedia
+502=Llista de reproduccio
+503=Subtitols
+
+;Modificadors de Teclat
+667=Ctrl+
+668=Shift+
+669=Alt+
+
+;Botons de dialeg
+1=OK
+2=Cancel.lar
+8=Tancar
+10=Seleccionar
+
+;Fitxer d'Ajuda
+13=tinyPlay_EN.txt
+
+;Tags
+1000=titol
+1001=Artista
+1002=Album
+1003=Pista
+1004=any
+1005=Comentari
+1006=Genere
+1007=Copyright
+1008=Codificat per
+1009=URL
+1010=Descripcio
+1011=Compositor
+1012=Artista original
+1013=Tag
