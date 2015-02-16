@@ -241,9 +241,9 @@ IDI_PLAYWND             ICON    DISCARDABLE     "tinyplay.ico"
 IDD_ABOUTBOX DIALOG DISCARDABLE  52, 18, 113, 104
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About"
-FONT 11, "MS Sans Serif"
+FONT 11, "MS Shell Dlg"
 BEGIN
-    CTEXT           "(C) 2004-2011  Petr Lastovicka",300,4,50,104,10
+    CTEXT           "(C) 2004-2015  Petr Lastovicka",300,4,50,104,10
     CTEXT           "Version",301,36,24,28,9
     CTEXT           "Tiny Player",IDC_STATIC,36,6,40,9
     ICON            IDI_PLAYWND,IDC_STATIC,12,18,20,20,SS_CENTERIMAGE
@@ -734,7 +734,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2,8,4,0
+ FILEVERSION 2,8,4,2
  PRODUCTVERSION 0,0,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -753,9 +753,9 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "Petr Laštovièka\0"
             VALUE "FileDescription", "Tiny Player\0"
-            VALUE "FileVersion", "2, 8, 4, 0\0"
+            VALUE "FileVersion", "2, 8, 4, 2\0"
             VALUE "InternalName", "\0"
-            VALUE "LegalCopyright", "(c) 2004-2012 Petr Lastovicka\0"
+            VALUE "LegalCopyright", "(c) 2004-2015 Petr Lastovicka\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "tinyplay.exe\0"
             VALUE "PrivateBuild", "\0"
