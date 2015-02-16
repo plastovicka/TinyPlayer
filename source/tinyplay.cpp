@@ -3050,6 +3050,12 @@ int PASCAL WinMain(HINSTANCE hInstance, HINSTANCE hPrev, LPSTR cmdLine, int cmdS
 		}
 	}
 	inst = hInstance;
+
+	//DPIAware
+	typedef BOOL(WINAPI *TGetProcAddress)();
+	TGetProcAddress getProcAddress = (TGetProcAddress)GetProcAddress(GetModuleHandle(_T("user32")), "SetProcessDPIAware");
+	if(getProcAddress) getProcAddress();
+
 	_tcscpy(subtExt, _T("sub;srt;txt;aqt;dks;stf"));
 	_tcscpy(listExt, _T("m3u;wpl;asx;wax;wvx"));
 	_tcscpy(outRender, _T("Default DirectSound Device"));
