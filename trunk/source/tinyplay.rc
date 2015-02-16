@@ -306,7 +306,7 @@ END
 
 OPTIONS_GENERAL DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL         "When loading multiple files, &sort them by path and name",
                     IDC_SORTONLOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
@@ -329,7 +329,7 @@ END
 
 OPTIONS_AUDIO1 DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL         "1)  Built-in audio &renderer",IDC_USEDS,"Button",
                     BS_AUTORADIOBUTTON | WS_GROUP,9,7,254,10
@@ -389,7 +389,7 @@ END
 
 OPTIONS_SUBTITLES DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL         "Automatically open &subtitles",IDC_SUBTAUTOLOAD,"Button",
                     BS_AUTOCHECKBOX | WS_TABSTOP,7,10,256,10
@@ -435,7 +435,7 @@ END
 
 OPTIONS_VIDEO DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL         "Open video in &full screen",IDC_FULLSCREEN,"Button",
                     BS_AUTOCHECKBOX | WS_TABSTOP,10,9,253,10
@@ -456,7 +456,7 @@ END
 
 OPTIONS_START DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL         "Activate window when a &file is opened from Explorer",
                     IDC_STARTFOREGROUND,"Button",BS_AUTOCHECKBOX | 
@@ -524,7 +524,7 @@ END
 
 OPTIONS_CDDB DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL         "&Automatically connect to freedb when playing CD",
                     IDC_AUTO_CONNECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
@@ -570,7 +570,7 @@ END
 
 OPTIONS_LOCALCDDB DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     CTEXT           "Fol&der:",IDC_SFOLDER,4,20,36,8,NOT WS_GROUP
     EDITTEXT        IDC_CDDBFOLDER,45,18,186,14,ES_AUTOHSCROLL
@@ -603,7 +603,7 @@ END
 
 OPTIONS_AUDIO2 DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     LTEXT           "&Interval of redrawing visualization:",IDC_SVISTIMER,11,
                     9,140,8
@@ -653,7 +653,7 @@ END
 
 OPTIONS_CD DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL         "&Digital audio extraction",IDC_CDDA,"Button",
                     BS_AUTOCHECKBOX | WS_TABSTOP,16,7,247,10
@@ -683,7 +683,7 @@ END
 
 OPTIONS_PLAYLIST DIALOG DISCARDABLE  0, 0, 270, 175
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL         "Automatically display length and bitrate of &all files in the playlist",
                     IDC_AUTOINFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,10,
