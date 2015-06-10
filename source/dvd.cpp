@@ -339,7 +339,7 @@ bool dvdRate(double rate)
 	return true;
 }
 
-HRESULT dvdRender(IGraphBuilder *pGB, TCHAR *fileName)
+HRESULT dvdRender(IGraphBuilder *_pGB, TCHAR *fileName)
 {
 	IBaseFilter *pBF;
 	if(FAILED(pDvdControl->QueryInterface(IID_IBaseFilter, (void **)&pBF))){
@@ -355,7 +355,7 @@ HRESULT dvdRender(IGraphBuilder *pGB, TCHAR *fileName)
 		convertT2W(dvdPath, w);
 		pDvdControl->SetDVDDirectory(w);
 	}
-	pGB->AddFilter(pBF, L"DVD Navigator");
+	_pGB->AddFilter(pBF, L"DVD Navigator");
 	//render all pins
 	IPin *pins[3];
 	ULONG c;
@@ -366,7 +366,7 @@ HRESULT dvdRender(IGraphBuilder *pGB, TCHAR *fileName)
 	pEnumPins->Release();
 	int n=0;
 	for(ULONG i=0; i<c; i++){
-		if(SUCCEEDED(pGB->Render(pins[i]))) n++;
+		if(SUCCEEDED(_pGB->Render(pins[i]))) n++;
 		pins[i]->Release();
 	}
 	//check if there is a disc

@@ -100,12 +100,12 @@ CScopeWindow::~CScopeWindow()
 }
 
 //property dialog box initialization
-void CScopeWindow::init(HWND hwndDlg)
+void CScopeWindow::init(HWND hWnd)
 {
-	this->hwndDlg = hwndDlg;
-	hwndGain =     GetDlgItem(hwndDlg, IDC_GAIN);
-	hwndOffset =   GetDlgItem(hwndDlg, IDC_OFFSET);
-	hwndTimebase = GetDlgItem(hwndDlg, IDC_TIMEBASE);
+	this->hwndDlg = hWnd;
+	hwndGain =     GetDlgItem(hWnd, IDC_GAIN);
+	hwndOffset =   GetDlgItem(hWnd, IDC_OFFSET);
+	hwndTimebase = GetDlgItem(hWnd, IDC_TIMEBASE);
 
 	//set the scroll ranges for the trackbars
 	SendMessage(hwndGain, TBM_SETRANGE, TRUE, MAKELONG(MinGain, MaxGain));

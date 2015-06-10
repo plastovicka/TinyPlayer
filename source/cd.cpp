@@ -1254,7 +1254,7 @@ BOOL CALLBACK cdProc(HWND hWnd, UINT mesg, WPARAM wP, LPARAM lP)
 	static const int Mbuf=1024;
 	TCHAR *buf= (TCHAR*)_alloca(Mbuf*2);
 	static char *colNames[]={"#", "Title", "Offset", "Len.", "Comment"};
-	static int colWidth[]={25, 210, 55, 42, 250};
+	static int columnWidth[]={25, 210, 55, 42, 250};
 	static TcdStrValue strOpts[]={
 		{&TcdInfo::Album, IDC_CDALBUM},
 		{&TcdInfo::Artist, IDC_CDARTIST},
@@ -1285,9 +1285,9 @@ BOOL CALLBACK cdProc(HWND hWnd, UINT mesg, WPARAM wP, LPARAM lP)
 			dc=GetDC(hWnd);
 			n= GetDeviceCaps(dc, LOGPIXELSX);
 			ReleaseDC(hWnd, dc);
-			for(i=0; i<sizeA(colWidth); i++){
+			for(i=0; i<sizeA(columnWidth); i++){
 				lvc.iSubItem = i;
-				lvc.cx = colWidth[i]*n/96;
+				lvc.cx = columnWidth[i]*n/96;
 				convertA2T(colNames[i], cn);
 				lvc.pszText = lng(620+i, cn);
 				ListView_InsertColumn(trackList, i, &lvc);
@@ -1308,7 +1308,7 @@ BOOL CALLBACK cdProc(HWND hWnd, UINT mesg, WPARAM wP, LPARAM lP)
 				case LVN_GETDISPINFO:
 					pnmv= (LV_DISPINFO*)lP;
 					if(pnmv->item.mask & LVIF_TEXT){
-						TCHAR *s = pnmv->item.pszText;
+						s = pnmv->item.pszText;
 						*s=0;
 						k= pnmv->item.iItem+1;
 						if(k>obj->trackN2) break;
@@ -1408,9 +1408,9 @@ BOOL CALLBACK cdProc(HWND hWnd, UINT mesg, WPARAM wP, LPARAM lP)
 					if(trackN){
 						s=buf;
 						for(i=0; i<playlist.len; i++){
-							Titem *t= &playlist[i];
-							if(isCDA(t) && toupper(t->file[0])==cdLetter){
-								s+=_stprintf(s, _T("%d,"), getCDtrack(t)-1);
+							Titem *item= &playlist[i];
+							if(isCDA(item) && toupper(item->file[0])==cdLetter){
+								s+=_stprintf(s, _T("%d,"), getCDtrack(item)-1);
 							}
 						}
 						if(s==buf){

@@ -102,13 +102,13 @@ CSpectrumWindow::~CSpectrumWindow()
 }
 
 //property dialog box initialization
-void CSpectrumWindow::init(HWND hwndDlg)
+void CSpectrumWindow::init(HWND hWnd)
 {
-	this->hwndDlg = hwndDlg;
-	hwndGain = GetDlgItem(hwndDlg, IDC_GAIN);
-	hwndBands = GetDlgItem(hwndDlg, IDC_BANDS);
-	hwndPeakFall = GetDlgItem(hwndDlg, IDC_PEAKFALL);
-	hwndBarFall = GetDlgItem(hwndDlg, IDC_BARFALL);
+	this->hwndDlg = hWnd;
+	hwndGain = GetDlgItem(hWnd, IDC_GAIN);
+	hwndBands = GetDlgItem(hWnd, IDC_BANDS);
+	hwndPeakFall = GetDlgItem(hWnd, IDC_PEAKFALL);
+	hwndBarFall = GetDlgItem(hWnd, IDC_BARFALL);
 
 	//set the scroll ranges for the trackbars
 	SendMessage(hwndGain, TBM_SETRANGE, TRUE, MAKELONG(MinGain, MaxGain));
@@ -120,7 +120,7 @@ void CSpectrumWindow::init(HWND hwndDlg)
 	SendMessage(hwndBarFall, TBM_SETRANGE, TRUE, MAKELONG(MinBarFall, MaxBarFall));
 	SendMessage(hwndBarFall, TBM_SETPOS, TRUE, (LPARAM)barSpeed);
 
-	CheckRadioButton(hwndDlg, IDC_MONO, IDC_STEREO, isStereo ? IDC_STEREO : IDC_MONO);
+	CheckRadioButton(hWnd, IDC_MONO, IDC_STEREO, isStereo ? IDC_STEREO : IDC_MONO);
 	invalidate();
 }
 

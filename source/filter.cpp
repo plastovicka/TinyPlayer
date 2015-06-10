@@ -789,7 +789,7 @@ IMediaSample *VisualizationFilter::Copy(IMediaSample *pSource)
 	ASSERT(pDest);
 	IMediaSample2 *pSample2;
 	if(SUCCEEDED(pDest->QueryInterface(IID_IMediaSample2, (void **)&pSample2))){
-		HRESULT hr = pSample2->SetProperties(
+		hr = pSample2->SetProperties(
 			FIELD_OFFSET(AM_SAMPLE2_PROPERTIES, pbBuffer),
 			(PBYTE)m_pInput->SampleProps());
 		pSample2->Release();

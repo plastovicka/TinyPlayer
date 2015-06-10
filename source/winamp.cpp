@@ -127,7 +127,7 @@ int waCmpExt(char *ext, char *s)
 bool Winamp::open(Titem *item, int action)
 {
 	int i, k;
-	In_Module *in;
+	In_Module *in_mod;
 	char *ext;
 	AudioFilter *ds=0;
 	HRESULT hr;
@@ -159,14 +159,14 @@ bool Winamp::open(Titem *item, int action)
 	}
 	for(k=action; k<2; k++){
 		for(i=0; i<plugins.len; i++){
-			in=plugins[i];
-			if(k ? waCmpExt(ext, in->FileExtensions) : in->IsOurFile(fnA)){
+			in_mod=plugins[i];
+			if(k ? waCmpExt(ext, in_mod->FileExtensions) : in_mod->IsOurFile(fnA)){
 				if(action==0){ //play
-					Winamp::in=in;
+					Winamp::in=in_mod;
 					waAudioFilter=ds;
 					waBufOk=false;
-					if(!in->Play(fnA)){
-						if(in->UsesOutputPlug){
+					if(!in_mod->Play(fnA)){
+						if(in_mod->UsesOutputPlug){
 							//many plugins create audio buffer in Play()
 							//mp3 plugin creates buffer later, so we have to wait
 							int cnt=500;
@@ -180,7 +180,7 @@ bool Winamp::open(Titem *item, int action)
 				}
 				else{ //get duration
 					int d=0;
-					in->GetFileInfo(fnA, title, &d);
+					in_mod->GetFileInfo(fnA, title, &d);
 					if(d>0){
 						item->length=LONGLONG(d)*10000;
 						return true;
@@ -275,9 +275,9 @@ void Winamp::unloadPlugins()
 {
 	if(lock || waAudioFilter) return;
 	for(int i=0; i<plugins.len; i++){
-		In_Module *in= plugins[i];
-		in->Quit();
-		FreeLibrary(in->hDllInstance);
+		In_Module *in_mod= plugins[i];
+		in_mod->Quit();
+		FreeLibrary(in_mod->hDllInstance);
 	}
 	plugins.reset();
 }
