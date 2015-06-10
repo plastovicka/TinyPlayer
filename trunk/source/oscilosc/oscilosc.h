@@ -42,7 +42,7 @@ public:
 
 	CScopeWindow(HWND visualWnd);
 	~CScopeWindow();
-	void init(HWND hwndDlg);
+	void init(HWND hWnd);
 	void setFormat(WAVEFORMATEX *pwf);
 	void setSize(int x, int y, HDC dc);
 };

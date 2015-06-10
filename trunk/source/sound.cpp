@@ -161,8 +161,8 @@ void AudioFilter::setNotify()
 {
 	useNotify=false;
 	if(!dsUseNotif) return;
-	IDirectSoundNotify *notify;
-	HRESULT hr= buffer->QueryInterface(IID_IDirectSoundNotify, (void**)&notify);
+	IDirectSoundNotify *_notify;
+	HRESULT hr= buffer->QueryInterface(IID_IDirectSoundNotify, (void**)&_notify);
 	if(hr==S_OK){
 		if(!notifyEvent) notifyEvent= CreateEvent(0, FALSE, FALSE, 0);
 		aminmax(dsNnotif, 2, Mnotif);
@@ -171,9 +171,9 @@ void AudioFilter::setNotify()
 			pn[i].dwOffset=bufSize/dsNnotif*(i+1)-1;
 			pn[i].hEventNotify=notifyEvent;
 		}
-		hr= notify->SetNotificationPositions(dsNnotif, pn);
+		hr= _notify->SetNotificationPositions(dsNnotif, pn);
 		if(hr==DS_OK && notifyEvent) useNotify=true;
-		notify->Release();
+		_notify->Release();
 	}
 }
 
@@ -663,7 +663,7 @@ AudioFilter::Pause()
 	if(m_State != State_Paused){
 		if(m_State == State_Stopped){
 			if(m_pInput->IsConnected()){
-				HRESULT hr= m_pInput->m_pAllocator->Commit();
+				hr= m_pInput->m_pAllocator->Commit();
 				if(FAILED(hr)) goto lend;
 			}
 			if(!playing){

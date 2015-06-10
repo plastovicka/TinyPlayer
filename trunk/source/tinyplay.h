@@ -219,7 +219,7 @@ void setMouse();
 void PlayClip();
 void CloseClip();
 void nextClip();
-HRESULT renderFile(IGraphBuilder *pGB, TCHAR *fileName);
+HRESULT renderFile(IGraphBuilder *_pGB, TCHAR *fileName);
 void setRate(double rate);
 void modifyRate(double incr);
 void StepFrame();

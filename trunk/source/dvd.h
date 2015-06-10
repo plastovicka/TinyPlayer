@@ -16,7 +16,7 @@
 LRESULT CALLBACK dvdWndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 LRESULT CALLBACK dvdWndMainProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 
-HRESULT dvdRender(IGraphBuilder *pGB, TCHAR *fileName);
+HRESULT dvdRender(IGraphBuilder *_pGB, TCHAR *fileName);
 bool dvdRate(double rate);
 void updateDVD();
 void dvdHiliteTitle();

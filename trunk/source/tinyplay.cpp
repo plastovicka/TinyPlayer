@@ -1231,9 +1231,9 @@ void mouseMoveFull()
 		if(p.x!=p1.x || p.y!=p1.y){
 			p1=p;
 			fullMoves++;
-			int tick = GetTickCount();
-			if(tick-tick1 > 3000) fullMoves=0;
-			tick1=tick;
+			int tick2 = GetTickCount();
+			if(tick2-tick1 > 3000) fullMoves=0;
+			tick1=tick2;
 		}
 		if(fullMoves<12) return;
 		winOnFull=true;
@@ -3015,8 +3015,8 @@ int PASCAL WinMain(HINSTANCE hInstance, HINSTANCE hPrev, LPSTR cmdLine, int cmdS
 
 	HKEY key;
 	if(RegOpenKeyEx(HKEY_CURRENT_USER, subkey, 0, KEY_QUERY_VALUE, &key)==ERROR_SUCCESS){
-		DWORD d=sizeof(int);
-		RegQueryValueEx(key, _T("multInst"), 0, 0, (BYTE *)&multInst, &d);
+		DWORD sz=sizeof(int);
+		RegQueryValueEx(key, _T("multInst"), 0, 0, (BYTE *)&multInst, &sz);
 		RegCloseKey(key);
 	}
 	// check if the player is already running

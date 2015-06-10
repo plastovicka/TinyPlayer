@@ -84,8 +84,8 @@ void rdAVI(TCHAR *fn)
 		ReadFile(f, buf, sizeof(buf), &r, 0);
 		if(buf[2]==MAKEFOURCC('A', 'V', 'I', ' ') && r>=36
 				&& buf[6]==MAKEFOURCC('a', 'v', 'i', 'h')){
-			DWORD f= buf[8];
-			if(f>1000 && f<5000000) frameRate=1000000/(double)f;
+			DWORD fr= buf[8];
+			if(fr>1000 && fr<5000000) frameRate=1000000/(double)fr;
 			isAvi=true;
 		}
 		else if(buf[0]==MAKEFOURCC('O', 'g', 'g', 'S')){
@@ -102,7 +102,7 @@ void rdAVI(TCHAR *fn)
 
 //------------------------------------------------------------------
 //returns fullscreen window rectangle and sets scrW,scrH
-void getScreen(RECT *rc, RECT *rcWork, int videoLeft, int videoTop, int videoWidth, int videoHeight)
+void getScreen(RECT *rc, RECT *rcWork, int left, int top, int width, int height)
 {
 	int vx, vy;
 	bool ok=false;
@@ -110,7 +110,7 @@ void getScreen(RECT *rc, RECT *rcWork, int videoLeft, int videoTop, int videoWid
 	vx=vy=0;
 	if(multiMonitors()){
 		RECT rcd;
-		SetRect(&rcd, videoLeft, videoTop, videoLeft + videoWidth, videoTop + videoHeight);
+		SetRect(&rcd, left, top, left + width, top + height);
 		MONITORINFO mi;
 		mi.cbSize = sizeof(mi);
 		if(getMonitorInfo(monitorFromRect(&rcd, MONITOR_DEFAULTTONEAREST), &mi)){
@@ -569,9 +569,9 @@ void CloseClip1(bool stop)
 	playBtn(ID_FILE_STOP);
 }
 
-HRESULT renderFile(IGraphBuilder *pGB, TCHAR *fileName)
+HRESULT renderFile(IGraphBuilder *_pGB, TCHAR *fileName)
 {
-	if(!audioFilter) enumAudioRenderers(2, pGB);
+	if(!audioFilter) enumAudioRenderers(2, _pGB);
 	HRESULT hr=S_OK;
 	VisualizationFilter *visFilter= audioFilter ? new AudioFilter(&hr) : new VisualizationFilter(&hr);
 	if(hr!=S_OK){
@@ -579,19 +579,19 @@ HRESULT renderFile(IGraphBuilder *pGB, TCHAR *fileName)
 		visFilter=0;
 	}
 	else{
-		pGB->AddFilter(visFilter, VISUAL_FILTER_NAMEW);
+		_pGB->AddFilter(visFilter, VISUAL_FILTER_NAMEW);
 	}
 	if(!audioFilter) AudioFilter::stop();
 
 	if(isDVD){
-		hr= dvdRender(pGB, fileName);
+		hr= dvdRender(_pGB, fileName);
 	}
 	else{
 		convertT2W(fileName, wFile);
-		hr= pGB->RenderFile(wFile, 0);
+		hr= _pGB->RenderFile(wFile, 0);
 	}
 	if(visFilter && !visFilter->m_pInput->IsConnected()){
-		pGB->RemoveFilter(visFilter);
+		_pGB->RemoveFilter(visFilter);
 	}
 	return hr;
 }
@@ -759,9 +759,9 @@ void beginPlay()
 						}
 						EnumFilters(mediaInfo, 0);
 						frameRate=0;
-						REFTIME t;
-						pBV->get_AvgTimePerFrame(&t);
-						if(t) frameRate= 1/t;
+						REFTIME tm;
+						pBV->get_AvgTimePerFrame(&tm);
+						if(tm) frameRate= 1/tm;
 						else rdAVI(fn);
 						if(subtitles.file) subtitles.reset();
 						if(subtAutoLoad) findSubtitles();
@@ -884,21 +884,21 @@ int getInfo(Titem *item)
 			result=1;
 		}
 		else{
-			IGraphBuilder *pGB;
-			IMediaSeeking *pMS;
+			IGraphBuilder *_pGB;
+			IMediaSeeking *_pMS;
 			if(SUCCEEDED(CoCreateInstance(CLSID_FilterGraph, NULL, CLSCTX_INPROC_SERVER,
-				IID_IGraphBuilder, (void **)&pGB))){
+				IID_IGraphBuilder, (void **)&_pGB))){
 				convertT2W(item->file, wFile);
-				if(SUCCEEDED(pGB->RenderFile(wFile, 0))){
-					pGB->QueryInterface(IID_IMediaSeeking, (void **)&pMS);
-					if(pMS){
-						if(SUCCEEDED(pMS->GetDuration(&item->length))){
+				if(SUCCEEDED(_pGB->RenderFile(wFile, 0))){
+					_pGB->QueryInterface(IID_IMediaSeeking, (void **)&_pMS);
+					if(_pMS){
+						if(SUCCEEDED(_pMS->GetDuration(&item->length))){
 							result=1;
 						}
-						pMS->Release();
+						_pMS->Release();
 					}
 				}
-				releaseGB(pGB);
+				releaseGB(_pGB);
 			}
 			if(!result){
 				Winamp::lock++;

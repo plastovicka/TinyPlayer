@@ -573,7 +573,7 @@ LRESULT CALLBACK listProc(HWND hWnd, UINT mesg, WPARAM wP, LPARAM lP)
 				dragStart= -1;
 				ReleaseCapture();
 				if(!dragged){
-					int i= getListItem(lP);
+					i= getListItem(lP);
 					if(i>0) SendMessage(listbox, LB_SELITEMRANGE, FALSE, MAKELPARAM(0, i-1));
 					SendMessage(listbox, LB_SELITEMRANGE, FALSE, MAKELPARAM(i+1, 65535));
 				}
@@ -1200,14 +1200,14 @@ void openFiles()
 		}
 		else{
 			//multiple files
-			TCHAR path[MAX_PATH];
-			lstrcpy(path, buf);
-			TCHAR *e= path+lstrlen(path);
+			TCHAR file[MAX_PATH];
+			lstrcpy(file, buf);
+			TCHAR *e= file+lstrlen(file);
 			if(e[-1]!='\\') *e++='\\';
 			numAdded=0;
 			for(; *s; s+=lstrlen(s)+1){
 				lstrcpy(e, s);
-				addFile1(path);
+				addFile1(file);
 			}
 			gotoFileN();
 		}
