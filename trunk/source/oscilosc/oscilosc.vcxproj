@@ -125,6 +125,7 @@
       </DataExecutionPrevention>
       <ImportLibrary>.\oscilosc___Win32_Release_Unicode/oscilosc.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -170,6 +171,7 @@
       </DataExecutionPrevention>
       <ImportLibrary>.\Release/oscilosc.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
     </Link>
     <PostBuildEvent />
   </ItemDefinitionGroup>
@@ -219,6 +221,7 @@
       <ImportLibrary>.\Debug/oscilosc.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
