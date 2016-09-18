@@ -1,5 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oscilosc", "source\oscilosc\oscilosc.vcxproj", "{1B5CCE1B-42A5-4E79-AEC3-685865664035}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spectrum", "source\spectrum\spectrum.vcxproj", "{9786831F-36A4-4034-A155-F8743055850C}"
@@ -19,7 +21,6 @@ Global
 		{1B5CCE1B-42A5-4E79-AEC3-685865664035}.Debug Optimize Unicode|Win32.Build.0 = Debug|Win32
 		{1B5CCE1B-42A5-4E79-AEC3-685865664035}.Debug Unicode|Win32.ActiveCfg = Debug|Win32
 		{1B5CCE1B-42A5-4E79-AEC3-685865664035}.Debug|Win32.ActiveCfg = Debug|Win32
-		{1B5CCE1B-42A5-4E79-AEC3-685865664035}.Debug|Win32.Build.0 = Debug|Win32
 		{1B5CCE1B-42A5-4E79-AEC3-685865664035}.Release Unicode|Win32.ActiveCfg = Release Unicode|Win32
 		{1B5CCE1B-42A5-4E79-AEC3-685865664035}.Release Unicode|Win32.Build.0 = Release Unicode|Win32
 		{1B5CCE1B-42A5-4E79-AEC3-685865664035}.Release|Win32.ActiveCfg = Release|Win32
@@ -28,7 +29,6 @@ Global
 		{9786831F-36A4-4034-A155-F8743055850C}.Debug Optimize Unicode|Win32.Build.0 = Debug|Win32
 		{9786831F-36A4-4034-A155-F8743055850C}.Debug Unicode|Win32.ActiveCfg = Debug|Win32
 		{9786831F-36A4-4034-A155-F8743055850C}.Debug|Win32.ActiveCfg = Debug|Win32
-		{9786831F-36A4-4034-A155-F8743055850C}.Debug|Win32.Build.0 = Debug|Win32
 		{9786831F-36A4-4034-A155-F8743055850C}.Release Unicode|Win32.ActiveCfg = Release Unicode|Win32
 		{9786831F-36A4-4034-A155-F8743055850C}.Release Unicode|Win32.Build.0 = Release Unicode|Win32
 		{9786831F-36A4-4034-A155-F8743055850C}.Release|Win32.ActiveCfg = Release|Win32

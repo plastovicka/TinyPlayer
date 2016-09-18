@@ -327,7 +327,7 @@ static void loadLang()
 				}
 #ifdef UNICODE
 				langFile= new TCHAR[len+3];
-				MultiByteToWideChar(cp, 0, langFileA, len, langFile, len);
+				len= MultiByteToWideChar(cp, 0, langFileA, len, langFile, len);
 				delete[] langFileA;
 #else
 				langFile= langFileA;
