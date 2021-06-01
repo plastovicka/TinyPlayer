@@ -172,6 +172,9 @@ Known bugs and problems
 
 What's new
 ----------
+2.8.4.3 (1 June 2021)
+Spanish translation
+
 2.8.4 (20 December 2012)
 fixed bugs:
 saving m3u playlist did not work in China

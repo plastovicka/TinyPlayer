@@ -1154,6 +1154,7 @@ void getCmdName(TCHAR *buf, int n, int cmd)
 		mii.fMask=MIIM_TYPE;
 		mii.dwTypeData=buf;
 		mii.cch= n;
+		*buf=0;
 		GetMenuItemInfo(GetMenu(hWin), cmd, FALSE, &mii);
 	}
 	for(s=d=buf; *s; s++){

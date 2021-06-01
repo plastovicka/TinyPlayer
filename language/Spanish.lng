@@ -1,0 +1,478 @@
+#CP1252
+; Traducción: Ricardo A. Rivas
+; https://sites.google.com/site/rivica
+
+; Menu
+;;;;;;;;;
+401=A&rchivo
+201=A&brir archivos
+244=Abrir &carpeta
+287=Ab&rir URL
+299=Reproducir D&VD
+295=R&eproducir CD de audio
+293=&Información de CD
+240=&Siempre visible
+270=Ca&pturar marco
+296=Eliminar archivo
+278=Propie&dades de archivo
+235=Eliminar ajustes
+406=&Idioma
+286=&Teclado
+269=Barra de &herramientas
+256=&Fuente
+263=C&olores
+245=Opcio&nes
+202=Sa&lir
+
+408=&Lista de reproducción
+257=&Abrir
+258=G&uardar
+248=R&emover todo
+266=Re&mover anterior
+229=Remo&ver selección
+288=Re&cortar selección
+247=Seleccionar &todo
+251=&No seleccionar
+250=&Invertir selección
+205=&Mostrar actual
+268=Leer &duraciones
+242=Re-&ordenar
+249=Rever&tir
+243=Aleat&orio
+
+402=&Control
+227=&Anterior
+213=&Reproducir
+203=&Pausar
+204=&Detener
+255=De&tener luego de actual
+228=&Siguiente
+253=A&vanzar
+254=Retr&oceder
+261=Sa&ltar a este tiempo
+225=Siguiente cua&dro
+
+411=&Sonido
+297=&Ecualizador
+285=&Cambiar calidad deaudio
+215=&Estéreo
+216=&Mono
+217=&Izquierda
+218=&Derecha
+219=Si&lencio
+214=Guardar &WAV
+
+410=&Visualización
+271=&Encender/Apagar
+294=&Siguiente complemento
+282=&Colores de video
+267=&Transcurrido/Restante
+206=&Avance manual
+231=&Repetir todo
+262=Re&petir pista
+
+403=&Zoom
+209=&50%
+212=&75%
+208=&100%
+234=15&0%
+210=200%
+232=&Agrandar
+233=&Reducir
+207=&Pantalla completa
+239=&Relación original
+298=Re&lación de pantalla
+238=1&6 : 9
+237=&4 : 3
+
+404=&Tasa
+224=0,5
+289=0,75
+222=&1
+290=1,25
+223=&2
+260=&Personalizada
+221=&Disminuir en 5%
+220=&Aumentar en 5%
+
+409=&Subtítulos
+279=&Abrir
+283=&Ocultar
+284=&Corrección de tiempo
+274=&Antes
+275=&Luego
+272=&Fuente
+281=&Disminuir tamaño
+280=A&umentar tamaño
+276=&Subir
+277=&Bajar
+
+407=F&iltros
+
+412=&DVD
+413=&Título
+414=C&apítulo
+303=&Siguiente capítulo
+304=A&nterior capítulo
+305=&Reproducir capítulo
+308=Menú &principal
+302=Reanu&dar
+420=&Otros menúes
+312=&Menú de capítulos
+309=Me&nú de subtítulos
+310=Menú de au&dio
+311=Menú de án&gulo
+313=Menú de &título
+415=Ángul&o
+416=&Audio
+417=&Idioma de menú
+419=&Sub-imagen
+307=Mostrar s&ubimagen
+306=Mostrar &close caption
+
+405=Ay&uda
+252=&Contenido
+230=&Detalles
+
+; Options
+;;;;;;;;;;;;
+20=Opciones
+
+24=Inicio
+517=&Activar ventana al abrir archivo desde Explorador
+575=&Permitir al menos dos ventanas
+576=&Registrar extensiones al iniciar reproductor
+512=&Extensiones de archivos multimedia
+513=E&xtensiones asociadas
+519=Pr&ioridad de proceso:
+591=&Lista de reproducción:
+
+25=Generales
+520=A&l cargar varios archivos, ordenarlos por ruta y nombre
+579=&Habilitar protector de pantalla de no reproducirse video alguno
+522=&Avanzar/retroceder:
+523=segundos
+515=&Intervalo de posición de re-trazado y subtítulos:
+554=&Precargar siguiente pista: 8 segundos
+562=&Recuadro de diálogo "Abrir carpeta" comienza en carpeta:
+
+35=Lista de reproducción
+578=&Auto-mostrar duración y tasa de bits de todo archivo en lista de reproducción
+577=&Mostrar piso (_) y %20 como espacios
+564=&Codificación ISO-8859-1 para etiquetas ID3 y APEv1
+563=C&olumnas:
+565=%nu - cifra en lista de reproducción\n%fi - Nombre de archivo\n%pa - ruta de archivo\n%ex - extensión de archivo\n%si - tamaño de archivo (bytes)\n%bi - tasa de bits (kb/s)\n%le - duración (min:seg)\n%ti - título, %tr - pista\n%ar - artista, %al - álbum\n%ye - año, %ge - género\n%co - comentarios, %ta - etiqueta
+592=&Título de ventana:
+
+26=Audio1
+526=1) &Renderizador incorporado de audio 
+525=2) &Dispositivo de audio:
+559=&Longitud de búfer:
+514=&Cambio de pista:
+521=Pr&ebúfer:
+626=Re&visar bajo rendimiento de búfer
+532=&Escribir muestras de audio en búfer cada
+533=Cr&ear posiciones de notificaciones
+535=posiciones
+555=&Superposición de pistas:
+
+32=Audio2
+531=&Intervalo de visualización de re-trazado:
+518=&Prioridad de visualización:
+569=Volumen:
+570=i&nhabilitado
+571=&master out
+572=&onda o CD
+538=&Habilitar ecualizador
+568=&Fade out / Fade in
+528=p&ausar
+529=&detener
+530=&buscar
+
+27=Video
+516=&Abrir video en pantalla completa
+524=&Mantener relación de aspecto al cambiar tamaño de video
+558=Ma&ntener relación de aspecto en pantalla completa
+593=&Ocultar cursor de ratón
+546=Uso de mezclador de superposición
+595=&sólo para subtítulos
+596=s&iempre
+597=n&unca
+
+28=Subtítulos
+547=&Auto-mostrar subtítulos
+536=&Pluma para fuente de subtítulos
+557=&Texto opaco
+534=&Máximo tiempo de visualización de subtítulos:
+553=Carpeta de subtítulos:
+574=&Extensiones de archivos:
+550=&Color
+551=&Fuente
+
+34=Unidad de CD
+541=&Extracción de audio digital
+548=&Comando de lectura:
+549=C&ambiar canales izquierdo/derecho
+552=&Big endian (intercambio de bytes altos / bajos)
+556=&Rapidez:
+594=Fijar rapidez &periódicamente cada
+625=sector
+560=&Cifra de sectores por lectura:
+561=&Habilitar texto de CD (artista, álbum, títulos de pistas)
+
+14=LocalCDDB
+600=&Carpeta:
+633=&Formato
+601=Windows
+602=Unix
+632=Co&dificación
+604=UTF-8
+639=Habilitar reproducción y orden personales
+
+29=freedb
+634=&Auto-conectar a freedb al reproducir CD
+606=Servidor
+635=Ruta
+607=Puerto
+636=&Mostrar toda lista de servidores
+642=Tiempo de espera:
+643=seg
+609=Usar pro&xy
+640=&Usuario
+641=&Contraseña
+608=C&orreo electrónico
+
+; Dialog boxes
+;;;;;;;;;;;;;;;;;;
+11=Detalles
+301=Versión
+
+21=Tasa
+590=Rapidez (decimal de punto flotante):
+
+22=Saltar a tiempo
+
+18=Abrir URL
+
+23=Colores
+586=Subtítulos:
+580=Lista de reproducción:
+581=Selección:
+582=Reproduciendo:
+585=Tiempo:
+583=Progreso:
+584=Barra de herramientas:
+
+17=Corrección de tiempo de subtítulos
+537=&Cambio:
+539=&Escala:
+511=FPS
+542=De mostrarse también subtítulos
+543=temprano\ntarde\nveloz\nlenta
+544=usar
+545=cambio negativo\ncambio positivo\nescala menor\nescala mayor
+
+19=Atajos de teclado
+566=Comando:
+567=Tecla:
+
+16=Información de CD
+611=&Artista
+610=&Título de álbum
+613=Añ&o
+614=Gé&nero
+615=&freedb
+638=O&rden de reproducción
+612=&Comentarios
+646=Revisión:
+648=&Leer texto de CD
+617=L&eer de CDDB local
+630=E&liminar de CDDB local
+616=&Guardar en CDDB local
+618=&Buscar freedb
+619=Enviar a freedb
+644=Borrar todo
+647=Duración total:
+620=#
+621=Título
+622=Offset
+623=Duración
+624=Comentarios
+
+15=Varios resultados
+631=Se encontraron más CDs con misma ID. Debe elegirse uno
+
+12=Servidores freedb
+637=&Actualizar
+
+;Equalizer
+540=Reinicio
+
+36=Controles de color
+685=Brillo:
+686=Contraste:
+687=Saturación:
+688=Tono:
+689=Gamma:
+684=Predeterminados
+
+33=Propiedades de renderizador de audio
+915=Formato:
+903=Longitud de muestra:
+916=Underruns:
+917=Bloqueos de búfer:
+904=Datos en búfer:
+
+30=Osciloscopio
+901=Offset
+902=Escala
+905=Izquierda
+906=Derecha
+907=Línea
+
+31=Analizador de espectro
+900=Ganancia
+912=Bandas
+909=Barras
+910=Picos
+911=Separador
+908=Fondo
+913=Rapidez de caída de picos
+914=Rapidez de caída de barras
+
+; Toolbar
+;;;;;;;;;;;;
+1227=Anterior
+1213=Reproducir
+1203=Pausar
+1204=Detener
+1228=Siguiente
+1201=Abrir archivos
+1244=Abrir carpeta
+1248=Remover todo
+1245=Opciones
+1207=Pantalla completa
+1225=Paso
+1253=Avanzar
+1254=Retroceder
+1258=Guardar lista de reproducción
+1256=Fuente
+1232=Agrandar
+1233=Reducir
+1271=Visualización
+1278=Información de archivo
+1287=Abrir URL
+1295=Reproducir CD
+1297=Ecualizador
+1299=Reproducir DVD
+
+; Error messages
+;;;;;;;;;;;;;;;;;;
+739=Archivo %s no encontrado
+730=Imposible abrir archivo %s
+733=Imposible crear archivo %s
+754=Error al leer archivo %s
+734=Error de escritura: %s
+753=Archivo %s demasiado largo
+735=Imposible escribir en Registro de Windows
+862=Debe elegirse carpeta de base de datos local de de CD (Menú Archivo / Opciones / LocalCDDB)
+790=No hay CD en unidad
+865=No hay pistas de audio en CD
+867=Imposible acceder a unidad de CD (error %d)
+798=Información de CD en cdplayer.ini
+796=CD no encontrado en base de datos local
+797=CD no encontrado en directorio "%s"
+793=No hay texto de CD en CD
+783=Función no disponible.\nIntentar instalar DirectX 9
+784=Error al capturar marco
+786=Imposible cargar subtítulos\nArchivo: %s
+782=No se reproduce video alguno
+863=Servidor freedb no encontrado o no hay conexión a Internet
+864=Imposible conectar a servidor freedb.\nRe-intentar o elegir otro servidor en opciones de programa
+859=Error devuelto por servidor freedb o resultado con formato incorrecto
+860=Servidor freedb no responde a solicitud
+794=Debe especificarse dirección de correo electrónico (Menú Archivo / Opciones)
+795=Debe indicarse título de pista, artista, álbum y categoría de freedb
+799=Hay otro CD en categoría %s con ID=%s
+792=Este CD no se halla en base de datos de Internet
+785=Visualización DLL no exporta funciones requeridas
+866 =%c: no es letra de unidad de CD
+789=Error en dispositivo de audio (¿usado por otra aplicación?)
+868=No hay DVD alguno en unidad
+780=Imposible reproducir %s
+788=Archivo solamente tiene una secuencia de audio
+781=Debe elegirse renderizador de audio incorporado de querer usar ecualizador
+755=Error en %s\nLínea %d
+756=Error en %s\Cifra de mensajes %d es enorme
+757=Error en %s\nNúmero duplicado %d
+791=¿Eliminar archivo %s?
+861=¿Guardar información de CD en base de datos local?
+869=Debe activarse "Habilitar ecualizador" en Opciones
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Media file info
+670=Archivo: %s\nTamaño: %I64d bytes\n
+681=Duración total: %d:%02d\n\n
+673=Duración: %.3f segundos\n
+671=\nTamaño de video original: %d x %d\nTamaño de video mostrado: %d x %d\n
+672=Tasa de cuadros: %.3f\n
+677=%d Hz, %d bit, %s\n
+
+;Playlist columns
+651=Nombre de archivo
+652=Tipo
+653=Tasa de bits
+654=Duración
+655=Ruta
+656=Tamaño
+
+;Process priority
+660=inactivo
+661=normal
+662=alta
+663=en tiempo real
+664=bajo lo normal
+665=sobre lo normal
+
+;Thread priority
+690=inactivo
+691=mínima
+692=bajo lo normal
+693=normal
+694=sobre lo normal
+
+;File extensions filters
+501=Todo archivo
+500=Archivos multimedia
+502=Lista de reproducción
+503=Subtítulos
+
+;Keyboard modifiers
+667=CTRL+
+668=Shift+
+669=Alt+
+
+;Dialog buttons
+1=Aceptar
+2=Cancelar
+8=Cerrar
+10=Seleccionar
+
+;Help file
+13=tinyplay_EN.txt
+
+;Tags
+1000=Título
+1001=Artista
+1002=Álbum
+1003=Pista
+1004=Año
+1005=Comentarios
+1006=Género
+1007=Derechos de autor
+1008=Codificado por
+1009=URL
+1010=Descripción
+1011=Compositor
+1012=Artista original
+1013=Etiqueta
