@@ -126,10 +126,8 @@ LINK32=link.exe
 # ADD LINK32 quartz.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib shell32.lib ole32.lib advapi32.lib oleaut32.lib wsock32.lib version.lib comctl32.lib winmm.lib dxguid.lib strmiids.lib /nologo /stack:0x200000,0x20000 /subsystem:windows /machine:I386 /out:"..\tinyplay.exe"
 # SUBTRACT LINK32 /map /debug /nodefaultlib
 # Begin Special Build Tool
-TargetPath=\_Petr\CW\tinyplay\tinyplay.exe
 SOURCE="$(InputPath)"
-PreLink_Cmds=c:\_petr\cw\hotkeyp\hotkeyp.exe -close window PlasPlayer
-PostBuild_Cmds=c:\programy\upx\upx -q $(TargetPath)
+PreLink_Cmds=C:\Programy\HotkeyP.exe -close window PlasPlayer
 # End Special Build Tool
 
 !ELSEIF  "$(CFG)" == "tinyplay - Win32 Debug Unicode"

@@ -243,7 +243,7 @@ STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About"
 FONT 11, "MS Shell Dlg"
 BEGIN
-    CTEXT           "(C) 2004-2015  Petr Lastovicka",300,4,50,104,10
+    CTEXT           "(C) 2004-2021  Petr Lastovicka",300,4,50,104,10
     CTEXT           "Version",301,36,24,28,9
     CTEXT           "Tiny Player",IDC_STATIC,36,6,40,9
     ICON            IDI_PLAYWND,IDC_STATIC,12,18,20,20,SS_CENTERIMAGE
@@ -275,33 +275,33 @@ BEGIN
     PUSHBUTTON      "Cancel",IDCANCEL,56,34,40,14
 END
 
-IDD_COLORS DIALOG DISCARDABLE  0, 0, 149, 178
+IDD_COLORS DIALOG DISCARDABLE  0, 0, 159, 178
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Colors"
 FONT 8, "MS Sans Serif"
 BEGIN
-    LTEXT           "Subtitles:",IDC_COLOR_SUBT,7,10,68,8
-    CONTROL         "",110,"Button",BS_OWNERDRAW | WS_TABSTOP,80,7,15,15
-    CONTROL         "",111,"Button",BS_OWNERDRAW | WS_TABSTOP,104,7,15,15
-    CONTROL         "",112,"Button",BS_OWNERDRAW | WS_TABSTOP,127,7,15,15
-    LTEXT           "Playlist:",IDC_COLOR_PLAYLIST,7,29,68,8
-    CONTROL         "",101,"Button",BS_OWNERDRAW | WS_TABSTOP,80,26,15,15
-    CONTROL         "",100,"Button",BS_OWNERDRAW | WS_TABSTOP,104,26,15,15
-    LTEXT           "Selected:",IDC_COLOR_SELECTED,7,49,68,8
-    CONTROL         "",103,"Button",BS_OWNERDRAW | WS_TABSTOP,80,47,15,15
-    CONTROL         "",102,"Button",BS_OWNERDRAW | WS_TABSTOP,104,47,15,15
-    LTEXT           "Playing:",IDC_COLOR_PLAYING,7,69,68,8
-    CONTROL         "",105,"Button",BS_OWNERDRAW | WS_TABSTOP,80,66,15,15
-    CONTROL         "",104,"Button",BS_OWNERDRAW | WS_TABSTOP,104,66,15,15
-    LTEXT           "Time:",IDC_COLOR_TIME,7,89,68,8
-    CONTROL         "",109,"Button",BS_OWNERDRAW | WS_TABSTOP,80,87,15,15
-    CONTROL         "",108,"Button",BS_OWNERDRAW | WS_TABSTOP,104,87,15,15
-    LTEXT           "Progress:",IDC_COLOR_PROGRESS,7,112,68,8
-    CONTROL         "",106,"Button",BS_OWNERDRAW | WS_TABSTOP,80,109,15,15
-    LTEXT           "Toolbar:",IDC_COLOR_TOOLBAR,7,132,68,8
-    CONTROL         "",107,"Button",BS_OWNERDRAW | WS_TABSTOP,80,130,15,15
+    LTEXT           "Subtitles:",IDC_COLOR_SUBT,7,10,75,8
+    CONTROL         "",110,"Button",BS_OWNERDRAW | WS_TABSTOP,88,7,15,15
+    CONTROL         "",111,"Button",BS_OWNERDRAW | WS_TABSTOP,112,7,15,15
+    CONTROL         "",112,"Button",BS_OWNERDRAW | WS_TABSTOP,135,7,15,15
+    LTEXT           "Playlist:",IDC_COLOR_PLAYLIST,7,29,75,8
+    CONTROL         "",101,"Button",BS_OWNERDRAW | WS_TABSTOP,88,26,15,15
+    CONTROL         "",100,"Button",BS_OWNERDRAW | WS_TABSTOP,112,26,15,15
+    LTEXT           "Selected:",IDC_COLOR_SELECTED,7,49,75,8
+    CONTROL         "",103,"Button",BS_OWNERDRAW | WS_TABSTOP,88,47,15,15
+    CONTROL         "",102,"Button",BS_OWNERDRAW | WS_TABSTOP,112,47,15,15
+    LTEXT           "Playing:",IDC_COLOR_PLAYING,7,69,75,8
+    CONTROL         "",105,"Button",BS_OWNERDRAW | WS_TABSTOP,88,66,15,15
+    CONTROL         "",104,"Button",BS_OWNERDRAW | WS_TABSTOP,112,66,15,15
+    LTEXT           "Time:",IDC_COLOR_TIME,7,89,75,8
+    CONTROL         "",109,"Button",BS_OWNERDRAW | WS_TABSTOP,88,87,15,15
+    CONTROL         "",108,"Button",BS_OWNERDRAW | WS_TABSTOP,112,87,15,15
+    LTEXT           "Progress:",IDC_COLOR_PROGRESS,7,112,75,8
+    CONTROL         "",106,"Button",BS_OWNERDRAW | WS_TABSTOP,88,109,15,15
+    LTEXT           "Toolbar:",IDC_COLOR_TOOLBAR,7,132,75,8
+    CONTROL         "",107,"Button",BS_OWNERDRAW | WS_TABSTOP,88,130,15,15
     DEFPUSHBUTTON   "OK",IDOK,14,157,50,14
-    PUSHBUTTON      "Cancel",IDCANCEL,77,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,157,50,14
 END
 
 OPTIONS_GENERAL DIALOG DISCARDABLE  0, 0, 270, 175
@@ -366,7 +366,7 @@ BEGIN
     LTEXT           "ms",IDC_STATIC,133,157,63,8
 END
 
-IDD_SUBTTIME DIALOG DISCARDABLE  0, 0, 279, 117
+IDD_SUBTTIME DIALOG DISCARDABLE  0, 0, 285, 117
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Subtitles time correction"
 FONT 8, "MS Sans Serif"
@@ -379,12 +379,12 @@ BEGIN
     LTEXT           "FPS",IDC_SFPS,122,34,94,8
     DEFPUSHBUTTON   "OK",IDOK,44,95,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,134,95,50,14
-    LTEXT           "If subtitles are displayed too",IDC_SSUBTHELP1,3,55,94,
+    LTEXT           "If subtitles are displayed too",IDC_SSUBTHELP1,3,55,97,
                     34,SS_CENTERIMAGE
-    CTEXT           "use",IDC_SSUBTHELP3,141,55,37,34,SS_CENTERIMAGE
+    CTEXT           "use",IDC_SSUBTHELP3,145,55,37,34,SS_CENTERIMAGE
     LTEXT           "negative shift\npositive shift\nlower scale\nhigher scale",
-                    IDC_SSUBTHELP4,183,55,96,34
-    LTEXT           "early\nlate\nfast\nslow",IDC_SSUBTHELP2,101,55,36,34
+                    IDC_SSUBTHELP4,187,55,96,34
+    LTEXT           "early\nlate\nfast\nslow",IDC_SSUBTHELP2,105,55,36,34
 END
 
 OPTIONS_SUBTITLES DIALOG DISCARDABLE  0, 0, 270, 175
@@ -734,7 +734,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2,8,4,2
+ FILEVERSION 2,8,4,3
  PRODUCTVERSION 0,0,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -753,9 +753,9 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "Petr Laštovièka\0"
             VALUE "FileDescription", "Tiny Player\0"
-            VALUE "FileVersion", "2, 8, 4, 2\0"
+            VALUE "FileVersion", "2, 8, 4, 3\0"
             VALUE "InternalName", "\0"
-            VALUE "LegalCopyright", "(c) 2004-2015 Petr Lastovicka\0"
+            VALUE "LegalCopyright", "(c) 2004-2021 Petr Lastovicka\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "tinyplay.exe\0"
             VALUE "PrivateBuild", "\0"
@@ -890,7 +890,7 @@ BEGIN
     IDD_COLORS, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 142
+        RIGHTMARGIN, 152
         TOPMARGIN, 7
         BOTTOMMARGIN, 171
     END
@@ -914,7 +914,7 @@ BEGIN
     IDD_SUBTTIME, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 272
+        RIGHTMARGIN, 278
         TOPMARGIN, 7
         BOTTOMMARGIN, 110
     END
