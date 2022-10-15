@@ -11,4 +11,4 @@ Audio, video and CD/DVD player for Windows which uses DirectShow technology. It 
 
 You can **download** released binaries (EXE file) for Windows from [sourceforge.net](https://sourceforge.net/projects/tinyplayer/).
 
-![TinyPlayer screenshot](http://petr.lastovicka.sweb.cz/img/tinyplay.png)
+![TinyPlayer screenshot](https://plastovicka.github.io/img/tinyplay.png)
