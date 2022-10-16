@@ -249,7 +249,7 @@ BEGIN
     ICON            IDI_PLAYWND,IDC_STATIC,12,18,20,20,SS_CENTERIMAGE
     PUSHBUTTON      "OK",IDOK,40,84,32,14
     ICON            IDI_PLAYWND,IDC_STATIC,81,18,20,20,SS_CENTERIMAGE
-    PUSHBUTTON      "http://petr.lastovicka.sweb.cz",123,5,64,104,13
+    PUSHBUTTON      "https://plastovicka.github.io",123,5,64,104,13
     LTEXT           "",101,65,24,12,8
 END
 
@@ -734,7 +734,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 2,8,4,3
+ FILEVERSION 2,8,4,4
  PRODUCTVERSION 0,0,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -753,9 +753,9 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "Petr Laštovièka\0"
             VALUE "FileDescription", "Tiny Player\0"
-            VALUE "FileVersion", "2, 8, 4, 3\0"
+            VALUE "FileVersion", "2, 8, 4, 4\0"
             VALUE "InternalName", "\0"
-            VALUE "LegalCopyright", "(c) 2004-2021 Petr Lastovicka\0"
+            VALUE "LegalCopyright", "(c) 2004-2022 Petr Lastovicka\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "tinyplay.exe\0"
             VALUE "PrivateBuild", "\0"

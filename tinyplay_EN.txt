@@ -390,4 +390,4 @@ License
 This program is free and distributed under the terms of "GNU General Public License". Please visit http://opensource.org/licenses  or send email to the author if you don't know what it means.
 
 ************************************************
-http://petr.lastovicka.sweb.cz
+https://plastovicka.github.io

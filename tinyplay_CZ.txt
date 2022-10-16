@@ -400,4 +400,4 @@ Licence
 Program je zdarma a vztahuje se na nìj licence "GNU General Public License". Pokud ji neznáte, pak se podívejte na  http://opensource.org/licenses  nebo mi napište a já vám ji pošlu.
 
 ************************************************
-http://petr.lastovicka.sweb.cz
+https://plastovicka.github.io
